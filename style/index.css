@@ -1,0 +1,86 @@
+h1 {
+    position: absolute;
+    width: 392px;
+    height: 121px;
+    left: calc(50% - 392px/2 - 346px);
+    top: 200px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+
+    color: #000000;
+}
+
+.buttons {
+    position: absolute;
+    width: 380px;
+    height: 172px;
+    left: calc(50% - 380px/2 - 351px);
+    top: 346px;
+        
+    border: 1px dashed #7B61FF;
+    box-sizing: border-box;
+    border-radius: 5px;    
+}
+
+.btnCriar {
+    position: absolute;
+    width: 331px;
+    height: 56px;
+    left: 20px;
+    top: 20px;
+
+    text-align: center;
+    
+
+    background: #1D3557;
+
+    position: absolute;
+}
+
+.btnEscolher {
+    position: absolute;
+    width: 331px;
+    height: 56px;
+    left: 20px;
+    top: 80px;
+
+    text-align: center;
+    
+
+    background: #457B9D;
+}
+
+p{
+    left: 11.46%;
+    right: 73%;
+    top: 64.92%;
+    bottom: 32.56%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+}
+
+.img {
+    position: absolute;
+    width: 611px;
+    height: 495px;
+    left: calc(50% - 611px/2 + 236.5px);
+    top: 135px;
+
+}
+
+.logo {
+    position: absolute;
+    width: 140px;
+    height: 75px;
+    border-radius: 100%;
+}
