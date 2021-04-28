@@ -1,0 +1,32 @@
+.box {
+  position: absolute;
+  background-color: #ecf2f5;
+  width: 465px;
+  height: 520px;
+  border-radius: 15px;
+}
+
+.fields {
+  width: 380px;
+  height: 90px;
+  margin-left: 40px;
+  margin-top: 15px;
+  background-color: #dbe6ec;
+  border-radius: 15px;
+}
+
+input {
+  margin-left: 30px;
+  font-size: 20px;
+  color: #556FCD;
+  margin-top: 36px;
+  margin-right: 0px;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+input::placeholder{
+  color: #556FCD;
+  opacity: 0.6;
+}
