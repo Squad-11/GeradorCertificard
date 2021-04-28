@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  width: 100vw;
+}
+
+header {
+  display: flex;
+  position: 60px 100vw 0;
+  border-bottom: 1px solid #000000;
+  flex-direction: row;
+  align-items: center;
+  overflow: visible;
+}
+
+.um {
+  margin: 1.5vh 60vw 1.5vh 5vw;
+}
+.dois {
+  margin-right: 5vw;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+section {
+  background: #C4C4C4;
+  border: 1px solid #000000;
+  width: 25%;
+  padding-bottom: 25%;
+  margin: 4%;
+  border-radius: 5px;
+}
