@@ -1,8 +1,10 @@
 const titles = document.getElementsByClassName("title");
 const wrappers = document.getElementsByClassName("wrapper");
 
-const bgPicker = document.querySelector("#bgPicker");
-const pseudoPicker = document.querySelector(".pseudo-picker");
+const pickers = document.querySelectorAll("input[type='color']");
+const pseudoPickers = document.querySelectorAll(".pseudo-picker");
+
+const sliders = document.querySelectorAll(".slider");
 
 const fileInput = document.querySelector("#fileInput");
 
@@ -30,13 +32,34 @@ function handleDialog(e) {
   wrapper.classList.add("active");
 }
 
-pseudoPicker.addEventListener("click", () => {
-  bgPicker.click();
-});
+for (let index = 0; index < pseudoPickers.length; index++) {
+  const pseudoPicker = pseudoPickers[index];
 
-bgPicker.addEventListener("input", (e) => {
-  document.documentElement.style.setProperty("--bg", e.target.value);
-});
+  pseudoPicker.addEventListener("click", (e) => {
+    const picker = e.target.nextElementSibling;
+    picker.click();
+  });
+}
+
+for (let index = 0; index < pickers.length; index++) {
+  const picker = pickers[index];
+  picker.addEventListener("input", (e) => {
+    const variable = e.target.dataset.variable;
+
+    updateCssVariable(variable, e.target.value);
+  });
+}
+
+for (let index = 0; index < sliders.length; index++) {
+  const slider = sliders[index];
+  slider.addEventListener("input", (e) => {
+    updateCssVariable(e.target.dataset.variable, `${e.target.value}px`);
+  });
+}
+
+function updateCssVariable(variable, value) {
+  document.documentElement.style.setProperty(variable, value);
+}
 
 fileInput.addEventListener("change", (e) => {
   const headerImg = document.querySelector(".header-img");
