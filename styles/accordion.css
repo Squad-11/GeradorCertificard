@@ -34,7 +34,7 @@ main {
 }
 
 .wrapper.active {
-  height: 275px;
+  height: 400px;
 }
 
 .wrapper.active .content {
@@ -119,6 +119,14 @@ input[type="color"] {
   height: 25px;
   cursor: pointer;
   border-radius: 50%;
+}
+
+.preview{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  background-size: cover;
 }
 
 .certificard {
