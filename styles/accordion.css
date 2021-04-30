@@ -3,6 +3,7 @@
   --bg: #fff;
   --linkHover: red;
   --linkColor: #fff;
+  --linkBgColor: blue;
   --imgBorderWidth: 0px;
   --imgBorderColor: #fff;
   --cardRadius: 15px;
@@ -207,6 +208,10 @@ a:visited {
 
 .links a:hover {
   background: var(--linkHover);
+}
+
+.project-links {
+  background-color: var(--linkBgColor);
 }
 
 .social-medias ul {
