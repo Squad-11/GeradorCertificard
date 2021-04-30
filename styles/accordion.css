@@ -9,12 +9,13 @@
   --cardRadius: 15px;
   --headerImgRadius: 10px;
   --userImgRadius: 50%;
+  --boxPadding: 50px;
 }
 
 main {
   display: grid;
   column-gap: 20px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
 
   padding: 50px;
 }
@@ -35,7 +36,7 @@ main {
 }
 
 .wrapper.active {
-  height: 275px;
+  height: 400px;
 }
 
 .wrapper.active .content {
@@ -122,15 +123,23 @@ input[type="color"] {
   border-radius: 50%;
 }
 
+.preview{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  background-size: cover;
+}
+
 .certificard {
-  width: 60%;
+  /*width: 60%;*/
   height: 100%;
   position: relative;
 
   background: var(--bg);  
 
   border-radius: var(--cardRadius);
-  padding: 20px;
+  padding: var(--boxPadding);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 

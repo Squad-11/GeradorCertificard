@@ -19,27 +19,20 @@
             <div class="wrapper">
                 <div class="title">
                     <span class="material-icons"> expand_more </span>
-                    <p>Imagens</p>
+                    <p>Background</p>
                 </div>
 
                 <div class="content">
-                    <label for="fileInput">Header image</label>
-                    <input type="file" id="fileInput" accept="image/*">
-
-                    <label for="cardRadius">Header image radius</label>
-                    <input type="range" min="0" max="50" value="10" data-variable="--headerImgRadius" class="slider"
-                        id="headerRadius">
-
-                    <label for="cardRadius">User image radius</label>
-                    <input type="range" min="0" max="50" value="50" data-variable="--userImgRadius" class="slider"
-                        id="headerRadius">
+                    <label for="certificardContainer">Certificard container image</label>
+                    <input type="file" id="certificardContainer" accept="image/*" data-element-class="preview"
+                        data-is-bg-img>
                 </div>
             </div>
 
             <div class="wrapper">
                 <div class="title">
                     <span class="material-icons"> expand_more </span>
-                    <p>Links</p>
+                    <p>Informações</p>
                 </div>
 
                 <div class="content">
@@ -54,79 +47,91 @@
                     <label for="linkBgPicker">Cor do bg link</label>
                     <div class="pseudo-picker" style="background: var(--linkBgColor);"></div>
                     <input type="color" id="linkBgPicker" data-variable="--linkBgColor">
+
+                    <label for="userName">Nome</label>
+                    <input type="text" id="userName" placeholder="Seu nome">
                 </div>
             </div>
 
             <div class="wrapper">
                 <div class="title">
-                    <span class="material-icons"> expand_more </span>
-                    <p>Cartão</p>
+                    <span class="material-icons">expand_more</span>
+                    <p>Box Principal</p>
                 </div>
+
                 <div class="content">
-                    <label for="bgPicker">Card background</label>
-                    <div class="pseudo-picker" style="background: var(--bg);"></div>
-                    <input type="color" id="bgPicker" data-variable="--bg">
-
-                    <label for="cardRadius">Borda do cartão</label>
-                    <input type="range" min="0" max="50" value="10" data-variable="--cardRadius" class="slider"
-                        id="cardRadius">
+                    <label for="BoxPadding">Espaçamento interno</label>
+                    <input type="range" min="0" max="30" value="30" data-variable="--boxPadding" class="slider"
+                        id="BoxPadding">
                 </div>
             </div>
-
         </div>
+        <div class="preview">
+            <div class="certificard">
+                <img class="user-photo"
+                    src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80">
+                <img class="header-img"
+                    src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80">
 
-        <div class="certificard">
-            <img class="user-photo"
-                src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80">
-            <img class="header-img"
-                src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80">
+                <h1 class="userName">Matheus Carvalho</h1>
 
-            <h1>Matheus Carvalho</h1>
+                <div class="container links">
+                    <h2>Insígnias da imersão dev</h2>
 
-            <div class="container links">
-                <h2>Insígnias da imersão dev</h2>
+                    <ul>
+                        <li> <a class="project-links" href="https://codepen.io/RogerSilveira/full/oNBzLja" target="_blank"> 🚗 Planejador
+                                de
+                                viagens</li>
+                        <li> <a class="project-links" href="https://codepen.io/RogerSilveira/full/NWdRjPe" target="_blank"> 🔢 Calculadora
+                        </li>
+                        <li> <a class="project-links" href="https://codepen.io/RogerSilveira/full/NWdRyqe" target="_blank"> 🔮 Mentalista
+                        </li>
+                        <li> <a class="project-links" href="https://codepen.io/RogerSilveira/full/gOgxQNo" target="_blank"> 🎬 Filmes
+                                Pixar
+                        </li>
+                        <li> <a class="project-links" href="https://codepen.io/RogerSilveira/full/JjErMPY" target="_blank"> 🏆
+                                Classificação
+                        </li>
+                        <li> <a class="project-links" href="https://codepen.io/RogerSilveira/full/PoWEGbj" target="_blank"> 🃏 Super
+                                trunfo
+                        </li>
+                        <li> <a class="project-links" href="https://codepen.io/RogerSilveira/full/yLgvaZG" target="_blank"> 🌐 Certificard
+                        </li>
+                    </ul>
+                </div>
 
-                <ul>
-                    <li> <a class="project-links" href="https://codepen.io/RogerSilveira/full/oNBzLja" target="_blank"> 🚗 Planejador de viagens</li>
-                    <li> <a class="project-links" href="https://codepen.io/RogerSilveira/full/NWdRjPe" target="_blank"> 🔢 Calculadora</li>
-                    <li> <a class="project-links" href="https://codepen.io/RogerSilveira/full/NWdRyqe" target="_blank"> 🔮 Mentalista</li>
-                    <li> <a class="project-links" href="https://codepen.io/RogerSilveira/full/gOgxQNo" target="_blank"> 🎬 Filmes Pixar</li>
-                    <li> <a class="project-links" href="https://codepen.io/RogerSilveira/full/JjErMPY" target="_blank"> 🏆 Classificação</li>
-                    <li> <a class="project-links" href="https://codepen.io/RogerSilveira/full/PoWEGbj" target="_blank"> 🃏 Super trunfo</li>
-                    <li> <a class="project-links" href="https://codepen.io/RogerSilveira/full/yLgvaZG" target="_blank"> 🌐 Certificard</li>
-                </ul>
-            </div>
+                <div class="container social-medias">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/rogersilveiraa" target="_blank">
+                                <img src="/images/github.svg"></a>
+                        </li>
 
-            <div class="container social-medias">
-                <ul>
-                    <li>
-                        <a href="https://github.com/rogersilveiraa" target="_blank">
-                            <img src="/images/github.svg"></a>
-                    </li>
+                        <li>
+                            <a href="https://instagram.com/rogersilveiraa" target="_blank">
+                                <img src="/images/instagram.svg">
+                            </a>
+                        </li>
 
-                    <li>
-                        <a href="https://instagram.com/rogersilveiraa" target="_blank">
-                            <img src="/images/instagram.svg">
-                        </a>
-                    </li>
+                        <li>
+                            <a href="https://codepen.io/RogerSilveira" target="_blank">
+                                <img src="/images/codepen.svg">
+                            </a>
+                        </li>
 
-                    <li>
-                        <a href="https://codepen.io/RogerSilveira" target="_blank">
-                            <img src="/images/codepen.svg">
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://www.linkedin.com/in/roger-silveira-98171b1a6/" target="_blank">
-                            <img src="/images/linkedin.svg">
-                        </a>
-                    </li>
-                </ul>
+                        <li>
+                            <a href="https://www.linkedin.com/in/roger-silveira-98171b1a6/" target="_blank">
+                                <img src="/images/linkedin.svg">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </main>
 
     <script src="/js/accordion.js"></script>
+    <script src="/js/customization.js"></script>
 </body>
 
 </html>
