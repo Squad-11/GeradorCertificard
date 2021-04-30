@@ -31,6 +31,7 @@ for (let index = 0; index < sliders.length; index++) {
 
 function updateCssVariable(variable, value) {
   document.documentElement.style.setProperty(variable, value);
+  customProps[variable.substring(2)] = value;
 }
 
 for (let index = 0; index < fileInputs.length; index++) {
@@ -54,3 +55,20 @@ document.getElementById("userName").addEventListener("input", (e) => {
   const nameText = document.querySelector(".userName");
   nameText.innerHTML = e.target.value;
 });
+
+document.getElementById("gerarCartao").addEventListener("click", () => {
+  sessionStorage.setItem("customProps", customProps);
+});
+
+const customProps = {
+  bg: "#fff",
+  linkHover: "red",
+  linkColor: "#fff",
+  linkBgColor: "blue",
+  imgBorderWidth: "0px",
+  imgBorderColor: "#fff",
+  cardRadius: "15px",
+  headerImgRadius: "10px",
+  userImgRadius: "50%",
+  boxPadding: "50px",
+};
