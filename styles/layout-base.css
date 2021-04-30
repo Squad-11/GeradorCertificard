@@ -1,8 +1,11 @@
 body {
   margin: 0;
   width: 100%;
-  /* background: linear-gradient(111deg, #E7E7E7 0%, #FFFFFF 100%);
-  background-image: url("/images/background.svg"); */
+  background-image: url("/images/background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 header {
