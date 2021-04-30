@@ -48,20 +48,3 @@ document.getElementById("userName").addEventListener("input", (e) => {
   const nameText = document.querySelector(".userName");
   nameText.innerHTML = e.target.value;
 });
-
-document.getElementById("gerarCartao").addEventListener("click", () => {
-  sessionStorage.setItem("customProps", customProps);
-});
-
-const customProps = {
-  bg: "#fff",
-  linkHover: "red",
-  linkColor: "#fff",
-  linkBgColor: "blue",
-  imgBorderWidth: "0px",
-  imgBorderColor: "#fff",
-  cardRadius: "15px",
-  headerImgRadius: "10px",
-  userImgRadius: "50%",
-  boxPadding: "50px",
-};
