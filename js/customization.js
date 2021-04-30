@@ -37,9 +37,7 @@ for (let index = 0; index < fileInputs.length; index++) {
   const fileInput = fileInputs[index];
 
   fileInput.addEventListener("change", (e) => {
-    const element = document.getElementsByClassName(
-      `${e.target.dataset.elementClass}`
-    );
+    const element = document.querySelector(`.${e.target.dataset.elementClass}`);
     const isBackgroundImg = e.target.dataset.isBgImg == "";
 
     if (isBackgroundImg) {
