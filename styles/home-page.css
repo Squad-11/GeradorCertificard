@@ -165,10 +165,11 @@ p {
 
 footer {
   width: 100vw;
-  height: 8vh;
+  height: 10vh;
   background: #008AFF;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
   bottom: 0;
+  padding: 20px;
 }
 
 .footer-frase {
