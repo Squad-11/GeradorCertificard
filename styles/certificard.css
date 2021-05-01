@@ -1,4 +1,5 @@
 :root {
+  --bgColor: #fff;
   --bg: #fff;
   --nameColor: black;
   --achievementTitleColor: black;
@@ -21,6 +22,8 @@ main {
   padding: 50px;
   flex-grow: 1;
   position: relative;
+  
+  background-color: var(--bgColor);
 }
 
 .preview {
