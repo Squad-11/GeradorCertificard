@@ -48,3 +48,8 @@ document.getElementById("userName").addEventListener("input", (e) => {
   const nameText = document.querySelector(".userName");
   nameText.innerHTML = e.target.value;
 });
+
+document.getElementById("achievementsTitle").addEventListener("input", (e) => {
+  const nameText = document.querySelector(".achievementsTitle");
+  nameText.innerHTML = e.target.value;
+});

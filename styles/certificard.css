@@ -1,5 +1,8 @@
 :root {
+  --bgColor: #fff;
   --bg: #fff;
+  --nameColor: black;
+  --achievementTitleColor: black;
   --linkHover: red;
   --linkColor: #fff;
   --linkBgColor: blue;
@@ -17,6 +20,8 @@ main {
   padding: 50px 0;
   flex-grow: 1;
   position: relative;
+  
+  background-color: var(--bgColor);
 }
 
 .preview {
@@ -69,6 +74,7 @@ main {
 .certificard h1 {
   text-align: center;
   margin: 10px 0 20px;
+  color: var(--nameColor);
 }
 
 .container {
@@ -87,6 +93,7 @@ main {
   text-align: center;
   margin-bottom: 20px;
   font-size: 30px;
+  color: var(--achievementTitleColor);
 }
 
 .links ul{
