@@ -2,10 +2,36 @@
   --rotation: 0;
 }
 
+.tab {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  flex-direction: row-reverse;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.show-tab {
+  cursor: pointer;
+}
+
 .options {
   display: flex;
   row-gap: 20px;
   flex-direction: column;
+
+  width: 0;
+  opacity: 0;
+
+  transition: all 0.2s ease-out;
+}
+
+.options.active {
+  opacity: 1;
+  width: 350px;
 }
 
 .wrapper {

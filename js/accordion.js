@@ -24,3 +24,11 @@ function handleDialog(e) {
   removeActiveWrapper();
   wrapper.classList.add("active");
 }
+
+document.querySelector(".show-tab").addEventListener("click", () => {
+  const tab = document.querySelector(".options");
+  tab.classList.toggle("active")
+
+  const preview = document.querySelector(".preview");
+  preview.classList.toggle("align-right")
+})

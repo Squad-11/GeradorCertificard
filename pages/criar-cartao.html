@@ -15,59 +15,64 @@
 <body>
     <main>
 
-        <div class="options">
+        <div class="tab">
 
-            <div class="wrapper">
-                <div class="title">
-                    <span class="material-icons"> expand_more </span>
-                    <p>Background</p>
+            <div class="show-tab">></div>
+
+            <div class="options">
+
+                <div class="wrapper">
+                    <div class="title">
+                        <span class="material-icons"> expand_more </span>
+                        <p>Background</p>
+                    </div>
+
+                    <div class="content">
+                        <label for="certificardContainer">Certificard container image</label>
+                        <input type="file" id="certificardContainer" accept="image/*" data-element-class="preview"
+                            data-is-bg-img>
+                    </div>
                 </div>
 
-                <div class="content">
-                    <label for="certificardContainer">Certificard container image</label>
-                    <input type="file" id="certificardContainer" accept="image/*" data-element-class="preview"
-                        data-is-bg-img>
+                <div class="wrapper">
+                    <div class="title">
+                        <span class="material-icons"> expand_more </span>
+                        <p>Informações</p>
+                    </div>
+
+                    <div class="content">
+                        <label for="linkPicker">Cor de fundo link</label>
+                        <div class="pseudo-picker" style="background: var(--linkHover);"></div>
+                        <input type="color" id="linkPicker" data-variable="--linkHover">
+
+                        <label for="linkColorPicker">Cor link</label>
+                        <div class="pseudo-picker" style="background: var(--linkColor);"></div>
+                        <input type="color" id="linkColorPicker" data-variable="--linkColor">
+
+                        <label for="linkBgPicker">Cor do bg link</label>
+                        <div class="pseudo-picker" style="background: var(--linkBgColor);"></div>
+                        <input type="color" id="linkBgPicker" data-variable="--linkBgColor">
+
+                        <label for="userName">Nome</label>
+                        <input type="text" id="userName" placeholder="Seu nome">
+                    </div>
                 </div>
+
+                <div class="wrapper">
+                    <div class="title">
+                        <span class="material-icons">expand_more</span>
+                        <p>Box Principal</p>
+                    </div>
+
+                    <div class="content">
+                        <label for="BoxPadding">Espaçamento interno</label>
+                        <input type="range" min="0" max="30" value="30" data-variable="--boxPadding" class="slider"
+                            id="BoxPadding">
+                    </div>
+                </div>
+
+                <button id="gerarCartao">Gerar Cartão</button>
             </div>
-
-            <div class="wrapper">
-                <div class="title">
-                    <span class="material-icons"> expand_more </span>
-                    <p>Informações</p>
-                </div>
-
-                <div class="content">
-                    <label for="linkPicker">Cor de fundo link</label>
-                    <div class="pseudo-picker" style="background: var(--linkHover);"></div>
-                    <input type="color" id="linkPicker" data-variable="--linkHover">
-
-                    <label for="linkColorPicker">Cor link</label>
-                    <div class="pseudo-picker" style="background: var(--linkColor);"></div>
-                    <input type="color" id="linkColorPicker" data-variable="--linkColor">
-
-                    <label for="linkBgPicker">Cor do bg link</label>
-                    <div class="pseudo-picker" style="background: var(--linkBgColor);"></div>
-                    <input type="color" id="linkBgPicker" data-variable="--linkBgColor">
-
-                    <label for="userName">Nome</label>
-                    <input type="text" id="userName" placeholder="Seu nome">
-                </div>
-            </div>
-
-            <div class="wrapper">
-                <div class="title">
-                    <span class="material-icons">expand_more</span>
-                    <p>Box Principal</p>
-                </div>
-
-                <div class="content">
-                    <label for="BoxPadding">Espaçamento interno</label>
-                    <input type="range" min="0" max="30" value="30" data-variable="--boxPadding" class="slider"
-                        id="BoxPadding">
-                </div>
-            </div>
-
-            <button id="gerarCartao">Gerar Cartão</button>
         </div>
 
         <div class="preview">
@@ -83,23 +88,30 @@
                     <h2>Insígnias da imersão dev</h2>
 
                     <ul>
-                        <li> <a class="project-links" href="https://codepen.io/RogerSilveira/full/oNBzLja" target="_blank"> 🚗 Planejador
+                        <li> <a class="project-links" href="https://codepen.io/RogerSilveira/full/oNBzLja"
+                                target="_blank"> 🚗 Planejador
                                 de
                                 viagens</li>
-                        <li> <a class="project-links" href="https://codepen.io/RogerSilveira/full/NWdRjPe" target="_blank"> 🔢 Calculadora
+                        <li> <a class="project-links" href="https://codepen.io/RogerSilveira/full/NWdRjPe"
+                                target="_blank"> 🔢 Calculadora
                         </li>
-                        <li> <a class="project-links" href="https://codepen.io/RogerSilveira/full/NWdRyqe" target="_blank"> 🔮 Mentalista
+                        <li> <a class="project-links" href="https://codepen.io/RogerSilveira/full/NWdRyqe"
+                                target="_blank"> 🔮 Mentalista
                         </li>
-                        <li> <a class="project-links" href="https://codepen.io/RogerSilveira/full/gOgxQNo" target="_blank"> 🎬 Filmes
+                        <li> <a class="project-links" href="https://codepen.io/RogerSilveira/full/gOgxQNo"
+                                target="_blank"> 🎬 Filmes
                                 Pixar
                         </li>
-                        <li> <a class="project-links" href="https://codepen.io/RogerSilveira/full/JjErMPY" target="_blank"> 🏆
+                        <li> <a class="project-links" href="https://codepen.io/RogerSilveira/full/JjErMPY"
+                                target="_blank"> 🏆
                                 Classificação
                         </li>
-                        <li> <a class="project-links" href="https://codepen.io/RogerSilveira/full/PoWEGbj" target="_blank"> 🃏 Super
+                        <li> <a class="project-links" href="https://codepen.io/RogerSilveira/full/PoWEGbj"
+                                target="_blank"> 🃏 Super
                                 trunfo
                         </li>
-                        <li> <a class="project-links" href="https://codepen.io/RogerSilveira/full/yLgvaZG" target="_blank"> 🌐 Certificard
+                        <li> <a class="project-links" href="https://codepen.io/RogerSilveira/full/yLgvaZG"
+                                target="_blank"> 🌐 Certificard
                         </li>
                     </ul>
                 </div>
