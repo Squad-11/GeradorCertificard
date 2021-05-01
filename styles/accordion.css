@@ -12,13 +12,21 @@
   top: 0;
   left: 0;
   bottom: 0;
+
+  z-index: 3;  
 }
 
 .show-tab {
+  font-size: 20px;
   cursor: pointer;
+  transition: all .3s ease-out;
 }
 
-.options {
+.show-tab.invert{
+  transform: rotate(180deg);
+}
+
+.options {  
   display: flex;
   row-gap: 20px;
   flex-direction: column;
@@ -26,18 +34,19 @@
   width: 0;
   opacity: 0;
 
-  transition: all 0.2s ease-out;
+  pointer-events: none;
+  transition: all 0.3s ease-out;
 }
 
 .options.active {
   opacity: 1;
   width: 350px;
+  background: #fff;
+  pointer-events: all;
 }
 
 .wrapper {
-  height: 40px;
-  width: 250px;
-  max-width: 350px;
+  height: 40px;  
 
   border-radius: 10px;
   background: rgba(69, 123, 157, 0.1);
