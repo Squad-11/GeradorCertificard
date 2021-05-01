@@ -89,7 +89,7 @@ main {
 
 .btn-criar {
   background-color: #FF3D00;
-  margin: 25vh 5vw 4vh 15vw;
+  margin: 30vh 5vw 4vh 15vw;
 }
 
 .btn-criar:hover {
@@ -109,8 +109,35 @@ main {
 
 .opcoes p {
   width: 32vw;
-  margin: 27vh 20vw 0 0;
+  margin: 33vh 20vw 0 0;
   color: #363636; 
+}
+
+.explicacao {
+  align-items: center;
+  background-color: #eeeeee;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0;
+  color: #363636;
+  display: flex;
+  padding: 10vh 15vw;
+  height: 70vh;
+}
+
+.explicacao h3{
+  margin-top: 0;
+  width: 30vw;
+}
+
+.explicacao p {
+  width: 30vw;
+  margin-top: 5px;
+}
+
+.explicacao img {
+  margin-left: 10vw;
+  width: 30vw;
+  height: 25vw;
 }
 
 footer {
@@ -119,7 +146,6 @@ footer {
   background: #008AFF;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
   bottom: 0;
-  /* position: fixed; */
 }
 
 .footer-frase {
