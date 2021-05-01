@@ -2,13 +2,6 @@
   --rotation: 0;
 }
 
-main {
-  display: grid;
-  column-gap: 20px;
-  grid-template-columns: 1fr 2fr;
-  padding: 50px;
-}
-
 .options {
   display: flex;
   row-gap: 20px;
