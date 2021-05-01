@@ -57,6 +57,7 @@ nav ul li {
 
 main {
   background-color: white;
+  color: #363636;
 }
 
 .opcoes {
@@ -110,7 +111,6 @@ main {
 .opcoes p {
   width: 32vw;
   margin: 33vh 20vw 0 0;
-  color: #363636; 
 }
 
 .explicacao {
@@ -118,18 +118,17 @@ main {
   background-color: #eeeeee;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin: 0;
-  color: #363636;
   display: flex;
-  padding: 10vh 15vw;
+  padding: 10vh 10vw;
   height: 70vh;
 }
 
-.explicacao h3{
+h3{
   margin-top: 0;
   width: 30vw;
 }
 
-.explicacao p {
+p {
   width: 30vw;
   margin-top: 5px;
 }
@@ -140,8 +139,32 @@ main {
   height: 25vw;
 }
 
+.compartilhar {
+  background-image: url("/images/diverse-friends-using-their-devices\ 1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  width: 100vw;
+  height: 80vh;
+  align-items: center;
+  margin: 0;
+  text-align: center;
+}
+
+.compartilhar article{
+  margin: auto;
+  color: whitesmoke;
+}
+
+.compartilhar h3 {
+  margin-top: 10vh;
+  margin-bottom: 35vh;
+  font-size: 2rem;
+}
+
 footer {
-  width: 100%;
+  width: 100vw;
   height: 8vh;
   background: #008AFF;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -153,4 +176,5 @@ footer {
   color: white;
   margin: 0;
   padding-top: 1.5vh;
+  width: 100vw;
 }
