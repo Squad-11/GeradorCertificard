@@ -101,6 +101,11 @@ p {
   width: 35%;
 }
 
+.template:hover {
+  background-color: #e4e4e4;
+  border: 2px solid black;
+}
+
 footer {
   width: 100vw;
   height: 10vh;
