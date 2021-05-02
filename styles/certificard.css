@@ -1,0 +1,144 @@
+:root {
+  --bgColor: #fff;
+  --bg: #fff;
+  --nameColor: black;
+  --achievementTitleColor: black;
+  --linkHover: red;
+  --linkColor: #fff;
+  --linkBgColor: blue;
+  --imgBorderWidth: 0px;
+  --imgBorderColor: #fff;
+  --cardRadius: 15px;
+  --headerImgRadius: 50px;
+  --userImgRadius: 50%;
+  --boxPadding: 50px;
+  --headerImageHeight: 200px;  
+}
+
+main {
+  display: flex;
+
+  padding: 50px 0;
+  flex-grow: 1;
+  position: relative;
+  
+  background-color: var(--bgColor);
+}
+
+.preview {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-size: cover;
+}
+
+.preview.align-right {
+  margin-left: 50%;
+}
+
+.certificard {
+  max-width: 800px;
+
+  position: relative;
+
+  background: var(--bg);
+
+  border-radius: var(--cardRadius);
+  padding: var(--boxPadding);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.certificard .user-photo {
+  position: absolute;
+  left: 50%;
+  top: 0;
+
+  width: calc(100px + var(--imgBorderWidth));
+  height: calc(100px + var(--imgBorderWidth));
+
+  object-fit: cover;
+  border-radius: var(--userImgRadius);
+  transform: translate(-50%, -50%);
+
+  border: var(--imgBorderWidth) solid var(--imgBorderColor);
+}
+
+.certificard .header-img {
+  width: 100%;
+  height: var(--headerImageHeight);
+
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: var(--headerImgRadius);
+}
+
+.certificard h1 {
+  text-align: center;
+  margin: 10px 0 20px;
+  color: var(--nameColor);
+}
+
+.container {
+  padding: 20px 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  background: rgba(63, 61, 86, 0.4);
+}
+
+.container ul,
+.container ol {
+  list-style: none;
+}
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: var(--achievementTitleColor);
+}
+
+.links ul{
+  display: flex;
+  row-gap: 10px;
+  flex-direction: column;
+}
+
+a {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 2px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--linkColor);
+}
+
+a:link {
+  text-decoration: none;
+  color: var(--linkColor);
+}
+
+a:visited {
+  color: var(--linkColor);
+}
+
+.links a:hover {
+  background: var(--linkHover);
+}
+
+.project-links {
+  background-color: var(--linkBgColor);
+}
+
+.social-medias ul {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-medias ul img {
+  width: 50px;
+  height: 50px;
+}

@@ -1,37 +1,55 @@
 :root {
   --rotation: 0;
-  --bg: #fff;
-  --linkHover: red;
-  --linkColor: #fff;
-  --imgBorderWidth: 0px;
-  --imgBorderColor: #fff;
-  --cardRadius: 15px;
-  --headerImgRadius: 10px;
-  --userImgRadius: 50%;
-  --boxPadding: 50px;
 }
 
-main {
-  display: grid;
-  column-gap: 20px;
-  grid-template-columns: 1fr 2fr;
-
-  padding: 50px;
-}
-
-.options {
+.tab {
   display: flex;
-  row-gap: 20px;
+  column-gap: 10px;
+  align-items: center;
+  flex-direction: row-reverse;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+
+  z-index: 3;  
+}
+
+.show-tab {
+  font-size: 20px;
+  cursor: pointer;
+  transition: all .3s ease-out;
+}
+
+.show-tab.invert{
+  transform: rotate(180deg);
+}
+
+.options {  
+  display: flex;
+  row-gap: 40px;
+  justify-content: center;
   flex-direction: column;
+
+  width: 0;
+  opacity: 0;
+
+  padding: 15px;
+  pointer-events: none;
+  transition: all 0.3s ease-out;
+}
+
+.options.active {
+  opacity: 1;
+  height: 100%;
+  width: 300px;
+  pointer-events: all;
+  background: rgba(226, 226, 226, 0.68);
 }
 
 .wrapper {
   height: 40px;
-  width: 250px;
-  max-width: 350px;
-
-  border-radius: 10px;
-  background: rgba(69, 123, 157, 0.1);
 }
 
 .wrapper.active {
@@ -55,10 +73,11 @@ main {
   position: relative;
 
   color: #fff;
+  font-size: 20px;
   cursor: pointer;
   padding: 15px 20px;
-  border-radius: 10px;
-  background: #3f3d56;
+  border-radius: 15px;
+  background: #ff3d00;
 }
 
 .title * {
@@ -67,7 +86,7 @@ main {
 
 .title span {
   position: absolute;
-  left: 15px;
+  right: 15px;
   bottom: 50%;
   transform: translateY(50%) rotate(var(--rotation));
 }
@@ -120,103 +139,4 @@ input[type="color"] {
   height: 25px;
   cursor: pointer;
   border-radius: 50%;
-}
-
-.preview{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-  background-size: cover;
-}
-
-.certificard {
-  /*width: 60%;*/
-  height: 100%;
-  position: relative;
-
-  background: var(--bg);  
-
-  border-radius: var(--cardRadius);
-  padding: var(--boxPadding);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-}
-
-.certificard .user-photo {
-  position: absolute;
-  left: 50%;
-  top: 0;
-
-  width: calc(100px + var(--imgBorderWidth));
-  height: calc(100px + var(--imgBorderWidth));
-
-  object-fit: cover;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-
-  border: var(--imgBorderWidth) solid var(--imgBorderColor);
-}
-
-.certificard .header-img {
-  width: 100%;
-  max-height: 100px;
-  object-fit: cover;
-  border-radius: var(--headerImgRadius);
-}
-
-.certificard h1 {
-  text-align: center;
-  margin: 10px 0 20px;
-}
-
-.container {
-  padding: 20px 10px;
-  margin-bottom: 10px;
-  border-radius: 15px;
-  background: rgba(63, 61, 86, 0.4);
-}
-
-.container ul,
-.container ol {
-  list-style: none;
-}
-
-.container h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 30px;
-}
-
-a {
-  font-size: 18px;
-  font-weight: bold;
-  padding: 2px;
-  border-radius: 8px;
-  text-decoration: none;
-  color: var(--linkColor);
-}
-
-a:link {
-  text-decoration: none;
-  color: var(--linkColor);
-}
-
-a:visited {
-  color: var(--linkColor);
-}
-
-.links a:hover {
-  background: var(--linkHover);
-}
-
-.social-medias ul {
-  display: flex;
-  column-gap: 20px;
-  align-items: center;
-  justify-content: center;
-}
-
-.social-medias ul img {
-  width: 50px;
-  height: 50px;
 }

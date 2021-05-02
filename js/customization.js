@@ -1,46 +1,38 @@
 const pickers = document.querySelectorAll("input[type='color']");
 const fileInputs = document.querySelectorAll("input[type='file']");
+const sliders = document.querySelectorAll("input[type='range']");
 
-const sliders = document.querySelectorAll(".slider");
 const pseudoPickers = document.querySelectorAll(".pseudo-picker");
 
-for (let index = 0; index < pseudoPickers.length; index++) {
-  const pseudoPicker = pseudoPickers[index];
+function addEventListenerToAll(list, event, exec) {
+  for (let index = 0; index < list.length; index++) {
+    const element = list[index];
 
-  pseudoPicker.addEventListener("click", (e) => {
-    const picker = e.target.nextElementSibling;
-    picker.click();
-  });
+    element.addEventListener(event, exec);
+  }
 }
 
-for (let index = 0; index < pickers.length; index++) {
-  const picker = pickers[index];
-  picker.addEventListener("input", (e) => {
-    const variable = e.target.dataset.variable;
+addEventListenerToAll(pseudoPickers, "click", (e) => {
+  const picker = e.target.nextElementSibling;
+  picker.click();
+});
 
-    updateCssVariable(variable, e.target.value);
-  });
-}
+addEventListenerToAll(pickers, "input", (e) => {
+  const variable = e.target.dataset.variable;
+  updateCssVariable(variable, e.target.value);
+});
 
-for (let index = 0; index < sliders.length; index++) {
-  const slider = sliders[index];
-  slider.addEventListener("input", (e) =>
-    updateCssVariable(e.target.dataset.variable, `${e.target.value}px`)
-  );
-}
+addEventListenerToAll(sliders, "input", (e) =>  updateCssVariable(e.target.dataset.variable, `${e.target.value}px`));
+
+addEventListenerToAll(fileInputs, "change", displaySelectedImage)
 
 function updateCssVariable(variable, value) {
-  document.documentElement.style.setProperty(variable, value);
+  document.documentElement.style.setProperty(variable, value);  
 }
 
-for (let index = 0; index < fileInputs.length; index++) {
-  const fileInput = fileInputs[index];
-
-  fileInput.addEventListener("change", (e) => {
-    const element = document.getElementsByClassName(
-      `${e.target.dataset.elementClass}`
-    );
-    const isBackgroundImg = e.target.dataset.isBgImg == "";
+function displaySelectedImage(e) {
+    const element = document.querySelector(`.${e.target.dataset.elementClass}`);
+    const isBackgroundImg = e.target.dataset.isBgImg === "";
 
     if (isBackgroundImg) {
       element.style.backgroundImage = `url(${URL.createObjectURL(
@@ -49,10 +41,14 @@ for (let index = 0; index < fileInputs.length; index++) {
     }
 
     element.src = URL.createObjectURL(e.target.files[0]);
-  });
 }
 
 document.getElementById("userName").addEventListener("input", (e) => {
   const nameText = document.querySelector(".userName");
+  nameText.innerHTML = e.target.value;
+});
+
+document.getElementById("achievementsTitle").addEventListener("input", (e) => {
+  const nameText = document.querySelector(".achievementsTitle");
   nameText.innerHTML = e.target.value;
 });

@@ -1,5 +1,6 @@
 const titles = document.getElementsByClassName("title");
 const wrappers = document.getElementsByClassName("wrapper");
+const showTabBtn = document.querySelector(".show-tab");
 
 for (let index = 0; index < titles.length; index++) {
   const element = titles[index];
@@ -24,3 +25,13 @@ function handleDialog(e) {
   removeActiveWrapper();
   wrapper.classList.add("active");
 }
+
+showTabBtn.addEventListener("click", () => {
+  const tab = document.querySelector(".options");
+  tab.classList.toggle("active")
+
+  const certificard = document.querySelector(".certificard");
+  certificard.classList.toggle("align-right")
+
+  showTabBtn.classList.toggle("invert");
+})
