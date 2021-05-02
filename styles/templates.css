@@ -1,36 +1,123 @@
 body {
-  margin: 0;
   width: 100vw;
+  margin: 0;
+  /* font-weight: 300 e 500; */
+  font-family: 'Raleway', sans-serif;
+  background: linear-gradient(180deg, #008AFF 0%, #eeeeee 30%, #eeeeee 70%, #008AFF 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-size: clamp(10px, 1.5vw, 60px);
 }
 
 header {
+  width: 100vw;
+  height: 15vh;
   display: flex;
-  position: 60px 100vw 0;
-  border-bottom: 1px solid #000000;
-  flex-direction: row;
-  align-items: center;
-  overflow: visible;
 }
 
-.um {
-  margin: 1.5vh 60vw 1.5vh 5vw;
+.logo {
+  height: 90%;
+  margin: 5px 5px 0 20px
 }
-.dois {
-  margin-right: 5vw;
+
+.nome {
+  height: 70%;
+  margin-top: 2%;
+}
+
+.nav-header {
+  margin: 2% 8% auto auto;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: clamp(10px, 1.5vw, 30px);
+  color: white;
+  padding: 1vh 1.5vw;
+}
+
+nav a:hover {
+  background-color: #ffffff31;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+nav ul li {
+  display: block;
+  padding: 0 2.5vw;
 }
 
 main {
+  display: block;
+}
+
+.conteudo {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
+  background-color: #eeeeee;
+  width: 90vw;
+  margin: 5vh auto;
+  border-radius: 5px;
+  box-shadow: 0 15px 35px rgb(50 50 93 / 10%), 0 5px 15px rgb(0 0 0 / 7%);
 }
 
-section {
-  background: #C4C4C4;
-  border: 1px solid #000000;
-  width: 25%;
-  padding-bottom: 25%;
-  margin: 4%;
+.template {
+  display: flex;
+  background-color: #bbbbbb7a;
+  border: 2px solid #aaaaaa;
+  width: 40%;
+  padding: 1%;
+  margin: 3%;
   border-radius: 5px;
+  box-shadow: 0 15px 35px rgb(50 50 93 / 10%), 0 5px 15px rgb(0 0 0 / 7%);
 }
+
+.template div {
+  text-align: center;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+h4{
+  margin-top: 0;
+  color: #FF3D00;
+}
+
+p {
+  margin-top: 5px;
+  color: #363636;
+}
+
+.template img {
+  width: 35%;
+}
+
+footer {
+  width: 100vw;
+  height: 10vh;
+  bottom: 0;
+  padding: 20px;
+}
+
+footer p {
+  width: 30vw;
+  margin-top: 5px;
+}
+
+.footer-frase {
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding-top: 1.5vh;
+  width: 100vw;
+}
+  

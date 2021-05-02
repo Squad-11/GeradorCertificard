@@ -1,0 +1,181 @@
+body {
+  width: 100vw;
+  margin: 0;
+  /* font-weight: 300 e 500; */
+  font-family: 'Raleway', sans-serif;
+  background: linear-gradient(180deg, #008AFF 0%, #ffffff 40%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-size: clamp(10px, 1.5vw, 60px);
+}
+
+header {
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+}
+
+.logo {
+  height: 90%;
+  margin: 5px 5px 0 20px
+}
+
+.nome {
+  height: 70%;
+  margin-top: 2%;
+}
+
+.nav-header {
+  margin: 2% 8% auto auto;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: clamp(10px, 1.5vw, 30px);
+  color: white;
+  padding: 1vh 1.5vw;
+}
+
+nav a:hover {
+  background-color: #ffffff31;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+nav ul li {
+  display: block;
+  padding: 0 2.5vw;
+}
+
+main {
+  background-color: white;
+  color: #363636;
+}
+
+.opcoes {
+  background-image: url("/images/backgroud-pc-branco.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  width: 100vw;
+  height: 70vh;
+  margin-top: 2vh;
+}
+
+.botoes {
+  width: 40vw;
+}
+
+.opcoes button {
+  border-radius: 5px;
+  padding: 10px 20px;
+  width: 20vw;
+  height: 8vh;
+  text-align: center;
+  border: 0;
+  font-size: clamp(10px, 1.5vw, 60px);
+  font-family: 'Raleway', sans-serif;
+  color: white;
+}
+
+.btn-criar {
+  background-color: #FF3D00;
+  margin: 30vh 5vw 4vh 15vw;
+}
+
+.btn-criar:hover {
+  border: 2px solid black;
+  background-color: #ff3c00e5;
+}
+
+.btn-templates {
+  background-color: #FF8A00;
+  margin: 4vh 5vw 20vh 15vw;
+}
+
+.btn-templates:hover {
+  border: 2px solid black;
+  background-color: #FF8A00e5;
+}
+
+.opcoes p {
+  width: 32vw;
+  margin: 33vh 20vw 0 0;
+}
+
+.explicacao {
+  align-items: center;
+  background: linear-gradient(180deg, #eeeeee 60%, #dbdbdb 100%);
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0;
+  display: flex;
+  padding: 10vh 10vw;
+  height: 70vh;
+}
+
+h3{
+  margin-top: 0;
+  width: 30vw;
+}
+
+p {
+  width: 30vw;
+  margin-top: 5px;
+}
+
+.explicacao img {
+  margin-left: 10vw;
+  width: 30vw;
+  height: 25vw;
+}
+
+.compartilhar {
+  background-image: url("/images/diverse-friends-using-their-devices\ 1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  width: 100vw;
+  height: 80vh;
+  align-items: center;
+  margin: 0;
+  text-align: center;
+}
+
+.compartilhar article{
+  margin: auto;
+  color: whitesmoke;
+}
+
+.compartilhar h3 {
+  margin-top: 10vh;
+  margin-bottom: 35vh;
+  font-size: 2rem;
+}
+
+footer {
+  width: 100vw;
+  height: 10vh;
+  background: linear-gradient(180deg, #303030 -10%, #008AFF 40%);
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  bottom: 0;
+  padding: 20px;
+}
+
+.footer-frase {
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding-top: 1.5vh;
+  width: 100vw;
+}
