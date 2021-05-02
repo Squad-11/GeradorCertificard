@@ -65,7 +65,7 @@ main {
   align-items: center;
   background-color: #eeeeee;
   width: 90vw;
-  margin: 5vh auto;
+  margin: 3vh auto;
   border-radius: 5px;
   box-shadow: 0 15px 35px rgb(50 50 93 / 10%), 0 5px 15px rgb(0 0 0 / 7%);
 }
