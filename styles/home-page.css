@@ -1,7 +1,6 @@
 body {
-  width: 100vw;
+  width: 100%;
   margin: 0;
-  /* font-weight: 300 e 500; */
   font-family: 'Raleway', sans-serif;
   background: linear-gradient(180deg, #008AFF 0%, #ffffff 40%);
   background-repeat: no-repeat;
@@ -12,7 +11,7 @@ body {
 }
 
 header {
-  width: 100vw;
+  width: 100%;
   height: 15vh;
   display: flex;
 }
@@ -67,7 +66,7 @@ main {
   background-position: center;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
   display: flex;
-  width: 100vw;
+  width: 100%;
   height: 70vh;
   margin-top: 2vh;
 }
@@ -110,7 +109,7 @@ main {
 
 .opcoes p {
   width: 32vw;
-  margin: 33vh 20vw 0 0;
+  margin: 30vh 20vw 0 0;
 }
 
 .explicacao {
@@ -145,7 +144,7 @@ p {
   background-size: cover;
   background-position: center;
   display: flex;
-  width: 100vw;
+  width: 100%;
   height: 80vh;
   align-items: center;
   margin: 0;
@@ -164,7 +163,6 @@ p {
 }
 
 footer {
-  width: 100vw;
   height: 10vh;
   background: linear-gradient(180deg, #303030 -10%, #008AFF 40%);
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -177,5 +175,5 @@ footer {
   color: white;
   margin: 0;
   padding-top: 1.5vh;
-  width: 100vw;
+  width: 100%;
 }
