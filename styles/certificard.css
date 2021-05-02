@@ -59,7 +59,7 @@ main {
   height: calc(100px + var(--imgBorderWidth));
 
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: var(--userImgRadius);
   transform: translate(-50%, -50%);
 
   border: var(--imgBorderWidth) solid var(--imgBorderColor);

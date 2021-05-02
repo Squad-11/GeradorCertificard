@@ -68,6 +68,23 @@
                 <div class="wrapper">
                     <div class="title">
                         <span class="material-icons"> expand_more </span>
+                        <p>Foto de perfil</p>
+                    </div>
+
+                    <div class="content">
+                        <label for="profilePhotoInput">Escolher imagem</label>
+                        <input type="file" id="profilePhotoInput" accept="image/*" data-element-class="user-photo">
+
+                        <label for="profilePhotoRadius">Radius</label>
+                        <input type="range" min="0" max="50" value="50" data-variable="--userImgRadius" class="slider"
+                            id="profilePhotoRadius">
+                    </div>
+                </div>
+
+
+                <div class="wrapper">
+                    <div class="title">
+                        <span class="material-icons"> expand_more </span>
                         <p>Informações</p>
                     </div>
 
@@ -110,6 +127,14 @@
                         <label for="BoxPadding">Espaçamento interno</label>
                         <input type="range" min="0" max="30" value="30" data-variable="--boxPadding" class="slider"
                             id="BoxPadding">
+
+                        <label for="bgPicker">Background</label>
+                        <div class="pseudo-picker" style="background: var(--bg);"></div>
+                        <input type="color" id="bgPicker" data-variable="--bg">
+
+                        <label for="cardRadius">Radius</label>
+                        <input type="range" min="0" max="50" value="10" data-variable="--cardRadius" class="slider"
+                            id="cardRadius">
                     </div>
                 </div>
             </div>
