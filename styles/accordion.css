@@ -28,28 +28,28 @@
 
 .options {  
   display: flex;
-  row-gap: 20px;
+  row-gap: 40px;
+  justify-content: center;
   flex-direction: column;
 
   width: 0;
   opacity: 0;
 
+  padding: 15px;
   pointer-events: none;
   transition: all 0.3s ease-out;
 }
 
 .options.active {
   opacity: 1;
-  width: 350px;
-  background: #fff;
+  height: 100%;
+  width: 300px;
   pointer-events: all;
+  background: rgba(226, 226, 226, 0.68);
 }
 
 .wrapper {
-  height: 40px;  
-
-  border-radius: 10px;
-  background: rgba(69, 123, 157, 0.1);
+  height: 40px;
 }
 
 .wrapper.active {
@@ -73,10 +73,11 @@
   position: relative;
 
   color: #fff;
+  font-size: 20px;
   cursor: pointer;
   padding: 15px 20px;
-  border-radius: 10px;
-  background: #3f3d56;
+  border-radius: 15px;
+  background: #ff3d00;
 }
 
 .title * {
@@ -85,7 +86,7 @@
 
 .title span {
   position: absolute;
-  left: 15px;
+  right: 15px;
   bottom: 50%;
   transform: translateY(50%) rotate(var(--rotation));
 }
