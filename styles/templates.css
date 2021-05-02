@@ -1,41 +1,40 @@
 body {
+  width: 100vw;
   margin: 0;
-  width: 100%;
-  background-image: url("/images/background.svg");
+  /* font-weight: 300 e 500; */
+  font-family: 'Raleway', sans-serif;
+  background: linear-gradient(180deg, #008AFF 0%, #eeeeee 30%, #eeeeee 70%, #008AFF 100%);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  font-size: clamp(10px, 1.5vw, 60px);
 }
 
 header {
-width: 100%;
-height: 80px;
-background-color: #008AFF;
-border-bottom: 1px solid #FFFFFF;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-display: flex;
+  width: 100vw;
+  height: 15vh;
+  display: flex;
 }
 
 .logo {
-  height: 70px;
-  margin: 4px 5px 0 20px
+  height: 90%;
+  margin: 5px 5px 0 20px
 }
 
 .nome {
-  height: 45px;
-  margin-top: 25px;
+  height: 70%;
+  margin-top: 2%;
 }
 
 .nav-header {
-  margin: 15px 80px auto auto;
+  margin: 2% 8% auto auto;
 }
 
 nav a {
   text-decoration: none;
-  font-size: 18px;
+  font-size: clamp(10px, 1.5vw, 30px);
   color: white;
-  padding: 5px 10px;
+  padding: 1vh 1.5vw;
 }
 
 nav a:hover {
@@ -52,38 +51,78 @@ nav ul {
 }
 nav ul li {
   display: block;
-  padding: 0 30px;
+  padding: 0 2.5vw;
 }
 
 main {
+  display: block;
+}
+
+.conteudo {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
+  background-color: #eeeeee;
+  width: 90vw;
+  margin: 5vh auto;
+  border-radius: 5px;
+  box-shadow: 0 15px 35px rgb(50 50 93 / 10%), 0 5px 15px rgb(0 0 0 / 7%);
 }
 
-section {
-  background: #C4C4C4;
-  border: 1px solid #000000;
-  width: 25%;
-  padding-bottom: 25%;
-  margin: 4%;
+.template {
+  display: flex;
+  background-color: #bbbbbb7a;
+  border: 2px solid #aaaaaa;
+  width: 40%;
+  padding: 1%;
+  margin: 3%;
   border-radius: 5px;
+  box-shadow: 0 15px 35px rgb(50 50 93 / 10%), 0 5px 15px rgb(0 0 0 / 7%);
+}
+
+.template div {
+  text-align: center;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+h4{
+  margin-top: 0;
+  color: #FF3D00;
+}
+
+p {
+  margin-top: 5px;
+  color: #363636;
+}
+
+.template img {
+  width: 35%;
+}
+
+.template:hover {
+  background-color: #e4e4e4;
+  border: 2px solid black;
 }
 
 footer {
-  width: 100%;
-  height: 40px;
-  background: #008AFF;
-  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-top: 1px solid #FFFFFF;
+  width: 100vw;
+  height: 10vh;
   bottom: 0;
-  /* position: fixed; */
-  }
-  
-  .footer-frase {
-    text-align: center;
-    color: white;
-    margin-top: 12px;
-  }
+  padding: 20px;
+}
+
+footer p {
+  width: 30vw;
+  margin-top: 5px;
+}
+
+.footer-frase {
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding-top: 1.5vh;
+  width: 100vw;
+}
   
