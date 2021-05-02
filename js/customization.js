@@ -27,8 +27,7 @@ addEventListenerToAll(sliders, "input", (e) =>  updateCssVariable(e.target.datas
 addEventListenerToAll(fileInputs, "change", displaySelectedImage)
 
 function updateCssVariable(variable, value) {
-  document.documentElement.style.setProperty(variable, value);
-  customProps[variable.substring(2)] = value;
+  document.documentElement.style.setProperty(variable, value);  
 }
 
 function displaySelectedImage(e) {

@@ -43,6 +43,31 @@
                 <div class="wrapper">
                     <div class="title">
                         <span class="material-icons"> expand_more </span>
+                        <p>Imagem certificard</p>
+                    </div>
+
+                    <div class="content">
+                        <label for="imagemCertificard">Escolher imagem</label>
+                        <input type="file" id="imagemCertificard" accept="image/*" data-element-class="header-img"
+                            hidden>
+
+                        <!-- <label for="linkPicker">Cor do Background</label>
+                        <div class="pseudo-picker" style="background: var(--bgColor);"></div>
+                        <input type="color" id="linkPicker" data-variable="--bgColor"> -->
+
+                        <label for="tamanhoImagemCertificard">Tamanho</label>
+                        <input type="range" min="0" max="200" value="200" data-variable="--headerImageHeight"
+                            class="slider" id="tamanhoImagemCertificard">
+
+                        <label for="imagemCertificardRadius">Radius</label>
+                        <input type="range" min="0" max="50" value="50" data-variable="--headerImgRadius" class="slider"
+                            id="imagemCertificardRadius">
+                    </div>
+                </div>
+
+                <div class="wrapper">
+                    <div class="title">
+                        <span class="material-icons"> expand_more </span>
                         <p>Informações</p>
                     </div>
 
@@ -86,7 +111,7 @@
                         <input type="range" min="0" max="30" value="30" data-variable="--boxPadding" class="slider"
                             id="BoxPadding">
                     </div>
-                </div>                
+                </div>
             </div>
         </div>
 

@@ -9,9 +9,10 @@
   --imgBorderWidth: 0px;
   --imgBorderColor: #fff;
   --cardRadius: 15px;
-  --headerImgRadius: 10px;
+  --headerImgRadius: 50px;
   --userImgRadius: 50%;
   --boxPadding: 50px;
+  --headerImageHeight: 200px;  
 }
 
 main {
@@ -66,7 +67,9 @@ main {
 
 .certificard .header-img {
   width: 100%;
-  max-height: 100px;
+  height: var(--headerImageHeight);
+
+  max-height: 200px;
   object-fit: cover;
   border-radius: var(--headerImgRadius);
 }
