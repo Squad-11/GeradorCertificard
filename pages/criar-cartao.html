@@ -51,10 +51,6 @@
                         <input type="file" id="imagemCertificard" accept="image/*" data-element-class="header-img"
                             hidden>
 
-                        <!-- <label for="linkPicker">Cor do Background</label>
-                        <div class="pseudo-picker" style="background: var(--bgColor);"></div>
-                        <input type="color" id="linkPicker" data-variable="--bgColor"> -->
-
                         <label for="tamanhoImagemCertificard">Tamanho</label>
                         <input type="range" min="0" max="200" value="200" data-variable="--headerImageHeight"
                             class="slider" id="tamanhoImagemCertificard">
@@ -88,6 +84,17 @@
                     </div>
 
                     <div class="content">
+                        <label for="BoxPadding">Espaçamento interno</label>
+                        <input type="range" min="0" max="30" value="30" data-variable="--boxPadding" class="slider"
+                            id="BoxPadding">
+
+                        <label for="bgPicker">Background</label>
+                        <div class="pseudo-picker" style="background: var(--bg);"></div>
+                        <input type="color" id="bgPicker" data-variable="--bg">
+
+                        <label for="cardRadius">Radius</label>
+                        <input type="range" min="0" max="50" value="10" data-variable="--cardRadius" class="slider"
+                            id="cardRadius">
                     </div>
 
                 </div>
@@ -121,13 +128,6 @@
                         <label for="linkBgPicker">Cor do bg link</label>
                         <div class="pseudo-picker" style="background: var(--linkBgColor);"></div>
                         <input type="color" id="linkBgPicker" data-variable="--linkBgColor">
-
-                        <label for="achievementsTitle">Título</label>
-                        <input type="text" id="achievementsTitle" placeholder="Título">
-
-                        <label for="linkBgPicker">Cor do Título</label>
-                        <div class="pseudo-picker" style="background: var(--achievementTitleColor);"></div>
-                        <input type="color" id="linkBgPicker" data-variable="--achievementTitleColor">
                     </div>
                 </div>
 
@@ -138,17 +138,7 @@
                     </div>
 
                     <div class="content">
-                        <label for="BoxPadding">Espaçamento interno</label>
-                        <input type="range" min="0" max="30" value="30" data-variable="--boxPadding" class="slider"
-                            id="BoxPadding">
 
-                        <label for="bgPicker">Background</label>
-                        <div class="pseudo-picker" style="background: var(--bg);"></div>
-                        <input type="color" id="bgPicker" data-variable="--bg">
-
-                        <label for="cardRadius">Radius</label>
-                        <input type="range" min="0" max="50" value="10" data-variable="--cardRadius" class="slider"
-                            id="cardRadius">
                     </div>
                 </div>
 
@@ -175,6 +165,12 @@
                     </div>
 
                     <div class="content">
+                        <label for="achievementsTitle">Título</label>
+                        <input type="text" id="achievementsTitle" placeholder="Título">
+
+                        <label for="linkBgPicker">Cor do Título</label>
+                        <div class="pseudo-picker" style="background: var(--achievementTitleColor);"></div>
+                        <input type="color" id="linkBgPicker" data-variable="--achievementTitleColor">
                     </div>
 
                 </div>
