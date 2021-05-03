@@ -3,6 +3,9 @@
   --bg: #fff;
   --nameColor: black;
   --achievementTitleColor: black;
+  --boxLinksPadding: 10px;
+  --boxLinksBg: rgba(63, 61, 86, 0.4);
+  --boxLinksRadius: 15px;
   --linkHover: red;
   --linkColor: #fff;
   --linkBgColor: blue;
@@ -12,7 +15,8 @@
   --headerImgRadius: 50px;
   --userImgRadius: 50%;
   --boxPadding: 50px;
-  --headerImageHeight: 200px;  
+  --headerImageHeight: 200px;
+
 }
 
 main {
@@ -81,10 +85,10 @@ main {
 }
 
 .container {
-  padding: 20px 10px;
+  padding: var(--boxLinksPadding);
   margin-bottom: 10px;
-  border-radius: 15px;
-  background: rgba(63, 61, 86, 0.4);
+  border-radius: var(--boxLinksRadius);
+  background: var(--boxLinksBg);
 }
 
 .container ul,
