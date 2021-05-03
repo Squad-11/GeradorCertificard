@@ -107,3 +107,8 @@ addLinkBtn.addEventListener("click", () => {
   achievementText.value = "";
   achievementLink.value = "";
 })
+
+document.getElementById("filter").addEventListener("change", () => {
+  const medias = document.querySelector(".social-medias ul");
+  medias.classList.toggle("black-white")
+});
