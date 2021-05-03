@@ -55,11 +55,9 @@ document.getElementById("achievementsTitle").addEventListener("input", (e) => {
 
 addLinkBtn.addEventListener("click", () => {
   const linkList = document.getElementById("socialLinks");
-  const achievementText = document.getElementById("achievementText").value;
-  const achievementLink = document.getElementById("achievementLink").value;
-  console.log(achievementText);
-  console.log(achievementLink);
-  linkList.innerHTML += `<li><a class="project-links" href="${achievementLink}" target="_blank">${achievementText}</a></li>`;
-  document.getElementById("achievementText").value = "";
-  document.getElementById("achievementLink").value = "";
+  const achievementText = document.getElementById("achievementText");
+  const achievementLink = document.getElementById("achievementLink");
+  linkList.innerHTML += `<li><a class="project-links" href="${achievementLink.value}" target="_blank">${achievementText.value}</a></li>`;
+  achievementText.value = "";
+  achievementLink.value = "";
 })
