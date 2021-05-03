@@ -52,3 +52,14 @@ document.getElementById("achievementsTitle").addEventListener("input", (e) => {
   const nameText = document.querySelector(".achievementsTitle");
   nameText.innerHTML = e.target.value;
 });
+
+addLinkBtn.addEventListener("click", () => {
+  const linkList = document.getElementById("socialLinks");
+  const achievementText = document.getElementById("achievementText").value;
+  const achievementLink = document.getElementById("achievementLink").value;
+  console.log(achievementText);
+  console.log(achievementLink);
+  linkList.innerHTML += `<li><a class="project-links" href="${achievementLink}" target="_blank">${achievementText}</a></li>`;
+  document.getElementById("achievementText").value = "";
+  document.getElementById("achievementLink").value = "";
+})
