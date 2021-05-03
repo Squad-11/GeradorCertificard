@@ -1,6 +1,7 @@
 const titles = document.getElementsByClassName("title");
 const wrappers = document.getElementsByClassName("wrapper");
 const showTabBtn = document.querySelector(".show-tab");
+const addLinkBtn = document.getElementById("addLink");
 
 for (let index = 0; index < titles.length; index++) {
   const element = titles[index];
@@ -34,4 +35,9 @@ showTabBtn.addEventListener("click", () => {
   certificard.classList.toggle("align-right")
 
   showTabBtn.classList.toggle("invert");
+})
+
+addLinkBtn.addEventListener("click", () => {
+  const linkList = document.getElementById("socialLinks");
+  linkList.innerHTML += '<li><a class="project-links" href="https://codepen.io/RogerSilveira/full/yLgvaZG" target="_blank"> 🌐 Certificard </a></li>';
 })
