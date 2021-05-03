@@ -6,66 +6,179 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerador de CertifiCard</title>
-    <link rel="stylesheet" href="/styles/accordion.css">
     <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/accordion.css">
+    <link rel="stylesheet" href="/styles/certificard.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <main>
 
-        <div class="options">
+        <div class="tab">
 
-            <div class="wrapper">
-                <div class="title">
-                    <span class="material-icons"> expand_more </span>
-                    <p>Background</p>
+            <button class="show-tab">></button>
+
+            <div class="options">
+
+                <div class="wrapper">
+                    <div class="title">
+                        <span class="material-icons"> expand_more </span>
+                        <p>1 Bb pag</p>
+                    </div>
+
+                    <div class="content">
+                        <label for="certificardContainer">Certificard container image</label>
+                        <input type="file" id="certificardContainer" accept="image/*" data-element-class="preview"
+                            data-is-bg-img>
+
+                        <label for="linkPicker">Cor do Background</label>
+                        <div class="pseudo-picker" style="background: var(--bgColor);"></div>
+                        <input type="color" id="linkPicker" data-variable="--bgColor">
+                    </div>
                 </div>
 
-                <div class="content">
-                    <label for="certificardContainer">Certificard container image</label>
-                    <input type="file" id="certificardContainer" accept="image/*" data-element-class="preview"
-                        data-is-bg-img>
-                </div>
-            </div>
+                <div class="wrapper">
+                    <div class="title">
+                        <span class="material-icons"> expand_more </span>
+                        <p>2 Bg Card</p>
+                    </div>
 
-            <div class="wrapper">
-                <div class="title">
-                    <span class="material-icons"> expand_more </span>
-                    <p>Informações</p>
-                </div>
+                    <div class="content">
+                        <label for="imagemCertificard">Escolher imagem</label>
+                        <input type="file" id="imagemCertificard" accept="image/*" data-element-class="header-img"
+                            hidden>
 
-                <div class="content">
-                    <label for="linkPicker">Cor de fundo link</label>
-                    <div class="pseudo-picker" style="background: var(--linkHover);"></div>
-                    <input type="color" id="linkPicker" data-variable="--linkHover">
+                        <label for="tamanhoImagemCertificard">Tamanho</label>
+                        <input type="range" min="0" max="200" value="200" data-variable="--headerImageHeight"
+                            class="slider" id="tamanhoImagemCertificard">
 
-                    <label for="linkColorPicker">Cor link</label>
-                    <div class="pseudo-picker" style="background: var(--linkColor);"></div>
-                    <input type="color" id="linkColorPicker" data-variable="--linkColor">
-
-                    <label for="linkBgPicker">Cor do bg link</label>
-                    <div class="pseudo-picker" style="background: var(--linkBgColor);"></div>
-                    <input type="color" id="linkBgPicker" data-variable="--linkBgColor">
-
-                    <label for="userName">Nome</label>
-                    <input type="text" id="userName" placeholder="Seu nome">
-                </div>
-            </div>
-
-            <div class="wrapper">
-                <div class="title">
-                    <span class="material-icons">expand_more</span>
-                    <p>Box Principal</p>
+                        <label for="imagemCertificardRadius">Radius</label>
+                        <input type="range" min="0" max="50" value="50" data-variable="--headerImgRadius" class="slider"
+                            id="imagemCertificardRadius">
+                    </div>
                 </div>
 
-                <div class="content">
-                    <label for="BoxPadding">Espaçamento interno</label>
-                    <input type="range" min="0" max="30" value="30" data-variable="--boxPadding" class="slider"
-                        id="BoxPadding">
+                <div class="wrapper">
+                    <div class="title">
+                        <span class="material-icons"> expand_more </span>
+                        <p>3 Foto de perfil</p>
+                    </div>
+
+                    <div class="content">
+                        <label for="profilePhotoInput">Escolher imagem</label>
+                        <input type="file" id="profilePhotoInput" accept="image/*" data-element-class="user-photo">
+
+                        <label for="profilePhotoRadius">Radius</label>
+                        <input type="range" min="0" max="50" value="50" data-variable="--userImgRadius" class="slider"
+                            id="profilePhotoRadius">
+                    </div>
+                </div>
+
+                <div class="wrapper">
+                    <div class="title">
+                        <span class="material-icons"> expand_more </span>
+                        <p>4 Box principal</p>
+                    </div>
+
+                    <div class="content">
+                        <label for="BoxPadding">Espaçamento interno</label>
+                        <input type="range" min="0" max="30" value="30" data-variable="--boxPadding" class="slider"
+                            id="BoxPadding">
+
+                        <label for="bgPicker">Background</label>
+                        <div class="pseudo-picker" style="background: var(--bg);"></div>
+                        <input type="color" id="bgPicker" data-variable="--bg">
+
+                        <label for="cardRadius">Radius</label>
+                        <input type="range" min="0" max="50" value="10" data-variable="--cardRadius" class="slider"
+                            id="cardRadius">
+                    </div>
+
+                </div>
+
+                <div class="wrapper">
+                    <div class="title">
+                        <span class="material-icons"> expand_more </span>
+                        <p>5 Box links</p>
+                    </div>
+
+                    <div class="content">
+                    </div>
+
+                </div>
+
+                <div class="wrapper">
+                    <div class="title">
+                        <span class="material-icons"> expand_more </span>
+                        <p>6 Texto dos links</p>
+                    </div>
+
+                    <div class="content">
+                        <label for="linkPicker">Cor de fundo link</label>
+                        <div class="pseudo-picker" style="background: var(--linkHover);"></div>
+                        <input type="color" id="linkPicker" data-variable="--linkHover">
+
+                        <label for="linkColorPicker">Cor link</label>
+                        <div class="pseudo-picker" style="background: var(--linkColor);"></div>
+                        <input type="color" id="linkColorPicker" data-variable="--linkColor">
+
+                        <label for="linkBgPicker">Cor do bg link</label>
+                        <div class="pseudo-picker" style="background: var(--linkBgColor);"></div>
+                        <input type="color" id="linkBgPicker" data-variable="--linkBgColor">
+
+                        <button id="addLink">+</button>
+                    </div>
+                </div>
+
+                <div class="wrapper">
+                    <div class="title">
+                        <span class="material-icons">expand_more</span>
+                        <p>7 Redes Sociais</p>
+                    </div>
+
+                    <div class="content">
+
+                    </div>
+                </div>
+
+                <div class="wrapper">
+                    <div class="title">
+                        <span class="material-icons"> expand_more </span>
+                        <p>8 nome</p>
+                    </div>
+
+                    <div class="content">
+                        <label for="userName">Nome</label>
+                        <input type="text" id="userName" placeholder="Seu nome">
+
+                        <label for="linkBgPicker">Cor do Nome</label>
+                        <div class="pseudo-picker" style="background: var(--nameColor);"></div>
+                        <input type="color" id="linkBgPicker" data-variable="--nameColor">
+                    </div>
+                </div>
+
+                <div class="wrapper">
+                    <div class="title">
+                        <span class="material-icons"> expand_more </span>
+                        <p>9 Feitos</p>
+                    </div>
+
+                    <div class="content">
+                        <label for="achievementsTitle">Título</label>
+                        <input type="text" id="achievementsTitle" placeholder="Título">
+
+                        <label for="linkBgPicker">Cor do Título</label>
+                        <div class="pseudo-picker" style="background: var(--achievementTitleColor);"></div>
+                        <input type="color" id="linkBgPicker" data-variable="--achievementTitleColor">
+                    </div>
+
                 </div>
             </div>
         </div>
+
         <div class="preview">
             <div class="certificard">
                 <img class="user-photo"
@@ -76,26 +189,39 @@
                 <h1 class="userName">Matheus Carvalho</h1>
 
                 <div class="container links">
-                    <h2>Insígnias da imersão dev</h2>
+                    <h2 class="achievementsTitle">Insígnias da imersão dev</h2>
 
-                    <ul>
-                        <li> <a class="project-links" href="https://codepen.io/RogerSilveira/full/oNBzLja" target="_blank"> 🚗 Planejador
-                                de
-                                viagens</li>
-                        <li> <a class="project-links" href="https://codepen.io/RogerSilveira/full/NWdRjPe" target="_blank"> 🔢 Calculadora
+                    <ul id="socialLinks">
+                        <li>
+                            <a class="project-links" href="https://codepen.io/RogerSilveira/full/oNBzLja"
+                                target="_blank"> 🚗 Planejador de viagens
+                            </a>
                         </li>
-                        <li> <a class="project-links" href="https://codepen.io/RogerSilveira/full/NWdRyqe" target="_blank"> 🔮 Mentalista
+                        <li>
+                            <a class="project-links" href="https://codepen.io/RogerSilveira/full/NWdRjPe"
+                                target="_blank"> 🔢 Calculadora
+                            </a>
                         </li>
-                        <li> <a class="project-links" href="https://codepen.io/RogerSilveira/full/gOgxQNo" target="_blank"> 🎬 Filmes
-                                Pixar
+                        <li>
+                            <a class="project-links" href="https://codepen.io/RogerSilveira/full/NWdRyqe"
+                                target="_blank"> 🔮 Mentalista
+                            </a>
                         </li>
-                        <li> <a class="project-links" href="https://codepen.io/RogerSilveira/full/JjErMPY" target="_blank"> 🏆
-                                Classificação
+                        <li>
+                            <a class="project-links" href="https://codepen.io/RogerSilveira/full/gOgxQNo"
+                                target="_blank"> 🎬 Filmes Pixar </a>
                         </li>
-                        <li> <a class="project-links" href="https://codepen.io/RogerSilveira/full/PoWEGbj" target="_blank"> 🃏 Super
-                                trunfo
+                        <li>
+                            <a class="project-links" href="https://codepen.io/RogerSilveira/full/JjErMPY"
+                                target="_blank"> 🏆 Classificação </a>
                         </li>
-                        <li> <a class="project-links" href="https://codepen.io/RogerSilveira/full/yLgvaZG" target="_blank"> 🌐 Certificard
+                        <li>
+                            <a class="project-links" href="https://codepen.io/RogerSilveira/full/PoWEGbj"
+                                target="_blank"> 🃏 Super trunfo </a>
+                        </li>
+                        <li>
+                            <a class="project-links" href="https://codepen.io/RogerSilveira/full/yLgvaZG"
+                                target="_blank"> 🌐 Certificard </a>
                         </li>
                     </ul>
                 </div>
