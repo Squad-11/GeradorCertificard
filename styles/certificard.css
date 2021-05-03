@@ -3,6 +3,7 @@
   --bg: #fff;
   --nameColor: black;
   --achievementTitleColor: black;
+  --boxLinksBg: rgba(63, 61, 86, 0.4);
   --linkHover: red;
   --linkColor: #fff;
   --linkBgColor: blue;
@@ -12,7 +13,8 @@
   --headerImgRadius: 50px;
   --userImgRadius: 50%;
   --boxPadding: 50px;
-  --headerImageHeight: 200px;  
+  --headerImageHeight: 200px;
+
 }
 
 main {
@@ -84,7 +86,7 @@ main {
   padding: 20px 10px;
   margin-bottom: 10px;
   border-radius: 15px;
-  background: rgba(63, 61, 86, 0.4);
+  background: var(--boxLinksBg);
 }
 
 .container ul,
