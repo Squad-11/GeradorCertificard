@@ -107,9 +107,17 @@
 
                     <div class="content">
 
-                        <label for="bgPicker">Background</label>
+                        <label for="boxLinksPadding">Espaçamento interno</label>
+                        <input type="range" min="0" max="40" value="30" data-variable="--boxLinksPadding" class="slider"
+                            id="BoxLinksPadding">
+
+                        <label for="boxLinksBgPicker">Background</label>
                         <div class="pseudo-picker" style="background: var(--boxLinksBg);"></div>
                         <input type="color" id="bgPicker" data-variable="--boxLinksBg">
+                        
+                        <label for="boxLinksRadius">Radius</label>
+                        <input type="range" min="0" max="50" value="10" data-variable="--boxLinksRadius" class="slider"
+                            id="boxLinksRadius">
 
                     </div>
 
