@@ -1,14 +1,14 @@
 :root {
   --bgColor: #fff;
-  --bg: #fff;
+  --bg: #57A3F4;
   --nameColor: black;
   --achievementTitleColor: black;
   --boxLinksPadding: 10px;
-  --boxLinksBg: rgba(63, 61, 86, 0.4);
+  --boxLinksBg: #4d7ab4;
   --boxLinksRadius: 15px;
-  --linkHover: red;
+  --linkHover: #0C6388;
   --linkColor: #fff;
-  --linkBgColor: blue;
+  --linkBgColor: #40AFD4;
   --imgBorderWidth: 0px;
   --imgBorderColor: #fff;
   --cardRadius: 15px;
