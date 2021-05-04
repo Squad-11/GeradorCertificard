@@ -11,9 +11,13 @@ header {
   margin-top: 3px;
 }
 
+nav {
+  margin-top: clamp(0px, 2%, 4px);
+}
+
 nav a {
   text-decoration: none;
-  font-size: clamp(10px, 1.5vw, 30px);
+  font-size: clamp(15px, 1.5vw, 30px);
   color: white;
   padding: 1vh 1.5vw;
 }
@@ -30,6 +34,7 @@ nav ul {
   display: flex;
   flex-direction: row;
 }
+
 nav ul li {
   display: block;
   padding: 0 2.5vw;
