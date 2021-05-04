@@ -19,7 +19,6 @@
   --nameFontSize: 32px;
   --achievementsTitleFontSize: 30px;
   --linkFontSize: 18px;
-
 }
 
 main {
@@ -41,8 +40,10 @@ main {
   background-size: cover;
 }
 
-.preview.align-right {
-  margin-left: 50%;
+@media(min-width: 1000px){
+  .certificard.align-right {
+    margin-left: 20%;
+  }
 }
 
 .certificard {

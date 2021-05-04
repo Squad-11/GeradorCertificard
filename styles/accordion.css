@@ -6,7 +6,6 @@
   display: flex;
   column-gap: 10px;
   align-items: center;
-  flex-direction: row-reverse;
 
   position: absolute;
   top: 0;
@@ -14,11 +13,11 @@
   bottom: 0;
 
   z-index: 3;  
+  overflow: hidden;    
 }
 
 .show-tab {
   font-size: 20px;
-  cursor: pointer;
   transition: all .3s ease-out;
 }
 
@@ -36,6 +35,7 @@
   opacity: 0;
 
   padding: 15px;
+  overflow-y: auto;
   pointer-events: none;
   transition: all 0.3s ease-out;
 }
@@ -49,11 +49,13 @@
 }
 
 .wrapper {
-  height: 40px;
+  height: auto;
+  max-height: 40px;
+  transition: all .3s ease-out;
 }
 
 .wrapper.active {
-  height: 400px;
+  max-height: 500px;
 }
 
 .wrapper.active .content {
