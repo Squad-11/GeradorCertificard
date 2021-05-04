@@ -7,7 +7,7 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  font-size: clamp(10px, 1.5vw, 60px);
+  font-size: clamp(14px, 1.5vw, 30px);
 }
 
 main {
@@ -32,12 +32,12 @@ main {
 
 .opcoes button {
   border-radius: 5px;
-  padding: 10px 20px;
+  padding: auto;
   width: 20vw;
   height: 8vh;
   text-align: center;
   border: 0;
-  font-size: clamp(10px, 1.5vw, 60px);
+  font-size: clamp(14px, 1.5vw, 40px);
   font-family: 'Raleway', sans-serif;
   color: white;
 }
