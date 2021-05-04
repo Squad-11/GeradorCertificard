@@ -16,6 +16,8 @@
   --userImgRadius: 50%;
   --boxPadding: 50px;
   --headerImageHeight: 200px;
+  --nameFontSize: 32px;
+  --achievementsTitleFontSize: 30px;
   --linkFontSize: 18px;
 
 }
@@ -83,6 +85,7 @@ main {
   text-align: center;
   margin: 10px 0 20px;
   color: var(--nameColor);
+  font-size: var(--nameFontSize);
 }
 
 .container {
@@ -100,7 +103,7 @@ main {
 .container h2 {
   text-align: center;
   margin-bottom: 20px;
-  font-size: 30px;
+  font-size: var(--achievementsTitleFontSize);
   color: var(--achievementTitleColor);
 }
 
