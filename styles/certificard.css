@@ -16,6 +16,7 @@
   --userImgRadius: 50%;
   --boxPadding: 50px;
   --headerImageHeight: 200px;
+  --linkFontSize: 18px;
 
 }
 
@@ -110,7 +111,7 @@ main {
 }
 
 a {
-  font-size: 18px;
+  font-size: var(--linkFontSize);
   font-weight: bold;
   padding: 2px;
   border-radius: 8px;
