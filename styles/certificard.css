@@ -1,18 +1,24 @@
 :root {
   --bgColor: #fff;
-  --bg: #fff;
+  --bg: #57A3F4;
   --nameColor: black;
   --achievementTitleColor: black;
-  --linkHover: red;
+  --boxLinksPadding: 10px;
+  --boxLinksBg: #4d7ab4;
+  --boxLinksRadius: 15px;
+  --linkHover: #0C6388;
   --linkColor: #fff;
-  --linkBgColor: blue;
+  --linkBgColor: #40AFD4;
   --imgBorderWidth: 0px;
   --imgBorderColor: #fff;
   --cardRadius: 15px;
   --headerImgRadius: 50px;
   --userImgRadius: 50%;
   --boxPadding: 50px;
-  --headerImageHeight: 200px;  
+  --headerImageHeight: 200px;
+  --nameFontSize: 32px;
+  --achievementsTitleFontSize: 30px;
+  --linkFontSize: 18px;
 }
 
 main {
@@ -34,8 +40,10 @@ main {
   background-size: cover;
 }
 
-.preview.align-right {
-  margin-left: 50%;
+@media(min-width: 1000px){
+  .certificard.align-right {
+    margin-left: 20%;
+  }
 }
 
 .certificard {
@@ -78,13 +86,14 @@ main {
   text-align: center;
   margin: 10px 0 20px;
   color: var(--nameColor);
+  font-size: var(--nameFontSize);
 }
 
 .container {
-  padding: 20px 10px;
+  padding: var(--boxLinksPadding);
   margin-bottom: 10px;
-  border-radius: 15px;
-  background: rgba(63, 61, 86, 0.4);
+  border-radius: var(--boxLinksRadius);
+  background: var(--boxLinksBg);
 }
 
 .container ul,
@@ -95,7 +104,7 @@ main {
 .container h2 {
   text-align: center;
   margin-bottom: 20px;
-  font-size: 30px;
+  font-size: var(--achievementsTitleFontSize);
   color: var(--achievementTitleColor);
 }
 
@@ -106,7 +115,7 @@ main {
 }
 
 a {
-  font-size: 18px;
+  font-size: var(--linkFontSize);
   font-weight: bold;
   padding: 2px;
   border-radius: 8px;
@@ -141,4 +150,8 @@ a:visited {
 .social-medias ul img {
   width: 50px;
   height: 50px;
+}
+
+.social-medias ul.black-white img{
+  filter: grayscale(100%);
 }

@@ -19,8 +19,6 @@
 
         <div class="tab">
 
-            <button class="show-tab">></button>
-
             <div class="options">
 
                 <div class="wrapper">
@@ -106,6 +104,19 @@
                     </div>
 
                     <div class="content">
+
+                        <label for="boxLinksPadding">Espaçamento interno</label>
+                        <input type="range" min="0" max="40" value="30" data-variable="--boxLinksPadding" class="slider"
+                            id="BoxLinksPadding">
+
+                        <label for="boxLinksBgPicker">Background</label>
+                        <div class="pseudo-picker" style="background: var(--boxLinksBg);"></div>
+                        <input type="color" id="bgPicker" data-variable="--boxLinksBg">
+                        
+                        <label for="boxLinksRadius">Radius</label>
+                        <input type="range" min="0" max="50" value="10" data-variable="--boxLinksRadius" class="slider"
+                            id="boxLinksRadius">
+
                     </div>
 
                 </div>
@@ -129,6 +140,16 @@
                         <div class="pseudo-picker" style="background: var(--linkBgColor);"></div>
                         <input type="color" id="linkBgPicker" data-variable="--linkBgColor">
 
+                        <label for="linkFontSize">Link Font Size</label>
+                        <input type="range" min="10" max="50" value="18" data-variable="--linkFontSize" class="slider"
+                            id="linkFontSize">
+
+                        <label for="achievementText">Nova Conquista</label>
+                        <input type="text" id="achievementText" placeholder="Nome">
+
+                        <label for="achievementLink">Link</label>
+                        <input type="text" id="achievementLink" placeholder="URL">
+
                         <button id="addLink">+</button>
                     </div>
                 </div>
@@ -140,7 +161,16 @@
                     </div>
 
                     <div class="content">
+                        <label for="availableSocialMedias">Redes sociais</label>
+                        <select id="availableSocialMedias"></select>
 
+                        <label for="socialMediaLink">Link</label>
+                        <input type="url" id="socialMediaLink">
+
+                        <button id="addSocialMedia">+</button>
+
+                        <label for="filter">Icones preto e branco</label>
+                        <input type="checkbox" id="filter">
                     </div>
                 </div>
 
@@ -157,6 +187,10 @@
                         <label for="linkBgPicker">Cor do Nome</label>
                         <div class="pseudo-picker" style="background: var(--nameColor);"></div>
                         <input type="color" id="linkBgPicker" data-variable="--nameColor">
+
+                        <label for="nameFontSize">Name Font Size</label>
+                        <input type="range" min="10" max="72" value="32" data-variable="--nameFontSize" class="slider"
+                            id="nameFontSize">
                     </div>
                 </div>
 
@@ -173,55 +207,58 @@
                         <label for="linkBgPicker">Cor do Título</label>
                         <div class="pseudo-picker" style="background: var(--achievementTitleColor);"></div>
                         <input type="color" id="linkBgPicker" data-variable="--achievementTitleColor">
+
+                        <label for="achievementsTitleFontSize">Achievements Font Size</label>
+                        <input type="range" min="10" max="64" value="30" data-variable="--achievementsTitleFontSize" 
+                        class="slider" id="achievementsTitleFontSize">
                     </div>
 
                 </div>
             </div>
+
+            <button class="show-tab">></button>
         </div>
 
         <div class="preview">
             <div class="certificard">
                 <img class="user-photo"
-                    src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80">
+                    src="/images/woman-profile.svg">
                 <img class="header-img"
-                    src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80">
+                    src="/images/header-banner.jpg">
 
-                <h1 class="userName">Matheus Carvalho</h1>
+                <h1 class="userName">Seu Nome</h1>
 
                 <div class="container links">
-                    <h2 class="achievementsTitle">Insígnias da imersão dev</h2>
+
+                    <h2 class="achievementsTitle">Título de suas Conquistas</h2>
 
                     <ul id="socialLinks">
                         <li>
                             <a class="project-links" href="https://codepen.io/RogerSilveira/full/oNBzLja"
-                                target="_blank"> 🚗 Planejador de viagens
+                                target="_blank"> 🚗 Conquista 1
                             </a>
                         </li>
                         <li>
                             <a class="project-links" href="https://codepen.io/RogerSilveira/full/NWdRjPe"
-                                target="_blank"> 🔢 Calculadora
+                                target="_blank"> 🔢 Conquista 2
                             </a>
                         </li>
                         <li>
                             <a class="project-links" href="https://codepen.io/RogerSilveira/full/NWdRyqe"
-                                target="_blank"> 🔮 Mentalista
+                                target="_blank"> 🔮 Conquista 3
                             </a>
                         </li>
                         <li>
                             <a class="project-links" href="https://codepen.io/RogerSilveira/full/gOgxQNo"
-                                target="_blank"> 🎬 Filmes Pixar </a>
+                                target="_blank"> 🎬 Conquista 4 </a>
                         </li>
                         <li>
                             <a class="project-links" href="https://codepen.io/RogerSilveira/full/JjErMPY"
-                                target="_blank"> 🏆 Classificação </a>
+                                target="_blank"> 🏆 Conquista 5 </a>
                         </li>
                         <li>
                             <a class="project-links" href="https://codepen.io/RogerSilveira/full/PoWEGbj"
-                                target="_blank"> 🃏 Super trunfo </a>
-                        </li>
-                        <li>
-                            <a class="project-links" href="https://codepen.io/RogerSilveira/full/yLgvaZG"
-                                target="_blank"> 🌐 Certificard </a>
+                                target="_blank"> 🃏 Continue adicionando </a>
                         </li>
                     </ul>
                 </div>

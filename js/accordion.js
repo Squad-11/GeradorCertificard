@@ -36,8 +36,3 @@ showTabBtn.addEventListener("click", () => {
 
   showTabBtn.classList.toggle("invert");
 })
-
-addLinkBtn.addEventListener("click", () => {
-  const linkList = document.getElementById("socialLinks");
-  linkList.innerHTML += '<li><a class="project-links" href="https://codepen.io/RogerSilveira/full/yLgvaZG" target="_blank"> 🌐 Certificard </a></li>';
-})
