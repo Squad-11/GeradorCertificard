@@ -7,51 +7,7 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  font-size: clamp(10px, 1.5vw, 60px);
-}
-
-header {
-  width: 100%;
-  height: 15vh;
-  display: flex;
-}
-
-.logo {
-  height: 90%;
-  margin: 5px 5px 0 20px
-}
-
-.nome {
-  height: 70%;
-  margin-top: 2%;
-}
-
-.nav-header {
-  margin: 2% 8% auto auto;
-}
-
-nav a {
-  text-decoration: none;
-  font-size: clamp(10px, 1.5vw, 30px);
-  color: white;
-  padding: 1vh 1.5vw;
-}
-
-nav a:hover {
-  background-color: #ffffff31;
-  border-radius: 5px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-}
-nav ul li {
-  display: block;
-  padding: 0 2.5vw;
+  font-size: clamp(14px, 1.5vw, 30px);
 }
 
 main {
@@ -68,7 +24,6 @@ main {
   display: flex;
   width: 100%;
   height: 70vh;
-  margin-top: 2vh;
 }
 
 .botoes {
@@ -77,12 +32,12 @@ main {
 
 .opcoes button {
   border-radius: 5px;
-  padding: 10px 20px;
+  padding: auto;
   width: 20vw;
   height: 8vh;
   text-align: center;
   border: 0;
-  font-size: clamp(10px, 1.5vw, 60px);
+  font-size: clamp(14px, 1.5vw, 40px);
   font-family: 'Raleway', sans-serif;
   color: white;
 }
@@ -95,6 +50,7 @@ main {
 .btn-criar:hover {
   border: 2px solid black;
   background-color: #ff3c00e5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .btn-templates {
@@ -105,6 +61,7 @@ main {
 .btn-templates:hover {
   border: 2px solid black;
   background-color: #FF8A00e5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .opcoes p {
@@ -134,8 +91,7 @@ p {
 
 .explicacao img {
   margin-left: 10vw;
-  width: 30vw;
-  height: 25vw;
+  height: clamp(180px, 25vw, 500px);
 }
 
 .compartilhar {
@@ -163,17 +119,6 @@ p {
 }
 
 footer {
-  height: 10vh;
   background: linear-gradient(180deg, #303030 -10%, #008AFF 40%);
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-  bottom: 0;
-  padding: 20px;
-}
-
-.footer-frase {
-  text-align: center;
-  color: white;
-  margin: 0;
-  padding-top: 1.5vh;
-  width: 100%;
 }

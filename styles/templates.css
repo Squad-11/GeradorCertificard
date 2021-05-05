@@ -1,58 +1,15 @@
 body {
   width: 100%;
   margin: 0;
-  /* font-weight: 300 e 500; */
   font-family: 'Raleway', sans-serif;
   background: linear-gradient(180deg, #008AFF 0%, #eeeeee 30%, #eeeeee 70%, #008AFF 100%);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  font-size: clamp(10px, 1.5vw, 60px);
+  font-size: clamp(14px, 1.5vw, 30px);
+  color: #363636;
 }
 
-header {
-  width: 100%;
-  height: 15vh;
-  display: flex;
-}
-
-.logo {
-  height: 90%;
-  margin: 5px 5px 0 20px
-}
-
-.nome {
-  height: 70%;
-  margin-top: 2%;
-}
-
-.nav-header {
-  margin: 2% 8% auto auto;
-}
-
-nav a {
-  text-decoration: none;
-  font-size: clamp(10px, 1.5vw, 30px);
-  color: white;
-  padding: 1vh 1.5vw;
-}
-
-nav a:hover {
-  background-color: #ffffff31;
-  border-radius: 5px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-}
-nav ul li {
-  display: block;
-  padding: 0 2.5vw;
-}
 
 main {
   display: block;
@@ -65,7 +22,7 @@ main {
   align-items: center;
   background-color: #eeeeee;
   width: 90vw;
-  margin: 3vh auto;
+  margin: 10px auto auto;
   border-radius: 5px;
   box-shadow: 0 15px 35px rgb(50 50 93 / 10%), 0 5px 15px rgb(0 0 0 / 7%);
 }
@@ -74,7 +31,7 @@ main {
   display: flex;
   background-color: #bbbbbb7a;
   border: 2px solid #aaaaaa;
-  width: 40%;
+  width: clamp(400px, 40%, 800px);
   padding: 1%;
   margin: 3%;
   border-radius: 5px;
@@ -94,7 +51,6 @@ h4{
 
 p {
   margin-top: 5px;
-  color: #363636;
 }
 
 .template img {
@@ -104,25 +60,5 @@ p {
 .template:hover {
   background-color: #e4e4e4;
   border: 2px solid black;
-}
-
-footer {
-  width: 100%;
-  height: 10vh;
-  bottom: 0;
-  padding-bottom: 20px;
-}
-
-footer p {
-  width: 30vw;
-  margin-top: 5px;
-}
-
-.footer-frase {
-  text-align: center;
-  color: white;
-  margin: 0;
-  padding-top: 1.5vh;
-  width: 100%;
 }
   
