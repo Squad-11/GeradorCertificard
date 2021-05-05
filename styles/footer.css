@@ -1,0 +1,13 @@
+footer {
+  height: clamp(20px, 5vh, 40px);
+  bottom: 0;
+  padding: 20px 0 20px;
+}
+
+.footer-frase {
+  text-align: center;
+  color: white;
+  margin: 0;
+  width: 100%;
+  font-size: clamp(15px, 0.8em, 20px);
+}

@@ -1,121 +1,69 @@
-/* To do:
-Arrumar as posições de praticamente tudo
-logo do codepen maior
-*/
-
-header {
+body {
   width: 100%;
-  height: 80px;
-  background-color: #008AFF;
-  border-bottom: 1px solid #FFFFFF;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  display: flex;
-}
-        
-.img-logo {
-  height: 70px;
-  margin: 5px 5px 5px 20px
-}
-        
-.nome {
-  height: 45px;
-  margin-top: 25px;
-}
-
-.nav-header {
-  margin: 15px 80px auto auto;
-}
-        
-nav a {
-  text-decoration: none;
-  font-size: 18px;
-  color: white;
-  padding: 5px 10px;
-}
-        
-nav a:hover {
-  background-color: #ffffff31;
-  border-radius: 5px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-        
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;          
-  flex-direction: row;
-}
-
-nav ul li {
-  display: block;
-  padding: 0 30px;
-}
-
-body{
   margin: 0;
-  width: 100%;
-  background: linear-gradient(111.19deg, #E7E7E7 2.36%, #FFFFFF 98.8%);
+  font-family: 'Raleway', sans-serif;
+  background: linear-gradient(180deg, #008AFF 0%, #ffffff 40%);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  font-size: clamp(14px, 1.5vw, 30px);
+  color: #363636;
 }
 
-div{
-  height: 300px;
-  width: 100%;
-  display: inline-block;
+section{
+  height: 48vh;
+  display: flex;
+  align-items: center;
+  padding: 0 4%;
 }
 
-.isa{
-  background: linear-gradient(111.19deg, #E7E7E7 2.36%, #FFFFFF 98.8%);
+.isa, .matheus{
+  background: linear-gradient(111.19deg, #dbdbdb 2.36%, #f5f5f5 98.8%);
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.shinji{
-  background: linear-gradient(111.19deg, #FFFFFF 2.36%, #FF3D00 98.8%);
+.shinji, .roger{
+  background: linear-gradient(111.19deg, #e7e7e7 2.36%, #ff6434 98.8%);
+  box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.matheus{
-  background: linear-gradient(111.19deg, #E7E7E7 2.36%, #FFFFFF 98.8%);
+.imagens {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
 }
 
-.roger{
-  background: linear-gradient(111.19deg, #FFFFFF 2.36%, #FF3D00 98.8%);
+.foto-perfil{
+  height: clamp(50px, 25vw, 200px);
+  border-radius: 50%;
+  border: 2px solid #363636;
+  margin: auto;
 }
 
-.foto-perfil-e{
-  width: 150px;
-  height: 150px;
-  border-radius: 100%;
-  border: 1px solid #E7E7E7;
-
-}
-
-.foto-perfil-d{
-  width: 150px;
-  height: 150px;
-  border-radius: 100%;
-  border: 1px solid #ff3d00;
+:is(.isa, .matheus) .foto-perfil{
+  border: 2px solid #363636;
 }
 
 .redes-sociais{
-  width: 30px;
-  height: 30px;
+  display: flex;
+  list-style: none;
+  column-gap: 10%;
+  justify-content: center;
+  flex-direction: row;
+  padding: 0;
 }
 
+ .redes-sociais img{
+   height:30px;
+ }
 
-footer {
-  width: 100%;
-  height: 40px;
-  background: #008AFF;
+ .apresentacao{
+   max-width: 50%;
+   margin: 0 auto;
+ }
+
+ footer {
+  background: linear-gradient(180deg, #303030 -10%, #008AFF 40%);
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-top: 1px solid #FFFFFF;
-  bottom: 0;
-  position: fixed;
-  }
-
-.footer-frase {
-  text-align: center;
-  color: white;
-  margin-top: 12px;
-  }
+}
