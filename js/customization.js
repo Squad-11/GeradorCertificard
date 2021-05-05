@@ -4,7 +4,7 @@ const sliders = document.querySelectorAll("input[type='range']");
 
 const pseudoPickers = document.querySelectorAll(".pseudo-picker");
 
-const socialMedias = ["Github", "Instagram", "Linkedin", "Codepen"];
+const socialMedias = ["Github", "Instagram", "Linkedin", "Codepen", "Youtube", "Twitter", "Facebook"];
 let availableSocialMedias = socialMedias;
 
 const user = {
