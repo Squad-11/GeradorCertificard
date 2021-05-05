@@ -8,53 +8,58 @@ body {
   background-position: center;
   background-attachment: fixed;
   font-size: clamp(14px, 1.5vw, 30px);
+  color: #363636;
 }
 
 section{
-  height: 300px;
+  height: 48vh;
   display: flex;
   align-items: center;
-  padding: 0 50px;
+  padding: 0 4%;
 }
-
-section:last-of-type{
-  margin-bottom:20px;
-}
-
 
 .isa, .matheus{
-  background: linear-gradient(111.19deg, #E7E7E7 2.36%, #FFFFFF 98.8%);
+  background: linear-gradient(111.19deg, #dbdbdb 2.36%, #f5f5f5 98.8%);
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .shinji, .roger{
-  background: linear-gradient(111.19deg, #E7E7E7 2.36%, #FF3D00 98.8%);
+  background: linear-gradient(111.19deg, #e7e7e7 2.36%, #ff6434 98.8%);
+  box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.imagens {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
 }
 
 .foto-perfil{
-  width: 200px;
-  height: 200px;
+  height: clamp(50px, 25vw, 200px);
   border-radius: 50%;
-  border: 1px solid #e7e7e7;
+  border: 2px solid #363636;
+  margin: auto;
 }
 
 :is(.isa, .matheus) .foto-perfil{
-  border: 1px solid #FF3D00;
+  border: 2px solid #363636;
 }
 
 .redes-sociais{
   display: flex;
   list-style: none;
-  column-gap: 25px;
+  column-gap: 10%;
   justify-content: center;
+  flex-direction: row;
+  padding: 0;
 }
 
  .redes-sociais img{
    height:30px;
-   width: 30px;
  }
 
  .apresentacao{
-   max-width: 40ch;
+   max-width: 50%;
    margin: 0 auto;
  }
 
