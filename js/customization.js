@@ -90,7 +90,9 @@ document.getElementById("achievementsTitle").addEventListener("input", (e) => {
   nameText.innerHTML = e.target.value;
 });
 
-document.getElementById("addSocialMedia").addEventListener("click", () => {
+document.getElementById("addSocialMedia").addEventListener("click", (e) => {
+  e.preventDefault();
+
   const selectMedias = document.getElementById("availableSocialMedias");
   const inputMedia = document.getElementById("socialMediaLink");
 
@@ -109,7 +111,9 @@ document.getElementById("addSocialMedia").addEventListener("click", () => {
   renderMediaIcons();
 });
 
-addLinkBtn.addEventListener("click", () => {
+addLinkBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+
   const linkList = document.getElementById("socialLinks");
   const achievementText = document.getElementById("achievementText");
   const achievementLink = document.getElementById("achievementLink");

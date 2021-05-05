@@ -12,8 +12,8 @@
   left: 0;
   bottom: 0;
 
-  z-index: 3;  
-  overflow: hidden;    
+  z-index: 3;
+  overflow: hidden;
 }
 
 .show-tab {
@@ -21,13 +21,13 @@
   transition: all .3s ease-out;
 }
 
-.show-tab.invert{
+.show-tab.invert {
   transform: rotate(180deg);
 }
 
-.options {  
+.options {
   display: flex;
-  row-gap: 30px;  
+  row-gap: 30px;
   flex-direction: column;
 
   width: 0;
@@ -88,7 +88,7 @@
   pointer-events: none;
 }
 
-.title .arrow {  
+.title .arrow {
   transform: rotate(var(--rotation));
 }
 
@@ -107,7 +107,7 @@
   margin-bottom: 20px;
 }
 
-.content > label{
+:is(.content, form) > label {
   display: block;
   margin-bottom: 5px;
 }
@@ -124,14 +124,24 @@
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
 }
 
-.content > :is(input, select){
+:is(.content, form) > :is(input, select) {
   width: 100%;
   max-width: unset;
   margin-bottom: 10px;
 }
 
-.content input[type="checkbox"]{
+.content input[type="checkbox"] {
   width: auto;
+}
+
+form{
+  margin-bottom: 20px;
+}
+
+form button {
+  background: #28b8d8;
+  margin: 10px auto 0;
+  padding: 5px 30px;
 }
 
 button {
@@ -146,7 +156,7 @@ button {
   border-radius: 9999px;
 }
 
-button:hover {
+.show-tab:hover {
   background: #386f31;
 }
 

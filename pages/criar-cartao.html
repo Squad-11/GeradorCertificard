@@ -202,13 +202,17 @@
                                 class="slider" id="linkFontSize">
                         </div>
 
-                        <label for="achievementText">Nova Conquista</label>
-                        <input type="text" id="achievementText" placeholder="Nome">
+                        <form id="achievementForm">
+                            <label for="achievementText">Nova Conquista</label>
+                            <input type="text" id="achievementText" placeholder="Nome">
 
-                        <label for="achievementLink">Link</label>
-                        <input type="text" id="achievementLink" placeholder="URL">
+                            <label for="achievementLink">Link</label>
+                            <input type="text" id="achievementLink" placeholder="exemplo: https://github.com/seu-projeto">
 
-                        <button id="addLink">+</button>
+                            <button id="addLink">
+                                <span class="material-icons-outlined"> add_circle_outline </span>
+                            </button>
+                        </form>
                     </div>
                 </div>
 
@@ -219,14 +223,17 @@
                         <span class="material-icons-outlined"> share </span>
                     </div>
 
-                    <div class="content">                        
-                            <label for="availableSocialMedias">Redes sociais</label>
-                            <select id="availableSocialMedias"></select>                        
-                        
-                            <label for="socialMediaLink">Link</label>
-                            <input type="url" id="socialMediaLink" placeholder="exemplo: https://google.com">                        
+                    <div class="content">
+                        <form id="redesForm">
 
-                        <button id="addSocialMedia">+</button>
+                            <label for="availableSocialMedias">Redes sociais</label>
+                            <select id="availableSocialMedias"></select>
+
+                            <label for="socialMediaLink">Link</label>
+                            <input type="url" id="socialMediaLink" placeholder="exemplo: https://google.com">
+
+                            <button id="addSocialMedia">+</button>
+                        </form>
 
                         <div class="group">
                             <label for="filter">Icones preto e branco</label>
