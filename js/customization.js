@@ -71,7 +71,7 @@ function renderMediaIcons(){
   for (let index = 0; index < user.socialMedias.length; index++) {
     const element = user.socialMedias[index];
     socialMediasContainer.innerHTML += `<li><a href=${element.link} target="_blank">
-    <img src="/images/${element.media.toLowerCase()}.svg"></a></li>`
+    <img src="/images/social/${element.media.toLowerCase()}.svg"></a></li>`
   }
 }
 

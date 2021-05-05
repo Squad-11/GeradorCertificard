@@ -6,7 +6,6 @@
   transition: all 250ms ease-out;
   font-family: "Roboto", sans-serif;
 }
-
 body {
   display: flex;
   flex-direction: column;
