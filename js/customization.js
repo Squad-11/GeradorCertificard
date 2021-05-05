@@ -75,6 +75,11 @@ function renderMediaIcons(){
   }
 }
 
+function validateLink(link){
+  const regex = new RegExp("https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()!@:%_\+.~#?&\/\/=]*)")
+  return regex.test(link);
+}
+
 document.getElementById("userName").addEventListener("input", (e) => {
   const nameText = document.querySelector(".userName");
   nameText.innerHTML = e.target.value;
@@ -88,6 +93,11 @@ document.getElementById("achievementsTitle").addEventListener("input", (e) => {
 document.getElementById("addSocialMedia").addEventListener("click", () => {
   const selectMedias = document.getElementById("availableSocialMedias");
   const inputMedia = document.getElementById("socialMediaLink");
+
+  if(!validateLink(inputMedia.value)){
+    alert("Link de rede social deve ser um link válido");
+    return;
+  }
 
   user.socialMedias.push({media: selectMedias.value, link: inputMedia.value});
 
@@ -103,6 +113,17 @@ addLinkBtn.addEventListener("click", () => {
   const linkList = document.getElementById("socialLinks");
   const achievementText = document.getElementById("achievementText");
   const achievementLink = document.getElementById("achievementLink");
+
+  if(!achievementText.value){
+    alert("Nome da conquista não pode ser vazio");
+    return;
+  }
+
+  if(!validateLink(achievementLink.value)){
+    alert("Link da conquista inválido");
+    return;
+  }
+
   linkList.innerHTML += `<li><a class="project-links" href="${achievementLink.value}" target="_blank">${achievementText.value}</a></li>`;
   achievementText.value = "";
   achievementLink.value = "";
