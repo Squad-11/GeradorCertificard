@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="/styles/certificard.css">
     <link rel="stylesheet" href="/styles/nav.css">
     <link rel="stylesheet" href="/styles/footer.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
@@ -19,15 +21,15 @@
 <body>
     <header>
         <a href="/pages/home-page.html">
-        <img class="logo" src="/images/logoNome.png" alt="Logo do site"></a>
+            <img class="logo" src="/images/logoNome.png" alt="Logo do site"></a>
         <nav class="nav-header">
-          <ul>
-            <li><a href="/pages/criar-cartao.html">Criar</a></li>
-            <li><a href="/pages/templates.html">Templates</a></li>
-            <li><a href="/pages/about-us.html">About Us</a></li>
-          </ul>
+            <ul>
+                <li><a href="/pages/criar-cartao.html">Criar</a></li>
+                <li><a href="/pages/templates.html">Templates</a></li>
+                <li><a href="/pages/about-us.html">About Us</a></li>
+            </ul>
         </nav>
-      </header>
+    </header>
 
     <main>
 
@@ -37,126 +39,168 @@
 
                 <div class="wrapper">
                     <div class="title">
-                        <span class="material-icons"> expand_more </span>
-                        <p>1 Bb pag</p>
+                        <span class="material-icons arrow"> expand_more </span>
+                        <p>Background</p>
+                        <span class="material-icons"> wallpaper </span>
                     </div>
 
                     <div class="content">
-                        <label for="certificardContainer">Certificard container image</label>
-                        <input type="file" id="certificardContainer" accept="image/*" data-element-class="preview"
-                            data-is-bg-img>
+                        <div class="group">
+                            <label for="certificardContainer">Escolher imagem</label>
+                            <input type="file" id="certificardContainer" accept="image/*" data-element-class="preview"
+                                data-is-bg-img>
+                        </div>
 
-                        <label for="linkPicker">Cor do Background</label>
-                        <div class="pseudo-picker" style="background: var(--bgColor);"></div>
-                        <input type="color" id="linkPicker" data-variable="--bgColor">
+                        <div class="group">
+                            <label for="linkPicker">Cor</label>
+                            <div class="pseudo-picker" style="background: var(--bgColor);"></div>
+                            <input type="color" id="linkPicker" data-variable="--bgColor">
+                        </div>
                     </div>
                 </div>
 
                 <div class="wrapper">
                     <div class="title">
-                        <span class="material-icons"> expand_more </span>
-                        <p>2 Bg Card</p>
+                        <span class="material-icons arrow"> expand_more </span>
+                        <p>Header card</p>
+                        <span class="material-icons"> view_stream </span>
                     </div>
 
                     <div class="content">
-                        <label for="imagemCertificard">Escolher imagem</label>
-                        <input type="file" id="imagemCertificard" accept="image/*" data-element-class="header-img"
-                            hidden>
+                        <div class="group">
 
-                        <label for="tamanhoImagemCertificard">Tamanho</label>
-                        <input type="range" min="0" max="200" value="200" data-variable="--headerImageHeight"
-                            class="slider" id="tamanhoImagemCertificard">
+                            <label for="imagemCertificard">Escolher imagem</label>
+                            <input type="file" id="imagemCertificard" accept="image/*" data-element-class="header-img"
+                                hidden>
+                        </div>
+                        <div class="group">
 
-                        <label for="imagemCertificardRadius">Radius</label>
-                        <input type="range" min="0" max="50" value="50" data-variable="--headerImgRadius" class="slider"
-                            id="imagemCertificardRadius">
+                            <label for="tamanhoImagemCertificard">Tamanho</label>
+                            <input type="range" min="0" max="200" value="200" data-variable="--headerImageHeight"
+                                class="slider" id="tamanhoImagemCertificard">
+                        </div>
+
+                        <div class="group">
+                            <label for="imagemCertificardRadius">Radius</label>
+                            <input type="range" min="0" max="50" value="50" data-variable="--headerImgRadius"
+                                class="slider" id="imagemCertificardRadius">
+                        </div>
+
                     </div>
                 </div>
 
                 <div class="wrapper">
                     <div class="title">
-                        <span class="material-icons"> expand_more </span>
-                        <p>3 Foto de perfil</p>
+                        <span class="material-icons arrow"> expand_more </span>
+                        <p>Foto de perfil</p>
+                        <span class="material-icons"> account_circle </span>
                     </div>
 
                     <div class="content">
-                        <label for="profilePhotoInput">Escolher imagem</label>
-                        <input type="file" id="profilePhotoInput" accept="image/*" data-element-class="user-photo">
+                        <div class="group">
+                            <label for="profilePhotoInput">Escolher imagem</label>
+                            <input type="file" id="profilePhotoInput" accept="image/*" data-element-class="user-photo">
+                        </div>
 
-                        <label for="profilePhotoRadius">Radius</label>
-                        <input type="range" min="0" max="50" value="50" data-variable="--userImgRadius" class="slider"
-                            id="profilePhotoRadius">
+                        <div class="group">
+                            <label for="profilePhotoRadius">Radius</label>
+                            <input type="range" min="0" max="50" value="50" data-variable="--userImgRadius"
+                                class="slider" id="profilePhotoRadius">
+                        </div>
                     </div>
                 </div>
 
                 <div class="wrapper">
                     <div class="title">
-                        <span class="material-icons"> expand_more </span>
-                        <p>4 Box principal</p>
+                        <span class="material-icons arrow"> expand_more </span>
+                        <p>Caixa principal</p>
+                        <span class="material-icons"> check_box_outline_blank </span>
                     </div>
 
                     <div class="content">
-                        <label for="BoxPadding">Espaçamento interno</label>
-                        <input type="range" min="0" max="30" value="30" data-variable="--boxPadding" class="slider"
-                            id="BoxPadding">
+                        <div class="group">
+                            <label for="BoxPadding">Espaçamento interno</label>
+                            <input type="range" min="0" max="30" value="30" data-variable="--boxPadding" class="slider"
+                                id="BoxPadding">
+                        </div>
 
-                        <label for="bgPicker">Background</label>
-                        <div class="pseudo-picker" style="background: var(--bg);"></div>
-                        <input type="color" id="bgPicker" data-variable="--bg">
+                        <div class="group">
+                            <label for="bgPicker">Background</label>
+                            <div class="pseudo-picker" style="background: var(--bg);"></div>
+                            <input type="color" id="bgPicker" data-variable="--bg">
+                        </div>
 
-                        <label for="cardRadius">Radius</label>
-                        <input type="range" min="0" max="50" value="10" data-variable="--cardRadius" class="slider"
-                            id="cardRadius">
-                    </div>
-
-                </div>
-
-                <div class="wrapper">
-                    <div class="title">
-                        <span class="material-icons"> expand_more </span>
-                        <p>5 Box links</p>
-                    </div>
-
-                    <div class="content">
-
-                        <label for="boxLinksPadding">Espaçamento interno</label>
-                        <input type="range" min="0" max="40" value="30" data-variable="--boxLinksPadding" class="slider"
-                            id="BoxLinksPadding">
-
-                        <label for="boxLinksBgPicker">Background</label>
-                        <div class="pseudo-picker" style="background: var(--boxLinksBg);"></div>
-                        <input type="color" id="bgPicker" data-variable="--boxLinksBg">
-
-                        <label for="boxLinksRadius">Radius</label>
-                        <input type="range" min="0" max="50" value="10" data-variable="--boxLinksRadius" class="slider"
-                            id="boxLinksRadius">
-
+                        <div class="group">
+                            <label for="cardRadius">Radius</label>
+                            <input type="range" min="0" max="50" value="10" data-variable="--cardRadius" class="slider"
+                                id="cardRadius">
+                        </div>
                     </div>
 
                 </div>
 
                 <div class="wrapper">
                     <div class="title">
-                        <span class="material-icons"> expand_more </span>
-                        <p>6 Texto dos links</p>
+                        <span class="material-icons arrow"> expand_more </span>
+                        <p>Caixa Links</p>
+                        <span class="material-icons-outlined"> indeterminate_check_box </span>
                     </div>
 
                     <div class="content">
-                        <label for="linkPicker">Cor de fundo link</label>
-                        <div class="pseudo-picker" style="background: var(--linkHover);"></div>
-                        <input type="color" id="linkPicker" data-variable="--linkHover">
+                        <div class="group">
 
-                        <label for="linkColorPicker">Cor link</label>
-                        <div class="pseudo-picker" style="background: var(--linkColor);"></div>
-                        <input type="color" id="linkColorPicker" data-variable="--linkColor">
+                            <label for="boxLinksPadding">Espaçamento interno</label>
+                            <input type="range" min="0" max="40" value="30" data-variable="--boxLinksPadding"
+                                class="slider" id="BoxLinksPadding">
+                        </div>
 
-                        <label for="linkBgPicker">Cor do bg link</label>
-                        <div class="pseudo-picker" style="background: var(--linkBgColor);"></div>
-                        <input type="color" id="linkBgPicker" data-variable="--linkBgColor">
+                        <div class="group">
+                            <label for="boxLinksBgPicker">Background</label>
+                            <div class="pseudo-picker" style="background: var(--boxLinksBg);"></div>
+                            <input type="color" id="bgPicker" data-variable="--boxLinksBg">
+                        </div>
 
-                        <label for="linkFontSize">Link Font Size</label>
-                        <input type="range" min="10" max="50" value="18" data-variable="--linkFontSize" class="slider"
-                            id="linkFontSize">
+                        <div class="group">
+                            <label for="boxLinksRadius">Radius</label>
+                            <input type="range" min="0" max="50" value="10" data-variable="--boxLinksRadius"
+                                class="slider" id="boxLinksRadius">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="wrapper">
+                    <div class="title">
+                        <span class="material-icons arrow"> expand_more </span>
+                        <p>Links</p>
+                        <span class="material-icons-outlined"> link </span>
+                    </div>
+
+                    <div class="content">
+                        <div class="group">
+                            <label for="linkPicker">Cor de fundo link</label>
+                            <div class="pseudo-picker" style="background: var(--linkHover);"></div>
+                            <input type="color" id="linkPicker" data-variable="--linkHover">
+                        </div>
+
+                        <div class="group">
+                            <label for="linkColorPicker">Cor link</label>
+                            <div class="pseudo-picker" style="background: var(--linkColor);"></div>
+                            <input type="color" id="linkColorPicker" data-variable="--linkColor">
+                        </div>
+
+                        <div class="group">
+                            <label for="linkBgPicker">Cor do bg link</label>
+                            <div class="pseudo-picker" style="background: var(--linkBgColor);"></div>
+                            <input type="color" id="linkBgPicker" data-variable="--linkBgColor">
+                        </div>
+
+                        <div class="group">
+                            <label for="linkFontSize">Link Font Size</label>
+                            <input type="range" min="10" max="50" value="18" data-variable="--linkFontSize"
+                                class="slider" id="linkFontSize">
+                        </div>
 
                         <label for="achievementText">Nova Conquista</label>
                         <input type="text" id="achievementText" placeholder="Nome">
@@ -170,61 +214,75 @@
 
                 <div class="wrapper">
                     <div class="title">
-                        <span class="material-icons">expand_more</span>
-                        <p>7 Redes Sociais</p>
+                        <span class="material-icons arrow">expand_more</span>
+                        <p>Redes Sociais</p>
+                        <span class="material-icons-outlined"> share </span>
                     </div>
 
-                    <div class="content">
-                        <label for="availableSocialMedias">Redes sociais</label>
-                        <select id="availableSocialMedias"></select>
-
-                        <label for="socialMediaLink">Link</label>
-                        <input type="url" id="socialMediaLink">
+                    <div class="content">                        
+                            <label for="availableSocialMedias">Redes sociais</label>
+                            <select id="availableSocialMedias"></select>                        
+                        
+                            <label for="socialMediaLink">Link</label>
+                            <input type="url" id="socialMediaLink" placeholder="exemplo: https://google.com">                        
 
                         <button id="addSocialMedia">+</button>
 
-                        <label for="filter">Icones preto e branco</label>
-                        <input type="checkbox" id="filter">
+                        <div class="group">
+                            <label for="filter">Icones preto e branco</label>
+                            <input type="checkbox" id="filter">
+                        </div>
                     </div>
                 </div>
 
                 <div class="wrapper">
                     <div class="title">
-                        <span class="material-icons"> expand_more </span>
-                        <p>8 nome</p>
+                        <span class="material-icons arrow"> expand_more </span>
+                        <p>Nome</p>
+                        <span class="material-icons-outlined"> format_color_text </span>
                     </div>
 
                     <div class="content">
                         <label for="userName">Nome</label>
                         <input type="text" id="userName" placeholder="Seu nome">
 
-                        <label for="linkBgPicker">Cor do Nome</label>
-                        <div class="pseudo-picker" style="background: var(--nameColor);"></div>
-                        <input type="color" id="linkBgPicker" data-variable="--nameColor">
+                        <div class="group">
+                            <label for="linkBgPicker">Cor</label>
+                            <div class="pseudo-picker" style="background: var(--nameColor);"></div>
+                            <input type="color" id="linkBgPicker" data-variable="--nameColor">
+                        </div>
 
-                        <label for="nameFontSize">Name Font Size</label>
-                        <input type="range" min="10" max="72" value="32" data-variable="--nameFontSize" class="slider"
-                            id="nameFontSize">
+                        <div class="group">
+                            <label for="nameFontSize">Font Size</label>
+                            <input type="range" min="10" max="72" value="32" data-variable="--nameFontSize"
+                                class="slider" id="nameFontSize">
+                        </div>
+
                     </div>
                 </div>
 
                 <div class="wrapper">
                     <div class="title">
-                        <span class="material-icons"> expand_more </span>
-                        <p>9 Feitos</p>
+                        <span class="material-icons arrow"> expand_more </span>
+                        <p>Feitos</p>
+                        <span class="material-icons-outlined"> outlined_flag </span>
                     </div>
 
                     <div class="content">
                         <label for="achievementsTitle">Título</label>
                         <input type="text" id="achievementsTitle" placeholder="Título">
 
-                        <label for="linkBgPicker">Cor do Título</label>
-                        <div class="pseudo-picker" style="background: var(--achievementTitleColor);"></div>
-                        <input type="color" id="linkBgPicker" data-variable="--achievementTitleColor">
+                        <div class="group">
+                            <label for="linkBgPicker">Cor</label>
+                            <div class="pseudo-picker" style="background: var(--achievementTitleColor);"></div>
+                            <input type="color" id="linkBgPicker" data-variable="--achievementTitleColor">
+                        </div>
 
-                        <label for="achievementsTitleFontSize">Achievements Font Size</label>
-                        <input type="range" min="10" max="64" value="30" data-variable="--achievementsTitleFontSize"
-                            class="slider" id="achievementsTitleFontSize">
+                        <div class="group">
+                            <label for="achievementsTitleFontSize">Font Size</label>
+                            <input type="range" min="10" max="64" value="30" data-variable="--achievementsTitleFontSize"
+                                class="slider" id="achievementsTitleFontSize">
+                        </div>
                     </div>
 
                 </div>
@@ -287,7 +345,7 @@
     <footer>
         <p class="footer-frase">Seja você o protagonista da sua vida!</p>
         <p class="footer-frase">2021 © ShowYou | Squad 11</p>
-      </footer>
+    </footer>
 
 
     <script src="/js/accordion.js"></script>

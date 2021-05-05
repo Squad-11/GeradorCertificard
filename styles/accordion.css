@@ -27,8 +27,7 @@
 
 .options {  
   display: flex;
-  row-gap: 40px;
-  justify-content: center;
+  row-gap: 30px;  
   flex-direction: column;
 
   width: 0;
@@ -43,14 +42,16 @@
 .options.active {
   opacity: 1;
   height: 100%;
-  width: 300px;
+  width: 400px;
   pointer-events: all;
-  background: rgba(226, 226, 226, 0.68);
+  background: rgb(174, 222, 237);
 }
 
 .wrapper {
   height: auto;
   max-height: 40px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
   transition: all .3s ease-out;
 }
 
@@ -60,6 +61,7 @@
 
 .wrapper.active .content {
   opacity: 1;
+  display: block;
   pointer-events: all;
 }
 
@@ -70,7 +72,7 @@
 .title {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 
   position: relative;
 
@@ -79,41 +81,57 @@
   cursor: pointer;
   padding: 15px 20px;
   border-radius: 15px;
-  background: #ff3d00;
+  background: #28B8D8;
 }
 
 .title * {
   pointer-events: none;
 }
 
-.title span {
-  position: absolute;
-  right: 15px;
-  bottom: 50%;
-  transform: translateY(50%) rotate(var(--rotation));
+.title .arrow {  
+  transform: rotate(var(--rotation));
 }
 
 .content {
   opacity: 0;
   padding: 10px;
+  display: none;
   pointer-events: none;
 }
 
-.content label {
-  display: block;
-  margin-bottom: 3px;
+.content .group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 20px;
 }
 
-.content input {
+.content > label{
+  display: block;
+  margin-bottom: 5px;
+}
+
+.content :is(input, select) {
   display: inline-block;
-  width: 100%;
+  max-width: 200px;
+  width: 200px;
 
   padding: 5px;
-  margin-bottom: 15px;
 
   border: none;
   border-radius: 5px;
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+}
+
+.content > :is(input, select){
+  width: 100%;
+  max-width: unset;
+  margin-bottom: 10px;
+}
+
+.content input[type="checkbox"]{
+  width: auto;
 }
 
 button {
@@ -137,8 +155,9 @@ input[type="color"] {
 }
 
 .pseudo-picker {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
   border-radius: 50%;
+  border: 3px solid #fff;
 }
