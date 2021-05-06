@@ -1,3 +1,6 @@
+/* Arrumar o tamanho da foto no criar-cartao, ta aqui na linha 51 
+Padronizar as Navs
+aplicar um padding que funcione no footer de criar-cartao*/
 header {
   width: 100%;
   height: 10vh;
@@ -12,7 +15,8 @@ header {
 }
 
 nav {
-  margin-top: clamp(0px, 2%, 4px);
+  display:flex;
+  align-items: center;
 }
 
 nav a {
@@ -39,3 +43,11 @@ nav ul li {
   display: block;
   padding: 0 2.5vw;
 }
+
+header a{
+  font-weight: normal;
+  }
+
+  header a img{
+    width: 120px;
+  }
