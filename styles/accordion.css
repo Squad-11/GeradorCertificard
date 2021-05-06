@@ -171,3 +171,27 @@ input[type="color"] {
   border-radius: 50%;
   border: 3px solid #fff;
 }
+
+.added-achievements, .added-medias{
+  display: flex;
+  row-gap: 10px;
+  flex-direction: column;
+  
+  margin: 10px 0;
+  list-style: none;
+}
+
+:is(.added-achievements, .added-medias) li{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #28b8d8;
+}
+
+:is(.added-achievements, .added-medias) span{
+  color: red;
+  cursor: pointer;
+}

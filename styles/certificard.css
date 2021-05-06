@@ -155,22 +155,3 @@ a:visited {
 .social-medias ul.black-white img{
   filter: grayscale(100%);
 }
-
-.added-achievements{
-  list-style: none;
-
-  display: flex;
-  row-gap: 20px;
-  flex-direction: column;
-}
-
-.added-achievements li{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.added-achievements span{
-  color: red;
-  cursor: pointer;
-}
