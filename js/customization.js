@@ -80,6 +80,52 @@ function validateLink(link){
   return regex.test(link);
 }
 
+function generateAddedAchievements(){
+  const addedAchievements = document.querySelector(".added-achievements");
+  addedAchievements.innerHTML = "";
+
+  for (let index = 0; index < user.projects.length; index++) {
+    const project = user.projects[index];    
+
+    const li = document.createElement("li");
+
+    const a = document.createElement("a");
+    a.href = project.link;
+    a.innerText = project.name;
+
+    const icon = document.createElement("span");
+    icon.classList.add("material-icons-outlined");
+    icon.innerHTML = "delete_outline";
+    icon.addEventListener("click", () => {
+      user.projects = user.projects.filter(x => x.name != project.name);      
+
+      generateAddedAchievements();
+      generateLinks();
+    });
+    
+    li.appendChild(a);
+    li.appendChild(icon);
+
+    addedAchievements.appendChild(li);
+  }
+}
+
+function generateLinks(){
+  const linkList = document.getElementById("socialLinks");
+  linkList.innerHTML = "";  
+
+  for (let index = 0; index < user.projects.length; index++) {
+    const project = user.projects[index];
+    
+    linkList.innerHTML += `
+    <li>
+        <a class="project-links" href="${project.link}" target="_blank">
+        ${project.name}
+        </a>
+    </li>`;
+  }
+}
+
 document.getElementById("userName").addEventListener("input", (e) => {
   const nameText = document.querySelector(".userName");
   nameText.innerHTML = e.target.value;
@@ -113,8 +159,7 @@ document.getElementById("addSocialMedia").addEventListener("click", (e) => {
 
 addLinkBtn.addEventListener("click", (e) => {
   e.preventDefault();
-
-  const linkList = document.getElementById("socialLinks");
+  
   const achievementText = document.getElementById("achievementText");
   const achievementLink = document.getElementById("achievementLink");
 
@@ -128,9 +173,14 @@ addLinkBtn.addEventListener("click", (e) => {
     return;
   }
 
-  linkList.innerHTML += `<li><a class="project-links" href="${achievementLink.value}" target="_blank">${achievementText.value}</a></li>`;
+  user.projects.push({name: achievementText.value, link: achievementLink.value});
+
+  generateLinks();
+
   achievementText.value = "";
   achievementLink.value = "";
+
+  generateAddedAchievements();
 })
 
 document.getElementById("filter").addEventListener("change", () => {
