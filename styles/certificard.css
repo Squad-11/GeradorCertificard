@@ -11,6 +11,7 @@
   --linkBgColor: #40AFD4;
   --imgBorderWidth: 0px;
   --imgBorderColor: #fff;
+  --imgSize: 100px;
   --cardRadius: 15px;
   --headerImgRadius: 50px;
   --userImgRadius: 50%;
@@ -32,6 +33,7 @@ main {
 }
 
 .preview {
+  padding-top: 50px;
   flex-grow: 1;
   display: flex;
   align-items: center;
@@ -63,8 +65,8 @@ main {
   left: 50%;
   top: 0;
 
-  width: calc(100px + var(--imgBorderWidth));
-  height: calc(100px + var(--imgBorderWidth));
+  width: calc(var(--imgSize) + var(--imgBorderWidth));
+  height: calc(var(--imgSize) + var(--imgBorderWidth));
 
   object-fit: cover;
   border-radius: var(--userImgRadius);

@@ -73,8 +73,8 @@
                             <input type="file" id="imagemCertificard" accept="image/*" data-element-class="header-img"
                                 hidden>
                         </div>
-                        <div class="group">
 
+                        <div class="group">
                             <label for="tamanhoImagemCertificard">Tamanho</label>
                             <input type="range" min="0" max="200" value="200" data-variable="--headerImageHeight"
                                 class="slider" id="tamanhoImagemCertificard">
@@ -106,6 +106,24 @@
                             <label for="profilePhotoRadius">Radius</label>
                             <input type="range" min="0" max="50" value="50" data-variable="--userImgRadius"
                                 class="slider" id="profilePhotoRadius">
+                        </div>
+
+                        <div class="group">
+                            <label for="borderWidth">Borda</label>
+                            <input type="range" min="0" max="50" value="0" data-variable="--imgBorderWidth"
+                                class="slider" id="borderWidth">
+                        </div>
+
+                        <div class="group">
+                            <label for="imgSize">Tamanho</label>
+                            <input type="range" min="0" max="200" value="100" data-variable="--imgSize"
+                                class="slider" id="imgSize">
+                        </div>
+
+                        <div class="group">
+                            <label for="imgBorderColor">Cor da borda</label>
+                            <div class="pseudo-picker" style="background: var(--imgBorderColor);"></div>
+                            <input type="color" id="imgBorderColor" data-variable="--imgBorderColor">
                         </div>
                     </div>
                 </div>
