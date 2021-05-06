@@ -11,6 +11,8 @@ const templates = {
             dev4: ['dev4', 'https://google.com'],
             dev5: ['dev5', 'https://google.com'],
         },
+        userPhoto: '/images/FavIcon.png',
+        headerImg: '',
         bgcolor: '#000',
         bg: '#328238',
     },
@@ -24,6 +26,7 @@ if (queryString.length > 0 && typeof templates[queryString] != undefined) {
     document.querySelector('.userName').innerHTML = templates[queryString].userName;
     document.querySelector('.achievementsTitle').innerHTML = templates[queryString].achievementTitle;
     addTemplateAchievements();
+    document.querySelector('.user-photo').setAttribute('src', templates[queryString].userPhoto);
     document.documentElement.style.setProperty('--bgColor', templates[queryString].bgcolor);
     document.documentElement.style.setProperty('--bg', templates[queryString].bg);
 
