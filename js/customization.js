@@ -16,6 +16,7 @@ const user = {
 function generateSocialMediasSelect() {
   const selectMedias = document.getElementById("availableSocialMedias");
   selectMedias.innerHTML = "";
+  availableSocialMedias = availableSocialMedias.sort();
 
   for (let index = 0; index < availableSocialMedias.length; index++) {
     const element = availableSocialMedias[index];
@@ -110,6 +111,38 @@ function generateAddedAchievements(){
   }
 }
 
+function generateAddedMedias(){
+  const addedMedias = document.querySelector(".added-medias");
+  addedMedias.innerHTML = "";
+
+  for (let index = 0; index < user.socialMedias.length; index++) {
+    const media = user.socialMedias[index];    
+
+    const li = document.createElement("li");
+
+    const a = document.createElement("a");
+    a.href = media.link;
+    a.innerText = media.media;
+
+    const icon = document.createElement("span");
+    icon.classList.add("material-icons-outlined");
+    icon.innerHTML = "delete_outline";
+    icon.addEventListener("click", () => {
+      user.socialMedias = user.socialMedias.filter(x => x.media != media.media);      
+      availableSocialMedias.push(media.media)      
+
+      generateSocialMediasSelect();
+      generateAddedMedias();
+      renderMediaIcons();
+    });
+    
+    li.appendChild(a);
+    li.appendChild(icon);
+
+    addedMedias.appendChild(li);
+  }
+}
+
 function generateLinks(){
   const linkList = document.getElementById("socialLinks");
   linkList.innerHTML = "";  
@@ -151,6 +184,7 @@ document.getElementById("addSocialMedia").addEventListener("click", (e) => {
 
   availableSocialMedias = availableSocialMedias.filter(x => x != selectMedias.value)
   
+  generateAddedMedias();
   generateSocialMediasSelect();
   inputMedia.value = ""
 
