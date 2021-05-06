@@ -1,5 +1,6 @@
 :root {
   --bgColor: #fff;
+  --backgroundPadding: 50px;
   --bg: #57A3F4;
   --nameColor: black;
   --achievementTitleColor: black;
@@ -24,8 +25,7 @@
 
 main {
   display: flex;
-
-  padding: 50px 0;
+  
   flex-grow: 1;
   position: relative;
   
@@ -33,7 +33,7 @@ main {
 }
 
 .preview {
-  padding-top: 50px;
+  padding: var(--backgroundPadding) 0;
   flex-grow: 1;
   display: flex;
   align-items: center;
