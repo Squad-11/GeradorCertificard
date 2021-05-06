@@ -47,7 +47,7 @@ const templates = {
     }
 }
 
-if (queryString.length > 0 && typeof templates[queryString] != undefined) {
+if (queryString.length > 0 && templates[queryString]) {
     document.querySelector('.userName').innerHTML = templates[queryString].userName;
     document.querySelector('.achievementsTitle').innerHTML = templates[queryString].achievementTitle;
     addTemplateAchievements();
@@ -75,23 +75,21 @@ function addTemplateAchievements() {
 
 function addSocialIcons() {
     const socialLinks = document.querySelector('.social-medias');
-    console.log(socialLinks);
-    socialLinks.innerHTML = '';
     socialLinks.innerHTML = 
     `<ul>
-    <li><a href="criar-cartao.html?${queryString}" target="_blank">
+    <li><a href="#">
     <img src="/images/social/github.svg"></a></li>
-    <li><a href="criar-cartao.html?${queryString}" target="_blank">
+    <li><a href="#">
     <img src="/images/social/instagram.svg"></a></li>
-    <li><a href="criar-cartao.html?${queryString}" target="_blank">
+    <li><a href="#">
     <img src="/images/social/codepen.svg"></a></li>
-    <li><a href="criar-cartao.html?${queryString}" target="_blank">
+    <li><a href="#">
     <img src="/images/social/linkedin.svg"></a></li>
-    <li><a href="criar-cartao.html?${queryString}" target="_blank">
+    <li><a href="#">
     <img src="/images/social/youtube.svg"></a></li>
-    <li><a href="criar-cartao.html?${queryString}" target="_blank">
+    <li><a href="#">
     <img src="/images/social/twitter.svg"></a></li>
-    <li><a href="criar-cartao.html?${queryString}" target="_blank">
+    <li><a href="#">
     <img src="/images/social/facebook.svg"></a></li>
     </ul>`;
 }
