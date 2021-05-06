@@ -221,3 +221,8 @@ document.getElementById("filter").addEventListener("change", () => {
   const medias = document.querySelector(".social-medias ul");
   medias.classList.toggle("black-white")
 });
+
+document.getElementById("removeBgBtn").addEventListener("click", () => {
+  document.querySelector(".preview").style.backgroundImage = "";
+  document.getElementById("certificardContainer").value = "";
+});
