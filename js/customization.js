@@ -180,6 +180,11 @@ document.getElementById("addSocialMedia").addEventListener("click", (e) => {
     return;
   }
 
+  if (!validateSocialMedia(selectMedias.value, inputMedia.value)){
+    alert("Link de rede social deve ser um link válido");
+    return
+    }
+
   user.socialMedias.push({media: selectMedias.value, link: inputMedia.value});
 
   availableSocialMedias = availableSocialMedias.filter(x => x != selectMedias.value)
@@ -226,3 +231,12 @@ document.getElementById("removeBgBtn").addEventListener("click", () => {
   document.querySelector(".preview").style.backgroundImage = "";
   document.getElementById("certificardContainer").value = "";
 });
+
+function validateSocialMedia(media, link){
+  if (media == "Facebook" && link.match("fb.com")){
+    return true;
+  }
+  else {
+    return link.includes(media.toLowerCase());
+  }
+}
