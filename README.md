@@ -87,5 +87,5 @@ $ git clone https://github.com/Squad-11/GeradorCertificard.git && cd geradorcert
 
 ## 📝 Licença
 
-Este projeto está licenciado sob a MIT License - vejá o arquivo [LICENSE](LICENSE) para mais detalhes. 
+Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE](LICENSE) para mais detalhes. 
 </div>
