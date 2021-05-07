@@ -1,7 +1,7 @@
 # ShowYou
 
 <div align="center">
-  <img src=".github/ShowYou-github.png" alt="ShowYou GitHub">
+  <img src=".github/ShowYou-github.PNG" alt="ShowYou GitHub">
 </div>
 
 ### Sobre
