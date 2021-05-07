@@ -11,13 +11,13 @@ Seja o protagonista da sua história. ShowYou foi desenvolvido para você se mos
 ## Tabela de conteúdos
 =================
 <!--ts-->
-   * [Sobre](###sobre)
-   * [Tabela de conteúdos](##tabela-de-conteúdos)
-   * [Hackathon FCamara](##👨‍💻️-hackathon-fcamara)
-   * [Tecnologias](##🛠️-tecnologias)
-   * [Como rodar](##🚀-como-rodar)
-   * [Contribuidores](##👦👩-contribuidores)
-   * [Licença](##📝-licença)
+   * [Sobre](#sobre)
+   * [Tabela de conteúdos](#tabela-de-conteúdos)
+   * [Hackathon FCamara](#👨‍💻️-hackathon-fcamara)
+   * [Tecnologias](#🛠️-tecnologias)
+   * [Como rodar](#🚀-como-rodar)
+   * [Contribuidores](#👦👩-contribuidores)
+   * [Licença](#📝-licença)
 <!--te-->
 
 ## 👨‍💻️ Hackathon FCamara
