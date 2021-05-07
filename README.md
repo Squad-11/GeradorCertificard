@@ -1,8 +1,8 @@
 # ShowYou
 
-<!-- <div align="center">
-  <img src=".github/image" alt="Image Name">
-</div> -->
+<div align="center">
+  <img src=".github/showyou-github.png" alt="ShowYou GitHub">
+</div>
 
 ### Sobre
 
