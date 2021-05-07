@@ -1,6 +1,8 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  font-size: clamp(14px, 1.5vw, 40px);
 }
 
 .ham {
@@ -8,11 +10,17 @@
   z-index: 100;
   top: 1rem;
   right: 1rem;
-  width: 3rem;
-  height: 3rem;
-  border: black solid 1px;
-  background: white;
+  width: 2.4rem;
+  height: 2.4rem;
+  border: 0;
+  background: #008AFF;
   cursor: pointer;
+  border-radius: 5px;
+}
+
+.ham:hover {
+  background-color: #ffffff31;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .xIcon {
@@ -22,17 +30,21 @@
 .menu {
   position: fixed;
   top: 0;
-  left: 0;
+  /* left: 0; */
   right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100vh;
-  background: black;
+  /* bottom: 0; */
+  width: auto;
+  /* width: 100%; */
+  /* height: 100vh; */
+  background: #008AFF;
   color: white;
   transform: translateY(-100%);
   transition: transform 0.2s;
   list-style: none;
-  padding-top: 4rem;
+  /* padding-top: 4rem; */
+  padding: 5% 2% 2% 2%;
+  text-align: right;
+  border-radius: 0px 0px 0px 8px;
 }
 
 .showMenu {
@@ -40,16 +52,19 @@
 }
 
 li {
-  padding: 1rem 0;
+  padding: 3% 0;
 }
 
 .menuLink {
   display: inline;
-  font-size: 2rem;
+  font-size: 1.4rem;
   color: white;
   text-decoration: none;
 }
 
 .menuLink:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  background-color: #ffffff31;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
