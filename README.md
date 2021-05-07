@@ -13,19 +13,24 @@ Seja o protagonista da sua história. ShowYou foi desenvolvido para você se mos
 <!--ts-->
    * [Sobre](#sobre)
    * [Tabela de conteúdos](#tabela-de-conteúdos)
-   * [Hackathon FCamara](#👨‍💻️-hackathon-fcamara)
-   * [Tecnologias](#🛠️-tecnologias)
-   * [Como rodar](#🚀-como-rodar)
-   * [Contribuidores](#👦👩-contribuidores)
-   * [Licença](#📝-licença)
+   * [Hackathon FCamara](#hackathon-fcamara)
+   * [Tecnologias](#tecnologias)
+   * [Como rodar](#como-rodar)
+   * [Contribuidores](#contribuidores)
+   * [Licença](#licenca)
 <!--te-->
+
+<div id="hackathon-fcamara">
 
 ## 👨‍💻️ Hackathon FCamara
 
 Este projeto foi desenvolvido durante o Hackathon da FCamara em parceria com a Alura.
 A proposta deste desafio era pegar um dos projetos desenvolvidos durante a ImersãoDev Alura, e melhorá-lo propondo uma nova solução para seu projeto. Nossa equipe escolheu o Gerador de Certificado e criamos o ShowYou.
+</div>
 
 ## Funcionalidades
+
+<div id="tecnologias">
 
 ## 🛠️ Tecnologias
 
@@ -34,6 +39,9 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 - [HTML](https://www.w3schools.com/html/)
 - [CSS](https://www.w3schools.com/css/)
 - [Javascript](https://www.w3schools.com/js/)
+</div>
+
+<div id="como-rodar">
 
 ## 🚀 Como rodar
 
@@ -63,6 +71,9 @@ $ git clone https://github.com/Squad-11/GeradorCertificard.git && cd geradorcert
 
 #Pronto, nossa página estará rodando no seu navegador!
 ```
+</div>
+
+<div id="contribuidores">
 
 ## 👦👩 Contribuidores
 
@@ -70,7 +81,11 @@ $ git clone https://github.com/Squad-11/GeradorCertificard.git && cd geradorcert
 - [Roger Silveira](https://github.com/rogersilveiraa)
 - [Isabella Lopes Vilhaba](https://github.com/Isabella-Lopes-Vilhaba)
 - [Matheus Carvalho](https://github.com/Matheus-Galdino)
+</div>
+
+<div id="licenca">
 
 ## 📝 Licença
 
 Este projeto está licenciado sob a MIT License - vejá o arquivo [LICENSE](LICENSE) para mais detalhes. 
+</div>
