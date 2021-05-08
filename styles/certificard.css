@@ -24,6 +24,30 @@
   --linkFontSize: 18px;
   --linkRadius: 10px;
   --linkPadding: 5px;
+  --linksRowGap: 10px;
+  --titleMargin: 20px;
+}
+
+*{
+  outline: none;
+  transition: all 250ms ease-out;
+}
+
+ul, ol{
+  padding: 0;
+  margin: 0;
+}
+
+a{  
+    text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited{
+  color: #fff;
 }
 
 main {
@@ -107,17 +131,18 @@ main {
 }
 
 .container h2 {
+  margin: 0;
   text-align: center;
-  margin-bottom: 20px;
-  font-size: var(--achievementsTitleFontSize);
+  margin-bottom: var(--titleMargin);
   color: var(--achievementTitleColor);
+  font-size: var(--achievementsTitleFontSize);
 }
 
 .links ul {
   padding: 0;
   display: flex;
   flex-direction: column;
-  row-gap: calc(10px + var(--linkPadding) * 2);
+  row-gap: calc(var(--linksRowGap) + var(--linkPadding) * 2);
 }
 
 .project-links {
@@ -158,4 +183,8 @@ main {
 
 .social-medias ul.black-white img{
   filter: grayscale(100%);
+}
+
+.added-medias a{
+  font-weight: bold;
 }
