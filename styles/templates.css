@@ -32,6 +32,8 @@ main {
   background-color: #bbbbbb7a;
   border: 2px solid #aaaaaa;
   width: clamp(400px, 40%, 800px);
+  height: 160px;
+  text-decoration: none;
   padding: 1%;
   margin: 3%;
   border-radius: 5px;
@@ -46,11 +48,14 @@ main {
 
 h4{
   margin-top: 0;
+  margin-bottom: 0;
   color: #FF3D00;
 }
 
 p {
   margin-top: 5px;
+  color: #363636;
+  font-size: 16px;
 }
 
 .template img {
