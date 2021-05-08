@@ -1,32 +1,39 @@
 :root {
-  --bgColor: #fff;
-  --backgroundPadding: 50px;
-  --bg: #57A3F4;
-  --nameColor: black;
-  --achievementTitleColor: black;
+  --containerbgColor: #fff;
+  --containerPadding: 50px;
+
+  --headerImgRadius: 50px;
+  --headerImageHeight: 200px;
+
+  --userImgSize: 100px;
+  --userImgRadius: 50%;
+  --userImgBorderWidth: 0px;
+  --userImgBorderColor: #fff;
+
+  --certificardRadius: 15px;
+  --certificardWidth: 800px;
+  --certificardPadding: 50px;
+  --certificardBg: #57A3F4;
+
+  --boxLinksRadius: 15px;
+  --boxLinksRowGap: 10px;
+  --boxLinksBg: #4d7ab4;
   --boxLinksVPadding: 30px;
   --boxLinksHPadding: 30px;
-  --boxLinksBg: #4d7ab4;
-  --boxLinksRadius: 15px;
-  --linkHover: #0C6388;
-  --linkColor: #fff;
-  --linkBgColor: #40AFD4;
-  --imgBorderWidth: 0px;
-  --imgBorderColor: #fff;
-  --imgSize: 100px;
-  --cardRadius: 15px;
-  --headerImgRadius: 50px;
-  --userImgRadius: 50%;
-  --boxPadding: 50px;
-  --headerImageHeight: 200px;
-  --nameFontSize: 32px;
-  --achievementsTitleFontSize: 30px;
-  --linkFontSize: 18px;
+
   --linkRadius: 10px;
   --linkPadding: 5px;
-  --linksRowGap: 10px;
-  --titleMargin: 20px;
-  --certificardWidth: 800px;
+  --linkColor: #fff;
+  --linkFontSize: 18px;
+  --linkHover: #0C6388;
+  --linkBgColor: #40AFD4;
+
+  --nameColor: black;
+  --nameFontSize: 32px;
+
+  --achievementTitleMargin: 20px;
+  --achievementTitleColor: black;
+  --achievementsTitleFontSize: 30px;
 }
 
 *{
@@ -34,12 +41,13 @@
   transition: all 250ms ease-out;
 }
 
-ul, ol{
+ul {
   padding: 0;
   margin: 0;
+  list-style: none;
 }
 
-a{  
+a {  
     text-decoration: none;
 }
 
@@ -47,22 +55,18 @@ a:link {
   text-decoration: none;
 }
 
-a:visited{
+a:visited {
   color: #fff;
 }
 
 main {
-  display: flex;
-  
   flex-grow: 1;
   position: relative;
-  
-  background-color: var(--bgColor);
 }
 
 .preview {
-  padding: var(--backgroundPadding) 0;
-  flex-grow: 1;
+  background-color: var(--containerbgColor);
+  padding: var(--containerPadding) 0;  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -82,10 +86,10 @@ main {
 
   position: relative;
 
-  background: var(--bg);
+  background: var(--certificardBg);
 
-  border-radius: var(--cardRadius);
-  padding: var(--boxPadding);
+  border-radius: var(--certificardRadius);
+  padding: var(--certificardPadding);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -94,14 +98,14 @@ main {
   left: 50%;
   top: 0;
 
-  width: calc(var(--imgSize) + var(--imgBorderWidth));
-  height: calc(var(--imgSize) + var(--imgBorderWidth));
+  width: calc(var(--userImgSize) + var(--userImgBorderWidth));
+  height: calc(var(--userImgSize) + var(--userImgBorderWidth));
 
   object-fit: cover;
   border-radius: var(--userImgRadius);
   transform: translate(-50%, -50%);
 
-  border: var(--imgBorderWidth) solid var(--imgBorderColor);
+  border: var(--userImgBorderWidth) solid var(--userImgBorderColor);
 }
 
 .certificard .header-img {
@@ -127,24 +131,18 @@ main {
   background: var(--boxLinksBg);
 }
 
-.container ul,
-.container ol {
-  list-style: none;
-}
-
 .container h2 {
   margin: 0;
   text-align: center;
-  margin-bottom: var(--titleMargin);
+  margin-bottom: var(--achievementTitleMargin);
   color: var(--achievementTitleColor);
   font-size: var(--achievementsTitleFontSize);
 }
 
 .links ul {
-  padding: 0;
   display: flex;
   flex-direction: column;
-  row-gap: calc(var(--linksRowGap) + var(--linkPadding) * 2);
+  row-gap: calc(var(--boxLinksRowGap) + var(--linkPadding) * 2);
 }
 
 .project-links {
@@ -153,8 +151,7 @@ main {
   font-size: var(--linkFontSize);
   background-color: var(--linkBgColor);
 
-  font-weight: bold;
-  text-decoration: none;
+  font-weight: bold;  
   border-radius: var(--linkRadius);
 }
 
@@ -166,8 +163,7 @@ main {
   background: var(--linkHover);
 }
 
-.project-links:link {
-  text-decoration: none;
+.project-links:link {  
   color: var(--linkColor);
 }
 
@@ -187,10 +183,10 @@ main {
   height: 50px;
 }
 
-.social-medias ul.black-white img{
+.social-medias ul.black-white img {
   filter: grayscale(100%);
 }
 
-.added-medias a{
+.added-medias a {
   font-weight: bold;
 }

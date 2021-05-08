@@ -44,7 +44,7 @@
                 <div class="wrapper">
                     <div class="title">
                         <span class="material-icons arrow"> expand_more </span>
-                        <p>Background</p>
+                        <p>Container</p>
                         <span class="material-icons"> wallpaper </span>
                     </div>
 
@@ -64,14 +64,14 @@
 
                         <div class="group">
                             <label for="linkPicker">Cor</label>
-                            <div class="pseudo-picker" style="background: var(--bgColor);"></div>
-                            <input type="color" id="linkPicker" data-variable="--bgColor">
+                            <div class="pseudo-picker" style="background: var(--containerbgColor);"></div>
+                            <input type="color" id="linkPicker" data-variable="--containerbgColor">
                         </div>
 
                         <div class="group">
-                            <label for="backgroundPadding">Espaçamento interno</label>
-                            <input type="range" min="0" max="100" value="50" data-variable="--backgroundPadding" class="slider"
-                                id="backgroundPadding">
+                            <label for="containerPadding">Espaçamento interno</label>
+                            <input type="range" min="0" max="100" value="50" data-variable="--containerPadding" class="slider"
+                                id="containerPadding">
                         </div>
                     </div>
                 </div>
@@ -127,20 +127,20 @@
 
                         <div class="group">
                             <label for="borderWidth">Borda</label>
-                            <input type="range" min="0" max="20" value="0" data-variable="--imgBorderWidth"
+                            <input type="range" min="0" max="20" value="0" data-variable="--userImgBorderWidth"
                                 class="slider" id="borderWidth">
                         </div>
 
                         <div class="group">
                             <label for="imgSize">Tamanho</label>
-                            <input type="range" min="0" max="200" value="100" data-variable="--imgSize"
+                            <input type="range" min="0" max="200" value="100" data-variable="--userImgSize"
                                 class="slider" id="imgSize">
                         </div>
 
                         <div class="group">
                             <label for="imgBorderColor">Cor da borda</label>
-                            <div class="pseudo-picker" style="background: var(--imgBorderColor);"></div>
-                            <input type="color" id="imgBorderColor" data-variable="--imgBorderColor">
+                            <div class="pseudo-picker" style="background: var(--userImgBorderColor);"></div>
+                            <input type="color" id="imgBorderColor" data-variable="--userImgBorderColor">
                         </div>
                     </div>
                 </div>
@@ -155,19 +155,19 @@
                     <div class="content">
                         <div class="group">
                             <label for="BoxPadding">Espaçamento interno</label>
-                            <input type="range" min="0" max="100" value="50" data-variable="--boxPadding" class="slider"
+                            <input type="range" min="0" max="100" value="50" data-variable="--certificardPadding" class="slider"
                                 id="BoxPadding">
                         </div>
 
                         <div class="group">
                             <label for="bgPicker">Background</label>
-                            <div class="pseudo-picker" style="background: var(--bg);"></div>
-                            <input type="color" id="bgPicker" data-variable="--bg">
+                            <div class="pseudo-picker" style="background: var(--certificardBg);"></div>
+                            <input type="color" id="bgPicker" data-variable="--certificardBg">
                         </div>
 
                         <div class="group">
                             <label for="cardRadius">Radius</label>
-                            <input type="range" min="0" max="50" value="10" data-variable="--cardRadius" class="slider"
+                            <input type="range" min="0" max="50" value="10" data-variable="--certificardRadius" class="slider"
                                 id="cardRadius">
                         </div>
 
@@ -216,7 +216,7 @@
 
                         <div class="group">
                             <label for="linksRowGap">Espaço entre links</label>
-                            <input type="range" min="0" max="30" value="10" data-variable="--linksRowGap"
+                            <input type="range" min="0" max="30" value="10" data-variable="--boxLinksRowGap"
                                 class="slider" id="linksRowGap">
                         </div>
                     </div>
@@ -371,7 +371,7 @@
 
                         <div class="group">
                             <label for="titleMargin">Margem abaixo</label>
-                            <input type="range" min="0" max="40" value="20" data-variable="--titleMargin"
+                            <input type="range" min="0" max="40" value="20" data-variable="--achievementTitleMargin"
                                 class="slider" id="titleMargin">
                         </div>
                     </div>
