@@ -4,7 +4,8 @@
   --bg: #57A3F4;
   --nameColor: black;
   --achievementTitleColor: black;
-  --boxLinksPadding: 10px;
+  --boxLinksVPadding: 30px;
+  --boxLinksHPadding: 30px;
   --boxLinksBg: #4d7ab4;
   --boxLinksRadius: 15px;
   --linkHover: #0C6388;
@@ -21,6 +22,8 @@
   --nameFontSize: 32px;
   --achievementsTitleFontSize: 30px;
   --linkFontSize: 18px;
+  --linkRadius: 10px;
+  --linkPadding: 5px;
 }
 
 main {
@@ -42,14 +45,14 @@ main {
   background-size: cover;
 }
 
-@media(min-width: 1000px){
+@media (min-width: 1000px) {
   .certificard.align-right {
     margin-left: 20%;
   }
 }
 
 .certificard {
-  max-width: 800px;
+  max-width: 1000px;
 
   position: relative;
 
@@ -92,7 +95,7 @@ main {
 }
 
 .container {
-  padding: var(--boxLinksPadding);
+  padding: var(--boxLinksVPadding) var(--boxLinksHPadding);
   margin-bottom: 10px;
   border-radius: var(--boxLinksRadius);
   background: var(--boxLinksBg);
@@ -110,36 +113,35 @@ main {
   color: var(--achievementTitleColor);
 }
 
-.links ul{
+.links ul {
+  padding: 0;
   display: flex;
-  row-gap: 10px;
   flex-direction: column;
-}
-
-a {
-  font-size: var(--linkFontSize);
-  font-weight: bold;
-  padding: 2px;
-  border-radius: 8px;
-  text-decoration: none;
-  color: var(--linkColor);
-}
-
-a:link {
-  text-decoration: none;
-  color: var(--linkColor);
-}
-
-a:visited {
-  color: var(--linkColor);
-}
-
-.links a:hover {
-  background: var(--linkHover);
+  row-gap: calc(10px + var(--linkPadding) * 2);
 }
 
 .project-links {
+  color: var(--linkColor);
+  padding: var(--linkPadding);
+  font-size: var(--linkFontSize);
   background-color: var(--linkBgColor);
+
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: var(--linkRadius);
+}
+
+.project-links:hover {
+  background: var(--linkHover);
+}
+
+.project-links:link {
+  text-decoration: none;
+  color: var(--linkColor);
+}
+
+.project-links:visited {
+  color: var(--linkColor);
 }
 
 .social-medias ul {

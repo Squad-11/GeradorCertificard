@@ -155,7 +155,7 @@
                     <div class="content">
                         <div class="group">
                             <label for="BoxPadding">Espaçamento interno</label>
-                            <input type="range" min="0" max="30" value="30" data-variable="--boxPadding" class="slider"
+                            <input type="range" min="0" max="100" value="50" data-variable="--boxPadding" class="slider"
                                 id="BoxPadding">
                         </div>
 
@@ -184,9 +184,16 @@
                     <div class="content">
                         <div class="group">
 
-                            <label for="boxLinksPadding">Espaçamento interno</label>
-                            <input type="range" min="0" max="40" value="30" data-variable="--boxLinksPadding"
-                                class="slider" id="BoxLinksPadding">
+                            <label for="boxLinksVPadding">Espaçamento vertical</label>
+                            <input type="range" min="0" max="40" value="30" data-variable="--boxLinksVPadding"
+                                class="slider" id="BoxLinksVPadding">
+                        </div>
+
+                        <div class="group">
+
+                            <label for="boxLinksHPadding">Espaçamento horizontal</label>
+                            <input type="range" min="0" max="40" value="30" data-variable="--boxLinksHPadding"
+                                class="slider" id="BoxLinksHPadding">
                         </div>
 
                         <div class="group">
@@ -232,9 +239,21 @@
                         </div>
 
                         <div class="group">
-                            <label for="linkFontSize">Link Font Size</label>
+                            <label for="linkFontSize">Font Size</label>
                             <input type="range" min="10" max="50" value="18" data-variable="--linkFontSize"
                                 class="slider" id="linkFontSize">
+                        </div>
+
+                        <div class="group">
+                            <label for="LinkPadding">Espaçamento interno</label>
+                            <input type="range" min="0" max="20" value="5" data-variable="--linkPadding"
+                                class="slider" id="LinkPadding">
+                        </div>
+
+                        <div class="group">
+                            <label for="linkRadius">Radius</label>
+                            <input type="range" min="0" max="50" value="8" data-variable="--linkRadius" class="slider"
+                                id="linkRadius">
                         </div>
 
                         <form id="achievementForm">
@@ -242,7 +261,7 @@
                             <input type="text" id="achievementText" placeholder="Nome">
 
                             <label for="achievementLink">Link</label>
-                            <input type="text" id="achievementLink" placeholder="exemplo: https://github.com/seu-projeto">
+                            <input type="text" id="achievementLink" placeholder="https://github.com/seu-projeto">
 
                             <button id="addLink">
                                 <span class="material-icons-outlined"> add_circle_outline </span>
