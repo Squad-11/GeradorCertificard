@@ -20,6 +20,10 @@ header {
   margin-top: 3px;
 }
 
+.link-logo {
+  padding: 0;
+}
+
 nav {
   display:flex;
   align-items: center;
@@ -123,7 +127,6 @@ label[for="bt-menu"] {
     border-radius: 0px 0px 0px 8px;
     margin: 0;
     z-index: 5;
-
     display: block;
   }
 
