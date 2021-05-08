@@ -157,3 +157,7 @@ a:visited {
 .social-medias ul.black-white img{
   filter: grayscale(100%);
 }
+
+footer {
+  box-sizing:content-box;
+}
