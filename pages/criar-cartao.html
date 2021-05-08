@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerador de CertifiCard</title>
-    <link rel="stylesheet" href="/styles/reset.css">
+    <!-- <link rel="stylesheet" href="/styles/reset.css"> -->
     <link rel="stylesheet" href="/styles/accordion.css">
     <link rel="stylesheet" href="/styles/certificard.css">
     <link rel="stylesheet" href="/styles/nav.css">
@@ -16,12 +16,16 @@
         rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;800&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <header>
+<body class="body">
+    <header class="header">
         <a href="/pages/home-page.html">
-            <img class="logo" src="/images/logoNome.png" alt="Logo do site"></a>
+        <img class="logo" src="/images/logoNome.png" alt="Logo do site"></a>
+        <input type="checkbox" id="bt-menu">
+        <label for="bt-menu" class="label">&#9776;</label>
+   
         <nav class="nav-header">
             <ul>
                 <li><a href="/pages/criar-cartao.html">Criar</a></li>
@@ -388,7 +392,7 @@
         </div>
     </main>
 
-    <footer>
+    <footer class="footer">
         <p class="footer-frase">Seja você o protagonista da sua vida!</p>
         <p class="footer-frase">2021 © ShowYou | Squad 11</p>
     </footer>
