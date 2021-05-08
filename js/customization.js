@@ -4,7 +4,7 @@ const sliders = document.querySelectorAll("input[type='range']");
 
 const pseudoPickers = document.querySelectorAll(".pseudo-picker");
 
-const socialMedias = ["Github", "Instagram", "Linkedin", "Codepen"];
+const socialMedias = ["Github", "Instagram", "Linkedin", "Codepen", "Youtube", "Twitter", "Facebook"];
 let availableSocialMedias = socialMedias;
 
 const user = {
@@ -16,6 +16,7 @@ const user = {
 function generateSocialMediasSelect() {
   const selectMedias = document.getElementById("availableSocialMedias");
   selectMedias.innerHTML = "";
+  availableSocialMedias = availableSocialMedias.sort();
 
   for (let index = 0; index < availableSocialMedias.length; index++) {
     const element = availableSocialMedias[index];
@@ -76,8 +77,86 @@ function renderMediaIcons(){
 }
 
 function validateLink(link){
-  const regex = new RegExp("https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()!@:%_\+.~#?&\/\/=]*)")
+  const regex = /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()!@:%_\+.~#?&\/\/=]*)/
   return regex.test(link);
+}
+
+function generateAddedAchievements(){
+  const addedAchievements = document.querySelector(".added-achievements");
+  addedAchievements.innerHTML = "";
+
+  for (let index = 0; index < user.projects.length; index++) {
+    const project = user.projects[index];    
+
+    const li = document.createElement("li");
+
+    const a = document.createElement("a");
+    a.href = project.link;
+    a.innerText = project.name;
+
+    const icon = document.createElement("span");
+    icon.classList.add("material-icons-outlined");
+    icon.innerHTML = "delete_outline";
+    icon.addEventListener("click", () => {
+      user.projects = user.projects.filter(x => x.name != project.name);      
+
+      generateAddedAchievements();
+      generateLinks();
+    });
+    
+    li.appendChild(a);
+    li.appendChild(icon);
+
+    addedAchievements.appendChild(li);
+  }
+}
+
+function generateAddedMedias(){
+  const addedMedias = document.querySelector(".added-medias");
+  addedMedias.innerHTML = "";
+
+  for (let index = 0; index < user.socialMedias.length; index++) {
+    const media = user.socialMedias[index];    
+
+    const li = document.createElement("li");
+
+    const a = document.createElement("a");
+    a.href = media.link;
+    a.innerText = media.media;
+
+    const icon = document.createElement("span");
+    icon.classList.add("material-icons-outlined");
+    icon.innerHTML = "delete_outline";
+    icon.addEventListener("click", () => {
+      user.socialMedias = user.socialMedias.filter(x => x.media != media.media);      
+      availableSocialMedias.push(media.media)      
+
+      generateSocialMediasSelect();
+      generateAddedMedias();
+      renderMediaIcons();
+    });
+    
+    li.appendChild(a);
+    li.appendChild(icon);
+
+    addedMedias.appendChild(li);
+  }
+}
+
+function generateLinks(){
+  const linkList = document.getElementById("socialLinks");
+  linkList.innerHTML = "";  
+
+  for (let index = 0; index < user.projects.length; index++) {
+    const project = user.projects[index];
+    
+    linkList.innerHTML += `
+    <li>
+        <a class="project-links" href="${project.link}" target="_blank">
+        ${project.name}
+        </a>
+    </li>`;
+  }
 }
 
 document.getElementById("userName").addEventListener("input", (e) => {
@@ -90,7 +169,9 @@ document.getElementById("achievementsTitle").addEventListener("input", (e) => {
   nameText.innerHTML = e.target.value;
 });
 
-document.getElementById("addSocialMedia").addEventListener("click", () => {
+document.getElementById("addSocialMedia").addEventListener("click", (e) => {
+  e.preventDefault();
+
   const selectMedias = document.getElementById("availableSocialMedias");
   const inputMedia = document.getElementById("socialMediaLink");
 
@@ -99,18 +180,25 @@ document.getElementById("addSocialMedia").addEventListener("click", () => {
     return;
   }
 
+  if (!validateSocialMedia(selectMedias.value, inputMedia.value)){
+    alert("Link de rede social deve ser um link válido");
+    return
+    }
+
   user.socialMedias.push({media: selectMedias.value, link: inputMedia.value});
 
   availableSocialMedias = availableSocialMedias.filter(x => x != selectMedias.value)
   
+  generateAddedMedias();
   generateSocialMediasSelect();
   inputMedia.value = ""
 
   renderMediaIcons();
 });
 
-addLinkBtn.addEventListener("click", () => {
-  const linkList = document.getElementById("socialLinks");
+addLinkBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  
   const achievementText = document.getElementById("achievementText");
   const achievementLink = document.getElementById("achievementLink");
 
@@ -124,12 +212,31 @@ addLinkBtn.addEventListener("click", () => {
     return;
   }
 
-  linkList.innerHTML += `<li><a class="project-links" href="${achievementLink.value}" target="_blank">${achievementText.value}</a></li>`;
+  user.projects.push({name: achievementText.value, link: achievementLink.value});
+
+  generateLinks();
+
   achievementText.value = "";
   achievementLink.value = "";
+
+  generateAddedAchievements();
 })
 
 document.getElementById("filter").addEventListener("change", () => {
   const medias = document.querySelector(".social-medias ul");
   medias.classList.toggle("black-white")
 });
+
+document.getElementById("removeBgBtn").addEventListener("click", () => {
+  document.querySelector(".preview").style.backgroundImage = "";
+  document.getElementById("certificardContainer").value = "";
+});
+
+function validateSocialMedia(media, link){
+  if (media == "Facebook" && link.match("fb.com")){
+    return true;
+  }
+  else {
+    return link.includes(media.toLowerCase());
+  }
+}
