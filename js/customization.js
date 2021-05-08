@@ -232,6 +232,14 @@ document.getElementById("removeBgBtn").addEventListener("click", () => {
   document.getElementById("certificardContainer").value = "";
 });
 
+document.getElementById("linkBgCheckbox").addEventListener("change", () => {
+  const links = document.getElementsByClassName("project-links");
+
+  for (let index = 0; index < links.length; index++) {
+    links[index].classList.toggle("no-bg");;    
+  }
+})
+
 function validateSocialMedia(media, link){
   if (media == "Facebook" && link.match("fb.com")){
     return true;

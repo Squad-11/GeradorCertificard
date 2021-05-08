@@ -156,6 +156,10 @@ main {
   border-radius: var(--linkRadius);
 }
 
+.project-links.no-bg{
+  background-color: transparent;
+}
+
 .project-links:hover {
   background: var(--linkHover);
 }
