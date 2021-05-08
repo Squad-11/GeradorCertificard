@@ -40,6 +40,7 @@ main {
   font-size: clamp(14px, 1.5vw, 40px);
   font-family: 'Raleway', sans-serif;
   color: white;
+  cursor: pointer;
 }
 
 .btn-criar {
@@ -118,27 +119,42 @@ p {
   font-size: 2rem;
 }
 
-@media(max-width: 540px) {
+@media(max-width: 650px) {
+
+  .opcoes {
+    flex-direction: column-reverse;
+    text-align: center;
+    justify-content: center;
+  }
 
   .botoes {
-    display: inline;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
   }
   
   .opcoes button {
-    padding: 2px;
+    padding: 0 5px;
+    width: clamp(40px, 32vw, 150px);
+    font-size: 0.8rem;
+    height: clamp(40px, 6vh, 150px);
+    margin: 40px 10px 0;
+    justify-content: center;
   }
   
   .btn-criar {
-    margin: 32vh 5vw 1vh 6vw;
+    margin: 0;
   }
   
   .btn-templates {
-    margin: 1vh 5vw 0vh 6vw;
+    margin: 0;
   }
   
   .opcoes p {
-    width: 80vw;
-    margin: 32vh 20vw 0 0;
+    width: 70vw;
+    margin: 15vh auto 0;
   }
 
   .explicacao {
@@ -159,7 +175,7 @@ p {
   }
   
   .explicacao img {
-    margin-top: 40px;
+    margin: 40px auto 0;
     height: clamp(180px, 40vw, 500px);
   }
   
