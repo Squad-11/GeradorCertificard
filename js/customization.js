@@ -181,7 +181,7 @@ document.getElementById("addSocialMedia").addEventListener("click", (e) => {
   }
 
   if (!validateSocialMedia(selectMedias.value, inputMedia.value)){
-    alert("Link de rede social deve ser um link válido");
+    alert("Link de rede social deve ser um link da rede social escolhida");
     return
     }
 
