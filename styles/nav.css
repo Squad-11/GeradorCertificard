@@ -108,7 +108,7 @@ label[for="bt-menu"] {
 
   .nav-header ul li {
     width: 100%;
-    padding: 5%;
+    padding: 10% 0;
   }
 
   #bt-menu:checked ~ .nav-header {
