@@ -235,6 +235,9 @@ document.getElementById("removeBgBtn").addEventListener("click", () => {
 function validateSocialMedia(media, link){
   if (media == "Facebook" && link.match("fb.com")){
     return true;
+    
+  } else if (media == "Youtube" && link.match("youtu.be")) {
+    return true;
   }
   else {
     return link.includes(media.toLowerCase());
