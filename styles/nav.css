@@ -32,9 +32,10 @@ nav {
 nav a {
   text-decoration: none;
   font-size: clamp(15px, 1.5vw, 30px);
-  color: white;
+  color: white !important;
   padding: 1vh 1.5vw;
 }
+
 
 nav a:hover {
   background-color: #ffffff31;
