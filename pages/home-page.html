@@ -9,15 +9,16 @@
   <link rel="stylesheet" href="/styles/footer.css">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;800&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="/images/FavIcon.png"/>
-
-  <link rel="stylesheet" href="/styles/menu-hamburguer.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <title>ShowYou</title>
 </head>
 <body>
   <header>
     <a href="/pages/home-page.html">
     <img class="logo" src="/images/logoNome.png" alt="Logo do site"></a>
+
+    <input type="checkbox" id="bt-menu">
+    <label for="bt-menu" class="label">&#9776;</label>
+
     <nav class="nav-header">
       <ul>
         <li><a class="menuLink" href="/pages/criar-cartao.html">Criar</a></li>
@@ -25,21 +26,6 @@
         <li><a class="menuLink" href="/pages/about-us.html">About Us</a></li>
       </ul>
     </nav>
-    <section class="menu-hamburguer">
-      <button class="ham">
-        <span class="menuIcon material-icons">
-          menu
-        </span>
-        <span class="xIcon material-icons">
-          close
-        </span>
-      </button>
-      <ul class="menu">
-        <li class="li-menu"><a class="menuLink" href="/pages/criar-cartao.html">Criar</a></li>
-        <li class="li-menu"><a class="menuLink" href="/pages/templates.html">Templates</a></li>
-        <li class="li-menu"><a class="menuLink" href="/pages/about-us.html">About Us</a></li>
-      </ul>
-    </section>
   </header>
   <main>
     <section class="opcoes">
@@ -70,6 +56,5 @@
     <p class="footer-frase">Seja você o protagonista da sua vida!</p>
     <p class="footer-frase">2021 © ShowYou | Squad 11</p>
   </footer>
-  <script src="/js/menu-hamburguer.js"></script>
 </body>
 </html>

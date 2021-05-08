@@ -94,6 +94,13 @@ p {
   height: clamp(180px, 25vw, 500px);
 }
 
+@media(max-width: 800px) {
+  .explicacao img {
+    margin-left: 5vw;
+    height: clamp(150px, 25vw, 500px);
+  }
+}
+
 .compartilhar {
   background-image: url("/images/background-compartilhar.png");
   background-repeat: no-repeat;

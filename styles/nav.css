@@ -11,6 +11,7 @@ aplicar um padding que funcione no footer de criar-cartao*/
 
 header {
   width: 100%;
+  height: auto;
   /* height: 10vh; */
   display: flex;
   justify-content: space-between;
@@ -59,4 +60,77 @@ header a{
 
 header a img{
   width: 120px;
+}
+
+/* Menu-hamburguer */
+
+label[for="bt-menu"] {
+  position: fixed;
+  z-index: 100;
+  top: 0.5rem;
+  right: 0.5rem;
+  padding: 0.5rem;
+  border: 0;
+  background-color: #0088ff70;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  justify-content: center;
+
+  display: none;
+}
+
+.label:hover {
+  background-color: #008AFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#bt-menu {
+  display: none;
+}
+
+@media(max-width: 800px) {
+
+  label[for="bt-menu"] {
+    display: block;
+  }
+  .nav-header {
+    transform: translateY(-200%);
+    margin-right: 0;
+    margin-top: 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  .nav-header ul li {
+    width: 100%;
+    padding: 5%;
+  }
+
+  #bt-menu:checked ~ .nav-header {
+    transform: translateY(0);
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: auto;
+    background-color: white;
+    background: linear-gradient(180deg, #008AFF 0%, #3ca3fd 100%);
+    transition: transform 0.4s;
+    list-style: none;
+    padding: 8% 2% 2% 2%;
+    text-align: right;
+    border-radius: 0px 0px 0px 8px;
+    margin: 0;
+
+    display: block;
+  }
+
+  header {
+    max-height: 65px;
+  }
 }
