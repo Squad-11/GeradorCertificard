@@ -240,6 +240,11 @@ document.getElementById("linkBgCheckbox").addEventListener("change", () => {
   }
 })
 
+document.getElementById("goFullscreen").addEventListener("click", () => {
+  document.querySelector("header").classList.toggle("hide");
+  document.querySelector("footer").classList.toggle("hide");
+})
+
 function validateSocialMedia(media, link){
   if (media == "Facebook" && link.match("fb.com")){
     return true;

@@ -36,6 +36,10 @@
   --achievementsTitleFontSize: 30px;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 *{
   outline: none;
   transition: all 250ms ease-out;
@@ -59,9 +63,21 @@ a:visited {
   color: #fff;
 }
 
+.hide{
+  display: none;
+}
+
 main {
   flex-grow: 1;
   position: relative;
+}
+
+#goFullscreen{
+  position: absolute;
+  top: 15px;
+  right: 30px;  
+  z-index: 4;
+  cursor: pointer;
 }
 
 .preview {
