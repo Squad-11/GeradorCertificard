@@ -7,8 +7,7 @@
 
 header {
   width: 100%;
-  height: auto;
-  /* height: 10vh; */
+  height: 10vh;
   display: flex;
   justify-content: space-between;
   font-size:  "Raleway", sans-serif;
