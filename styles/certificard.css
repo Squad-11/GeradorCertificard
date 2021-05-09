@@ -78,6 +78,9 @@ main {
   right: 30px;  
   z-index: 4;
   cursor: pointer;
+
+  filter: invert(1);
+  color: var(--containerbgColor);
 }
 
 .preview {
