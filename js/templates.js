@@ -43,7 +43,29 @@ const templates = {
         linkHover: '#2C0C5F',
         linkColor: '#B2155C',
         linkBgColor: '#53C544',
-    }
+    },
+    cook: {
+        userName: '👨‍🍳️ Chef',
+        achievementTitle: 'Minhas Receitas',
+        achievements: { // conquista: ['nome', 'link'],
+            cook1: ['🥖 Pão Caseiro', 'https://www.tudogostoso.com.br/receita/178357-pao-caseiro.html'],
+            cook2: ['🎂 Bolo de Chocolate', 'https://www.tudogostoso.com.br/receita/62547-a-melhor-receita-de-bolo-de-chocolate.html'],
+            cook3: ['🍝 Macarronada', 'https://www.tudogostoso.com.br/receita/57911-macarronada-simples.html'],
+            cook4: ['🥩 Churrasco', 'https://gourmetadois.com/receita/picanha-assada-com-alecrim-75.html'],
+            cook5: ['🍕 Pizza', 'https://gshow.globo.com/RPC/Estudio-C/cozinha-paranaense/receitas/receita-de-massa-caseira-de-pizza.ghtml'],
+        },
+        userPhoto: '/images/templates/cook/cook-profile.svg',
+        headerImg: '/images/templates/cook/cook-banner.svg',
+        bgcolor: '#4D4D4D',
+        bg: '#FAFAFA',
+        boxLinksBg: '#7728A0',
+        nameColor: '#333333',
+        achievementTitleColor: '#000000',
+        linkHover: '#A23ACE',
+        linkColor: '#FAFAFA',
+        linkBgColor: '#7728A0',
+}
+
 }
 
 if (queryString.length > 0 && templates[queryString]) {
@@ -52,8 +74,8 @@ if (queryString.length > 0 && templates[queryString]) {
     addTemplateAchievements();
     document.querySelector('.user-photo').setAttribute('src', templates[queryString].userPhoto);
     document.querySelector('.header-img').setAttribute('src', templates[queryString].headerImg);
-    document.documentElement.style.setProperty('--bgColor', templates[queryString].bgcolor);
-    document.documentElement.style.setProperty('--bg', templates[queryString].bg);
+    document.documentElement.style.setProperty('--containerbgColor', templates[queryString].bgcolor);
+    document.documentElement.style.setProperty('--certificardBg', templates[queryString].bg);
     document.documentElement.style.setProperty('--boxLinksBg', templates[queryString].boxLinksBg);
     document.documentElement.style.setProperty('--nameColor', templates[queryString].nameColor);
     document.documentElement.style.setProperty('--achievementTitleColor', templates[queryString].achievementTitleColor);
