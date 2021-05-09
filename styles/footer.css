@@ -1,9 +1,7 @@
 footer {
-  height: clamp(20px, 5vh, 40px);
+  height: clamp(20px, 4vh, 40px);
   bottom: 0;
-  padding: 20px 0 20px;
-
-  /* background: linear-gradient(180deg, #303030 -10%, #008AFF 40%); */
+  padding: 10px 0 20px;
 }
 
 .footer-frase {
