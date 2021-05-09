@@ -246,12 +246,9 @@ document.getElementById("linkBgCheckbox").addEventListener("change", () => {
   }
 })
 
-document.getElementById("goFullscreen").addEventListener("click", () => {
-  document.querySelector("header").classList.toggle("hide");
-  document.querySelector("footer").classList.toggle("hide");
-  document.querySelector(".options").classList.toggle("active");
-  document.querySelector(".certificard").classList.toggle("align-right");
-  document.querySelector(".show-tab").classList.toggle("invert");
+document.getElementById("goFullscreen").addEventListener("click", () => {  
+  document.querySelector(".certificard").classList.remove("align-right");
+  document.querySelector(".preview").requestFullscreen();
 })
 
 function validateSocialMedia(media, link){
