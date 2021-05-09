@@ -37,12 +37,15 @@
   overflow-y: auto;
   pointer-events: none;
   transition: all 0.3s ease-out;
+  /*  */
+  font-size: 0.9rem;
 }
 
 .options.active {
   opacity: 1;
   height: 100%;
-  width: 400px;
+  /* width: 400px; */
+  width: 330px;
   pointer-events: all;
   background: rgb(174, 222, 237);
 }
@@ -81,9 +84,11 @@
   position: relative;
 
   color: #fff;
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size: 1rem;
   cursor: pointer;
-  padding: 20px;
+  /* padding: 20px; */
+  padding: 15px;
   border-radius: 15px;
   background: #28B8D8;
 }
@@ -206,4 +211,49 @@ input[type="color"] {
   margin: 0;
   padding: 5px 25px;
   background: #28B8D8;
+}
+
+@media(max-width: 650px) {
+  main{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .preview {
+    margin-bottom: 20vh;
+  }
+
+  .tab {
+    display: block;
+    column-gap: 0px;
+    align-items: center;
+    width: 100%;
+  
+    position: relative;
+    margin: auto;
+  
+    z-index: 3;
+    overflow: hidden;
+
+    position: fixed;
+    margin-top: 70vh;
+
+    border-radius: 10px 10px 0 0;
+  }
+
+  .options.active {
+    height: auto;
+    width: 100%;
+    font-size: 1rem;
+
+    height: 30vh;
+  }
+  
+  .title {
+    font-size: 20px;
+  }
+  
+  button {
+    display: none;
+  }
 }
