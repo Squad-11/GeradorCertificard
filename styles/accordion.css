@@ -49,10 +49,14 @@
 
 .wrapper {
   height: auto;
-  max-height: 40px;
+  max-height: 100px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   transition: all .3s ease-out;
+}
+
+.wrapper:nth-child(1) {
+  margin-top: 20px;
 }
 
 .wrapper.active {
@@ -79,7 +83,7 @@
   color: #fff;
   font-size: 20px;
   cursor: pointer;
-  padding: 15px 20px;
+  padding: 20px;
   border-radius: 15px;
   background: #28B8D8;
 }
@@ -146,6 +150,8 @@ form button {
 
 button {
   display: block;
+  border: none;
+  cursor: pointer;
 
   margin: 40px auto 10px;
   padding: 10px 20px;
@@ -165,8 +171,8 @@ input[type="color"] {
 }
 
 .pseudo-picker {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   cursor: pointer;
   border-radius: 50%;
   border: 3px solid #fff;
