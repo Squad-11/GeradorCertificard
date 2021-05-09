@@ -64,6 +64,27 @@ const templates = {
         linkHover: '#A23ACE',
         linkColor: '#FAFAFA',
         linkBgColor: '#7728A0',
+},
+    cinema: {
+        userName: '📽️ Cinéfilo 🍿 ',
+        achievementTitle: 'Filmes Favoritos',
+        achievements: { // conquista: ['nome', 'link'],
+            cook1: ['🦇 Batman - O Cavaleiro das Trevas', 'https://www.youtube.com/watch?v=zqfz04yCTnE'],
+            cook2: ['🏀 Space Jam: Um Novo Legado', 'https://www.youtube.com/watch?v=t1m7zl8H-kE'],
+            cook3: ['🥊 Clube da Luta', 'https://www.youtube.com/watch?v=BdJKm16Co6M'],
+            cook4: ['😄 Divertida Mente', 'https://www.youtube.com/watch?v=LSpeM7G4zfY'],
+            cook5: ['🦊 Zootopia', 'https://www.youtube.com/watch?v=prct6AB5tR8'],
+        },
+        userPhoto: '/images/templates/cinema/cinema-profile.svg',
+        headerImg: '/images/templates/cinema/cinema-banner.jpg',
+        bgcolor: '#28B8D8',
+        bg: '#000000',
+        boxLinksBg: '#01057E',
+        nameColor: '#D1D1D1',
+        achievementTitleColor: '#D1D1D1',
+        linkHover: '#01057E',
+        linkColor: '#C2C2C2',
+        linkBgColor: '#0072A3',
 }
 
 }
