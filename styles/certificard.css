@@ -206,10 +206,6 @@ main {
   filter: grayscale(100%);
 }
 
-.added-medias a {
-  font-weight: bold;
-}
-
 @media(max-width: 650px) {
   :root {
     --containerPadding:120px;

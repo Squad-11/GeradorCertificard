@@ -129,6 +129,7 @@ function generateAddedMedias(){
     const a = document.createElement("a");
     a.href = media.link;
     a.innerText = media.media;
+    a.target = "_blank"
 
     const icon = document.createElement("span");
     icon.classList.add("material-icons-outlined");
@@ -187,7 +188,7 @@ document.getElementById("addSocialMedia").addEventListener("click", (e) => {
   }
 
   if (!validateSocialMedia(selectMedias.value, inputMedia.value)){
-    alert("Link de rede social deve ser um link da rede social escolhida");
+    alert(`Link deve pertencer ao ${selectMedias.value}`);
     return
     }
 
