@@ -219,8 +219,8 @@ input[type="color"] {
     flex-direction: column-reverse;
   }
 
-  .preview {
-    margin-bottom: 20vh;
+  .certificard {
+    margin: auto 2px 20vh;
   }
 
   .tab {

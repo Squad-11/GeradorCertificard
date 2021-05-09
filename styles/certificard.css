@@ -209,3 +209,30 @@ main {
 .added-medias a {
   font-weight: bold;
 }
+
+@media(max-width: 650px) {
+  :root {
+    --containerPadding:100px;
+
+    --headerImgRadius:19px;
+    --headerImageHeight:60px;
+
+    --userImgBorderWidth:4px;
+
+    --certificardRadius:9px;
+    --certificardWidth:500px;
+    --certificardPadding:25px;
+
+    --boxLinksRowGap:5px;
+    --boxLinksVPadding:11px;
+    --boxLinksHPadding:8px;
+
+    --linkRadius:4px;
+    --linkPadding:3px;
+    --linkFontSize:13px;
+
+    --nameFontSize:21px;
+
+    --achievementsTitleFontSize:14px;
+  }
+}
