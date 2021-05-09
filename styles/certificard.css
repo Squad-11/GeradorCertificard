@@ -235,4 +235,9 @@ main {
 
     --achievementsTitleFontSize:14px;
   }
+
+  .social-medias ul img {
+    width: 30px;
+    height: 30px;
+  }
 }
