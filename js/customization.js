@@ -44,12 +44,18 @@ addEventListenerToAll(pickers, "input", (e) => {
   updateCssVariable(variable, e.target.value);
 });
 
-addEventListenerToAll(sliders, "input", (e) =>  updateCssVariable(e.target.dataset.variable, `${e.target.value}px`));
+addEventListenerToAll(sliders, "input", (e) => {
+  const value = e.target.value;
+  const variable = e.target.dataset.variable;
+  const unit = e.target.dataset.unit ?? "px";    
+
+  updateCssVariable(variable, value, unit)
+});
 
 addEventListenerToAll(fileInputs, "change", displaySelectedImage);
 
-function updateCssVariable(variable, value) {
-  document.documentElement.style.setProperty(variable, value);
+function updateCssVariable(variable, value, unit) {  
+  document.documentElement.style.setProperty(variable, `${value}${unit ?? ""}`);
 }
 
 function displaySelectedImage(e) {
