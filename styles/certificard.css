@@ -212,7 +212,7 @@ main {
 
 @media(max-width: 650px) {
   :root {
-    --containerPadding:100px;
+    --containerPadding:120px;
 
     --headerImgRadius:19px;
     --headerImageHeight:60px;
@@ -221,7 +221,7 @@ main {
 
     --certificardRadius:9px;
     --certificardWidth:500px;
-    --certificardPadding:25px;
+    --certificardPadding:10px;
 
     --boxLinksRowGap:5px;
     --boxLinksVPadding:11px;
