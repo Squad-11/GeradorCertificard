@@ -41,10 +41,6 @@ section{
   margin: auto;
 }
 
-:is(.isa, .matheus) .foto-perfil{
-  border: 2px solid #363636;
-}
-
 .redes-sociais{
   display: flex;
   list-style: none;
@@ -61,4 +57,37 @@ section{
  .apresentacao{
    max-width: 50%;
    margin: 0 auto;
+ }
+
+ @media(max-width: 500px) {
+  section{
+    height: 80vh;
+    padding: 0% 4% 2%;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .isa, .matheus{
+    flex-direction: column;
+    background: linear-gradient(0deg, #dbdbdb 2.36%, #f5f5f5 98.8%);
+  }
+  
+  .shinji, .roger{
+    background: linear-gradient(0deg, #e7e7e7 2.36%, #ff6434 98.8%);
+    flex-direction: column-reverse;
+  }
+  
+  .imagens {
+    width: 100%;
+  }
+  
+  .foto-perfil{
+    height: clamp(50px, 40vw, 200px);
+  }
+  
+   .apresentacao{
+     max-width: 80%;
+     margin: 10px auto 0;
+     font-size: 1rem;
+   }
  }
