@@ -40,6 +40,7 @@ main {
   font-size: clamp(14px, 1.5vw, 40px);
   font-family: 'Raleway', sans-serif;
   color: white;
+  cursor: pointer;
 }
 
 .btn-criar {
@@ -94,13 +95,6 @@ p {
   height: clamp(180px, 25vw, 500px);
 }
 
-@media(max-width: 800px) {
-  .explicacao img {
-    margin-left: 5vw;
-    height: clamp(150px, 25vw, 500px);
-  }
-}
-
 .compartilhar {
   background-image: url("/images/background-compartilhar.png");
   background-repeat: no-repeat;
@@ -123,6 +117,78 @@ p {
   margin-top: 10vh;
   margin-bottom: 35vh;
   font-size: 2rem;
+}
+
+@media(max-width: 650px) {
+
+  .opcoes {
+    flex-direction: column-reverse;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .botoes {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .opcoes button {
+    padding: 0 5px;
+    width: clamp(40px, 32vw, 150px);
+    font-size: 0.8rem;
+    height: clamp(40px, 6vh, 150px);
+    margin: 40px 10px 0;
+    justify-content: center;
+  }
+  
+  .btn-criar {
+    margin: 0;
+  }
+  
+  .btn-templates {
+    margin: 0;
+  }
+  
+  .opcoes p {
+    width: 70vw;
+    margin: 15vh auto 0;
+  }
+
+  .explicacao {
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  h3{
+    margin-top: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    width: 100%;
+    padding: 0;
+  }
+  
+  .explicacao img {
+    margin: 40px auto 0;
+    height: clamp(180px, 40vw, 500px);
+  }
+  
+  .compartilhar {
+    font-size: 1.2rem;
+  }
+
+  .compartilhar p {
+    width: 70%;
+    padding: 10px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 footer {
