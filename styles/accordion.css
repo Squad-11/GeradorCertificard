@@ -117,8 +117,7 @@
   margin-bottom: 5px;
 }
 
-.content :is(input, select) {
-  display: inline-block;
+.content :is(input, select) {  
   max-width: 200px;
   width: 200px;
 
@@ -216,6 +215,27 @@ input[type="color"] {
   margin: 0;
   padding: 5px 25px;
   background: #28B8D8;
+}
+
+.pseudo-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  cursor: pointer;  
+  border-radius: 5px;
+  border: 1px solid #28B8D8;
+}
+
+.pseudo-checkbox span{
+  opacity: 0;
+}
+
+.pseudo-checkbox input:checked ~ span{
+  opacity: 1;
 }
 
 @media(max-width: 650px) {
