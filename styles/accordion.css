@@ -212,3 +212,48 @@ input[type="color"] {
   padding: 5px 25px;
   background: #28B8D8;
 }
+
+@media(max-width: 650px) {
+  main{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .preview {
+    margin-bottom: 20vh;
+  }
+
+  .tab {
+    display: block;
+    column-gap: 0px;
+    align-items: center;
+    width: 100%;
+  
+    position: relative;
+    margin: auto;
+  
+    z-index: 3;
+    overflow: hidden;
+
+    position: fixed;
+    margin-top: 70vh;
+
+    border-radius: 10px 10px 0 0;
+  }
+
+  .options.active {
+    height: auto;
+    width: 100%;
+    font-size: 1rem;
+
+    height: 30vh;
+  }
+  
+  .title {
+    font-size: 20px;
+  }
+  
+  button {
+    display: none;
+  }
+}
