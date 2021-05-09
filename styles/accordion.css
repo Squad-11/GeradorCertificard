@@ -37,12 +37,15 @@
   overflow-y: auto;
   pointer-events: none;
   transition: all 0.3s ease-out;
+  /*  */
+  font-size: 0.9rem;
 }
 
 .options.active {
   opacity: 1;
   height: 100%;
-  width: 400px;
+  /* width: 400px; */
+  width: 330px;
   pointer-events: all;
   background: rgb(174, 222, 237);
 }
@@ -81,9 +84,11 @@
   position: relative;
 
   color: #fff;
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size: 1rem;
   cursor: pointer;
-  padding: 20px;
+  /* padding: 20px; */
+  padding: 15px;
   border-radius: 15px;
   background: #28B8D8;
 }
