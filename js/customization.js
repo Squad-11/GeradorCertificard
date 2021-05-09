@@ -44,12 +44,18 @@ addEventListenerToAll(pickers, "input", (e) => {
   updateCssVariable(variable, e.target.value);
 });
 
-addEventListenerToAll(sliders, "input", (e) =>  updateCssVariable(e.target.dataset.variable, `${e.target.value}px`));
+addEventListenerToAll(sliders, "input", (e) => {
+  const value = e.target.value;
+  const variable = e.target.dataset.variable;
+  const unit = e.target.dataset.unit ?? "px";    
+
+  updateCssVariable(variable, value, unit)
+});
 
 addEventListenerToAll(fileInputs, "change", displaySelectedImage);
 
-function updateCssVariable(variable, value) {
-  document.documentElement.style.setProperty(variable, value);
+function updateCssVariable(variable, value, unit) {  
+  document.documentElement.style.setProperty(variable, `${value}${unit ?? ""}`);
 }
 
 function displaySelectedImage(e) {
@@ -181,7 +187,7 @@ document.getElementById("addSocialMedia").addEventListener("click", (e) => {
   }
 
   if (!validateSocialMedia(selectMedias.value, inputMedia.value)){
-    alert("Link de rede social deve ser um link válido");
+    alert("Link de rede social deve ser um link da rede social escolhida");
     return
     }
 
@@ -231,6 +237,19 @@ document.getElementById("removeBgBtn").addEventListener("click", () => {
   document.querySelector(".preview").style.backgroundImage = "";
   document.getElementById("certificardContainer").value = "";
 });
+
+document.getElementById("linkBgCheckbox").addEventListener("change", () => {
+  const links = document.getElementsByClassName("project-links");
+
+  for (let index = 0; index < links.length; index++) {
+    links[index].classList.toggle("no-bg");;    
+  }
+})
+
+document.getElementById("goFullscreen").addEventListener("click", () => {
+  document.querySelector("header").classList.toggle("hide");
+  document.querySelector("footer").classList.toggle("hide");
+})
 
 function validateSocialMedia(media, link){
   if (media == "Facebook" && link.match("fb.com")){
