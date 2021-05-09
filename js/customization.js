@@ -188,7 +188,7 @@ document.getElementById("addSocialMedia").addEventListener("click", (e) => {
   }
 
   if (!validateSocialMedia(selectMedias.value, inputMedia.value)){
-    alert(`Link deve pertencer ao ${selectMedias.value}`);
+    alert(`Este não é um link do ${selectMedias.value} válido`);
     return
     }
 
