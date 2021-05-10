@@ -206,9 +206,10 @@ main {
 
 .social-medias ul {
   display: flex;
-  column-gap: 20px;
+  gap: 20px;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .social-medias ul img {
