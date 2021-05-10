@@ -129,6 +129,7 @@ function generateAddedMedias(){
     const a = document.createElement("a");
     a.href = media.link;
     a.innerText = media.media;
+    a.target = "_blank"
 
     const icon = document.createElement("span");
     icon.classList.add("material-icons-outlined");
@@ -187,7 +188,7 @@ document.getElementById("addSocialMedia").addEventListener("click", (e) => {
   }
 
   if (!validateSocialMedia(selectMedias.value, inputMedia.value)){
-    alert("Link de rede social deve ser um link da rede social escolhida");
+    alert(`Este não é um link do ${selectMedias.value} válido`);
     return
     }
 
@@ -246,9 +247,18 @@ document.getElementById("linkBgCheckbox").addEventListener("change", () => {
   }
 })
 
-document.getElementById("goFullscreen").addEventListener("click", () => {
-  document.querySelector("header").classList.toggle("hide");
-  document.querySelector("footer").classList.toggle("hide");
+document.getElementById("goFullscreen").addEventListener("click", () => {  
+  const certificard = document.querySelector(".certificard");
+  certificard.classList.remove("align-right");
+
+  document.querySelector(".options").classList.remove("active");
+  document.querySelector(".show-tab").classList.remove("invert");
+
+  const preview = document.querySelector(".preview");
+  preview.onfullscreenchange = () => {
+    certificard.classList.toggle("fullscreen"); 
+  }
+  preview.requestFullscreen();
 })
 
 function validateSocialMedia(media, link){
