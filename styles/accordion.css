@@ -227,7 +227,7 @@ input[type="color"] {
   padding: 5px;
   cursor: pointer;  
   border-radius: 5px;
-  border: 1px solid #28B8D8;
+  border: 3px solid #28B8D8;
 }
 
 .pseudo-checkbox span{
