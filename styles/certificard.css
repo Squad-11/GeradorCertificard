@@ -68,6 +68,9 @@ a:visited {
 }
 
 main {
+  display: flex;
+  flex-direction: column;
+
   flex-grow: 1;
   position: relative;
 }
@@ -91,6 +94,7 @@ main {
   justify-content: center;
 
   background-size: cover;
+  flex-grow: 1;
 }
 
 @media (min-width: 1000px) {
