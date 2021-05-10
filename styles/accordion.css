@@ -273,7 +273,10 @@ input[type="color"] {
 
     height: 30vh;
   }
-  
+  .socialTitle {
+    font-size: 10px;
+  }
+
   .title {
     font-size: 20px;
   }
