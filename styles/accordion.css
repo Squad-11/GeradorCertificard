@@ -158,12 +158,12 @@ button {
   text-align: center;
 
   color: #fff;
-  background: #4f9c44;
+  background: #28B8D8;
   border-radius: 9999px;
 }
 
 .show-tab:hover {
-  background: #386f31;
+  background: #229DB9;
 }
 
 input[type="color"] {
