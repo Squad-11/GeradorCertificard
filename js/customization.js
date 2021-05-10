@@ -248,8 +248,17 @@ document.getElementById("linkBgCheckbox").addEventListener("change", () => {
 })
 
 document.getElementById("goFullscreen").addEventListener("click", () => {  
-  document.querySelector(".certificard").classList.remove("align-right");
-  document.querySelector(".preview").requestFullscreen();
+  const certificard = document.querySelector(".certificard");
+  certificard.classList.remove("align-right");
+
+  document.querySelector(".options").classList.remove("active");
+  document.querySelector(".show-tab").classList.remove("invert");
+
+  const preview = document.querySelector(".preview");
+  preview.onfullscreenchange = () => {
+    certificard.classList.toggle("fullscreen"); 
+  }
+  preview.requestFullscreen();
 })
 
 function validateSocialMedia(media, link){
