@@ -135,7 +135,7 @@ if (queryString.length > 0 && templates[queryString]) {
     document.querySelector('.userName').innerHTML = templates[queryString].userName;
     document.querySelector('.achievementsTitle').innerHTML = templates[queryString].achievementTitle;
     addTemplateAchievements();
-    document.querySelector('.user-photo').setAttribute('src', templates[queryString].userPhoto);
+    document.querySelector('.profile-photo').setAttribute('src', templates[queryString].userPhoto);
     document.querySelector('.header-img').setAttribute('src', templates[queryString].headerImg);
     document.documentElement.style.setProperty('--containerbgColor', templates[queryString].bgcolor);
     document.documentElement.style.setProperty('--certificardBg', templates[queryString].bg);
