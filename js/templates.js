@@ -43,7 +43,92 @@ const templates = {
         linkHover: '#2C0C5F',
         linkColor: '#B2155C',
         linkBgColor: '#53C544',
-    }
+    },
+    cook: {
+        userName: '👨‍🍳️ Chef',
+        achievementTitle: 'Minhas Receitas',
+        achievements: { // conquista: ['nome', 'link'],
+            cook1: ['🥖 Pão Caseiro', 'https://www.tudogostoso.com.br/receita/178357-pao-caseiro.html'],
+            cook2: ['🎂 Bolo de Chocolate', 'https://www.tudogostoso.com.br/receita/62547-a-melhor-receita-de-bolo-de-chocolate.html'],
+            cook3: ['🍝 Macarronada', 'https://www.tudogostoso.com.br/receita/57911-macarronada-simples.html'],
+            cook4: ['🥩 Churrasco', 'https://gourmetadois.com/receita/picanha-assada-com-alecrim-75.html'],
+            cook5: ['🍕 Pizza', 'https://gshow.globo.com/RPC/Estudio-C/cozinha-paranaense/receitas/receita-de-massa-caseira-de-pizza.ghtml'],
+        },
+        userPhoto: '/images/templates/cook/cook-profile.svg',
+        headerImg: '/images/templates/cook/cook-banner.svg',
+        bgcolor: '#4D4D4D',
+        bg: '#FAFAFA',
+        boxLinksBg: '#7728A0',
+        nameColor: '#333333',
+        achievementTitleColor: '#000000',
+        linkHover: '#A23ACE',
+        linkColor: '#FAFAFA',
+        linkBgColor: '#7728A0',
+},
+    cinema: {
+        userName: '📽️ Cinéfilo 🍿 ',
+        achievementTitle: 'Filmes Favoritos',
+        achievements: { // conquista: ['nome', 'link'],
+            cinema1: ['🦇 Batman - O Cavaleiro das Trevas', 'https://www.youtube.com/watch?v=zqfz04yCTnE'],
+            cinema2: ['🏀 Space Jam: Um Novo Legado', 'https://www.youtube.com/watch?v=t1m7zl8H-kE'],
+            cinema3: ['🥊 Clube da Luta', 'https://www.youtube.com/watch?v=BdJKm16Co6M'],
+            cinema4: ['😄 Divertida Mente', 'https://www.youtube.com/watch?v=LSpeM7G4zfY'],
+            cinema5: ['🦊 Zootopia', 'https://www.youtube.com/watch?v=prct6AB5tR8'],
+        },
+        userPhoto: '/images/templates/cinema/cinema-profile.svg',
+        headerImg: '/images/templates/cinema/cinema-banner.jpg',
+        bgcolor: '#28B8D8',
+        bg: '#000000',
+        boxLinksBg: '#01057E',
+        nameColor: '#D1D1D1',
+        achievementTitleColor: '#D1D1D1',
+        linkHover: '#01057E',
+        linkColor: '#C2C2C2',
+        linkBgColor: '#0072A3',
+},
+starwars: {
+    userName: 'Anakin ⚔ ',
+    achievementTitle: 'Planetas Visitados',
+    achievements: { // conquista: ['nome', 'link'],
+        starwars1: ['Tatooine', 'https://www.starwars.com/databank/tatooine'],
+        starwars2: ['Geonosis', 'https://www.starwars.com/databank/geonosis'],
+        starwars3: ['Mustafar', 'https://www.starwars.com/databank/mustafar'],
+        starwars4: ['Bespin', 'https://www.starwars.com/databank/bespin'],
+        starwars5: ['Endor', 'https://www.starwars.com/databank/endor'],
+    },
+    userPhoto: '/images/templates/starwars/starwars-profile.svg',
+    headerImg: '/images/templates/starwars/starwars-banner.jpg',
+    bgcolor: '#FCDE04',
+    bg: '#FCDE04',
+    boxLinksBg: '#141518',
+    nameColor: '#141518',
+    achievementTitleColor: '#A3A3A3',
+    linkHover: '#8F7E00',
+    linkColor: '#A3A3A3',
+    linkBgColor: '#1800B8',
+},
+viagem : {
+    userName: 'Viajante ✈️ ',
+    achievementTitle: 'Lugares onde já passei',
+    achievements: { // conquista: ['nome', 'link'],
+        viagem1: ['🌍 Holanda', 'https://www.youtube.com/watch?v=jjjdPk31AOI'],
+        viagem2: ['🌍 Grécia', 'https://www.youtube.com/watch?v=oRqbKjO4I74'],
+        viagem3: ['🌏 Japão', 'https://www.youtube.com/watch?v=5H7s6oPH6zs'],
+        viagem4: ['🌏 Austrália', 'https://www.youtube.com/watch?v=vW7V8cZw8ik'],
+        viagem5: ['🌎 Canadá', 'https://www.youtube.com/watch?v=LxDo1kq2QLQ'],
+    },
+    userPhoto: '/images/templates/viagem/viagem-profile.svg',
+    headerImg: '/images/templates/viagem/viagem-banner.jpg',
+    bgcolor: '#FC6027',
+    bg: '#FEF9F3',
+    boxLinksBg: '#EF653C',
+    nameColor: '#06329F',
+    achievementTitleColor: '#FEF9F3',
+    linkHover: '#FF4300',
+    linkColor: '#FEF9F3',
+    linkBgColor: '#06329F',
+}
+
 }
 
 if (queryString.length > 0 && templates[queryString]) {
@@ -52,8 +137,8 @@ if (queryString.length > 0 && templates[queryString]) {
     addTemplateAchievements();
     document.querySelector('.user-photo').setAttribute('src', templates[queryString].userPhoto);
     document.querySelector('.header-img').setAttribute('src', templates[queryString].headerImg);
-    document.documentElement.style.setProperty('--bgColor', templates[queryString].bgcolor);
-    document.documentElement.style.setProperty('--bg', templates[queryString].bg);
+    document.documentElement.style.setProperty('--containerbgColor', templates[queryString].bgcolor);
+    document.documentElement.style.setProperty('--certificardBg', templates[queryString].bg);
     document.documentElement.style.setProperty('--boxLinksBg', templates[queryString].boxLinksBg);
     document.documentElement.style.setProperty('--nameColor', templates[queryString].nameColor);
     document.documentElement.style.setProperty('--achievementTitleColor', templates[queryString].achievementTitleColor);
