@@ -1,0 +1,93 @@
+body {
+  width: 100%;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  background: linear-gradient(180deg, #008AFF 0%, #ffffff 40%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-size: clamp(14px, 1.5vw, 30px);
+  color: #363636;
+}
+
+section{
+  height: 48vh;
+  display: flex;
+  align-items: center;
+  padding: 0 4%;
+}
+
+.isa, .matheus{
+  background: linear-gradient(111.19deg, #dbdbdb 2.36%, #f5f5f5 98.8%);
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.shinji, .roger{
+  background: linear-gradient(111.19deg, #e7e7e7 2.36%, #ff6434 98.8%);
+  box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.imagens {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.foto-perfil{
+  height: clamp(50px, 25vw, 200px);
+  border-radius: 50%;
+  border: 2px solid #363636;
+  margin: auto;
+}
+
+.redes-sociais{
+  display: flex;
+  list-style: none;
+  column-gap: 10%;
+  justify-content: center;
+  flex-direction: row;
+  padding: 0;
+}
+
+ .redes-sociais img{
+   height:30px;
+ }
+
+ .apresentacao{
+   max-width: 50%;
+   margin: 0 auto;
+ }
+
+ @media(max-width: 500px) {
+  section{
+    height: 80vh;
+    padding: 0% 4% 2%;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .isa, .matheus{
+    flex-direction: column;
+    background: linear-gradient(0deg, #dbdbdb 2.36%, #f5f5f5 98.8%);
+  }
+  
+  .shinji, .roger{
+    background: linear-gradient(0deg, #e7e7e7 2.36%, #ff6434 98.8%);
+    flex-direction: column-reverse;
+  }
+  
+  .imagens {
+    width: 100%;
+  }
+  
+  .foto-perfil{
+    height: clamp(50px, 40vw, 200px);
+  }
+  
+   .apresentacao{
+     max-width: 80%;
+     margin: 10px auto 0;
+     font-size: 1rem;
+   }
+ }

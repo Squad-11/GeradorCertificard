@@ -1,0 +1,19 @@
+footer {
+  height: clamp(20px, 4vh, 40px);
+  bottom: 0;
+  padding: 10px 0 20px;
+}
+
+.footer-frase {
+  text-align: center;
+  color: white;
+  margin: 0;
+  width: 100%;
+  font-size: clamp(15px, 0.8em, 20px);
+}
+
+.footer {
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(180deg, #5c5c5c -20%, #008AFF 40%);
+  box-sizing:content-box;
+}

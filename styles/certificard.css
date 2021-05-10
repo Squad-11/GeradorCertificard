@@ -1,0 +1,258 @@
+:root {
+  --containerbgColor: #fff;
+  --containerPadding: 50px;
+
+  --headerImgRadius: 50px;
+  --headerImageHeight: 200px;
+
+  --userImgSize: 100px;
+  --userImgRadius: 50%;
+  --userImgBorderWidth: 0px;
+  --userImgBorderColor: #fff;
+
+  --certificardRadius: 15px;
+  --certificardWidth: 800px;
+  --certificardPadding: 50px;
+  --certificardBg: #57A3F4;
+
+  --boxLinksRadius: 15px;
+  --boxLinksRowGap: 10px;
+  --boxLinksBg: #4d7ab4;
+  --boxLinksVPadding: 30px;
+  --boxLinksHPadding: 30px;
+
+  --linkRadius: 10px;
+  --linkPadding: 5px;
+  --linkColor: #fff;
+  --linkFontSize: 18px;
+  --linkHover: #0C6388;
+  --linkBgColor: #40AFD4;
+
+  --nameColor: black;
+  --nameFontSize: 32px;
+
+  --achievementTitleMargin: 20px;
+  --achievementTitleColor: black;
+  --achievementsTitleFontSize: 30px;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+*{
+  outline: none;
+  transition: all 250ms ease-out;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {  
+    text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #fff;
+}
+
+.hide{
+  display: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+
+  flex-grow: 1;
+  position: relative;
+}
+
+#goFullscreen{
+  position: absolute;
+  top: 15px;
+  right: 30px;  
+  z-index: 4;
+  cursor: pointer;
+
+  filter: invert(1);
+  color: var(--containerbgColor);
+}
+
+.preview {
+  background-color: var(--containerbgColor);
+  padding: calc(var(--containerPadding) + var(--userImgSize) / 2) 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-size: cover;
+  flex-grow: 1;
+}
+
+@media (min-width: 1000px) {
+  .certificard.align-right {
+    margin-left: 20%;
+  }
+}
+
+.certificard {
+  width: var(--certificardWidth);
+  max-width: 1000px;
+
+  position: relative;
+
+  background: var(--certificardBg);
+
+  border-radius: var(--certificardRadius);
+  padding: var(--certificardPadding);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.certificard.fullscreen{
+  transform: scale(.7);
+}
+
+.certificard .user-photo {
+  position: absolute;
+  left: 50%;
+  top: 0;
+
+  width: var(--userImgSize);
+  height: var(--userImgSize);
+  border-radius: var(--userImgRadius);
+  transform: translate(-50%, -50%);
+
+  border: var(--userImgBorderWidth) solid var(--userImgBorderColor);
+}
+
+.certificard .user-photo img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  border-radius: var(--userImgRadius);
+}
+
+.certificard .header-img {
+  width: 100%;
+  height: var(--headerImageHeight);
+
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: var(--headerImgRadius);
+}
+
+.certificard h1 {
+  text-align: center;
+  margin: 10px 0 20px;
+  color: var(--nameColor);
+  font-size: var(--nameFontSize);
+}
+
+.container {
+  padding: var(--boxLinksVPadding) var(--boxLinksHPadding);
+  margin-bottom: 10px;
+  border-radius: var(--boxLinksRadius);
+  background: var(--boxLinksBg);
+}
+
+.container h2 {
+  margin: 0;
+  text-align: center;
+  margin-bottom: var(--achievementTitleMargin);
+  color: var(--achievementTitleColor);
+  font-size: var(--achievementsTitleFontSize);
+}
+
+.links ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: calc(var(--boxLinksRowGap) + var(--linkPadding) * 2);
+}
+
+.project-links {
+  color: var(--linkColor);
+  padding: var(--linkPadding);
+  font-size: var(--linkFontSize);
+  background-color: var(--linkBgColor);
+
+  font-weight: bold;  
+  border-radius: var(--linkRadius);
+}
+
+.project-links.no-bg{
+  background-color: transparent;
+}
+
+.project-links:hover {
+  background: var(--linkHover);
+}
+
+.project-links:link {  
+  color: var(--linkColor);
+}
+
+.project-links:visited {
+  color: var(--linkColor);
+}
+
+.social-medias ul {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social-medias ul img {
+  width: 50px;
+  height: 50px;
+}
+
+.social-medias ul.black-white img {
+  filter: grayscale(100%);
+}
+
+@media(max-width: 650px) {
+  :root {
+    --containerPadding:120px;
+
+    --headerImgRadius:19px;
+    --headerImageHeight:60px;
+
+    --userImgBorderWidth:4px;
+
+    --certificardRadius:9px;
+    --certificardWidth:500px;
+    --certificardPadding:10px;
+
+    --boxLinksRowGap:5px;
+    --boxLinksVPadding:11px;
+    --boxLinksHPadding:8px;
+
+    --linkRadius:4px;
+    --linkPadding:3px;
+    --linkFontSize:13px;
+
+    --nameFontSize:21px;
+
+    --achievementsTitleFontSize:14px;
+  }
+
+  .social-medias ul img {
+    width: 30px;
+    height: 30px;
+  }
+
+  #goFullscreen{
+    display: none;
+  }
+}
