@@ -134,10 +134,6 @@
   margin-bottom: 10px;
 }
 
-.content input[type="checkbox"] {
-  width: auto;
-}
-
 form{
   margin-bottom: 20px;
 }
@@ -202,12 +198,12 @@ input[type="color"] {
   cursor: pointer;
 }
 
-.added-medias a {
+:is(.added-medias, .added-achievements) a {
   color: #000;
   font-weight: bold;
 }
 
-.added-medias a:visited {
+:is(.added-medias, .added-achievements) a:visited {
   color: #000;
 }
 

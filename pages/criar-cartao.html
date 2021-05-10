@@ -6,33 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerador de CertifiCard</title>
-    <link rel="shortcut icon" href="/images/FavIcon.png"/>
+    <link rel="shortcut icon" href="/images/FavIcon.png" />
     <link rel="stylesheet" href="/styles/reset.css">
     <link rel="stylesheet" href="/styles/accordion.css">
     <link rel="stylesheet" href="/styles/certificard.css">
     <link rel="stylesheet" href="/styles/nav.css">
     <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="/styles/globals.css">
+
     <link
         href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
         rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;800&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="/images/FavIcon.png"/>
 </head>
 
-<body class="body">
-    <header class="header">
+<body>
+    <header>
         <a class="link-logo" href="/pages/home-page.html">
-        <img class="logo" src="/images/logoNome.png" alt="Logo do site"></a>
+            <img class="logo" src="/images/logoNome.png" alt="Logo do site">
+        </a>
         <input type="checkbox" id="bt-menu">
         <label for="bt-menu" class="label">&#9776;</label>
-   
+
         <nav class="nav-header">
             <ul>
                 <li><a href="/pages/criar-cartao.html">Criar</a></li>
                 <li><a href="/pages/templates.html">Templates</a></li>
-                <li><a href="/pages/about-us.html">About Us</a></li>
+                <li><a href="/pages/about-us.html">Sobre nós</a></li>
             </ul>
         </nav>
     </header>
@@ -42,7 +43,7 @@
 
         <div class="tab">
 
-            <div class="options active options-mobile">
+            <div class="options active">
 
                 <div class="wrapper">
                     <div class="title">
@@ -64,7 +65,7 @@
                         <div class="group">
                             <label for="nameFontSize">Font Size</label>
                             <input type="range" min="10" max="72" value="32" data-variable="--nameFontSize"
-                                class="slider" id="nameFontSize">
+                                id="nameFontSize">
                         </div>
 
                     </div>
@@ -90,18 +91,18 @@
                         <div class="group">
                             <label for="achievementsTitleFontSize">Font Size</label>
                             <input type="range" min="10" max="64" value="30" data-variable="--achievementsTitleFontSize"
-                                class="slider" id="achievementsTitleFontSize">
+                                id="achievementsTitleFontSize">
                         </div>
 
                         <div class="group">
                             <label for="titleMargin">Margem abaixo</label>
                             <input type="range" min="0" max="40" value="20" data-variable="--achievementTitleMargin"
-                                class="slider" id="titleMargin">
+                                id="titleMargin">
                         </div>
                     </div>
 
                 </div>
-                
+
                 <div class="wrapper">
                     <div class="title">
                         <span class="material-icons arrow"> expand_more </span>
@@ -131,28 +132,27 @@
                         <div class="group">
                             <label for="linkBgCheckbox">Sem fundo</label>
 
-                            <label for="linkBgCheckbox" class="pseudo-checkbox">                                
+                            <label for="linkBgCheckbox" class="pseudo-checkbox">
                                 <input type="checkbox" class="hide" id="linkBgCheckbox" hidden>
                                 <span class="material-icons-outlined"> done </span>
-                            </label>                            
+                            </label>
                         </div>
 
                         <div class="group">
                             <label for="linkFontSize">Font Size</label>
                             <input type="range" min="10" max="50" value="18" data-variable="--linkFontSize"
-                                class="slider" id="linkFontSize">
+                                id="linkFontSize">
                         </div>
 
                         <div class="group">
                             <label for="LinkPadding">Espaçamento interno</label>
                             <input type="range" min="0" max="20" value="5" data-variable="--linkPadding"
-                                class="slider" id="LinkPadding">
+                                id="LinkPadding">
                         </div>
 
                         <div class="group">
                             <label for="linkRadius">Radius</label>
-                            <input type="range" min="0" max="50" value="8" data-variable="--linkRadius" class="slider"
-                                id="linkRadius">
+                            <input type="range" min="0" max="50" value="8" data-variable="--linkRadius" id="linkRadius">
                         </div>
 
                         <form id="achievementForm">
@@ -171,7 +171,7 @@
                         <ul class="added-achievements"> </ul>
                     </div>
                 </div>
-                
+
                 <div class="wrapper">
                     <div class="title">
                         <span class="material-icons arrow"> expand_more </span>
@@ -182,25 +182,26 @@
                     <div class="content">
                         <div class="group">
                             <label for="profilePhotoInput">Escolher imagem</label>
-                            <input type="file" id="profilePhotoInput" accept="image/*" data-element-class="user-photo img">
+                            <input type="file" id="profilePhotoInput" accept="image/*"
+                                data-element-class="user-photo img">
                         </div>
 
                         <div class="group">
                             <label for="profilePhotoRadius">Radius</label>
                             <input type="range" min="0" max="50" value="50" data-variable="--userImgRadius"
-                                 data-unit="%" class="slider" id="profilePhotoRadius">
+                                data-unit="%" id="profilePhotoRadius">
                         </div>
 
                         <div class="group">
                             <label for="borderWidth">Borda</label>
                             <input type="range" min="0" max="20" value="0" data-variable="--userImgBorderWidth"
-                                class="slider" id="borderWidth">
+                                id="borderWidth">
                         </div>
 
                         <div class="group">
                             <label for="imgSize">Tamanho</label>
                             <input type="range" min="0" max="200" value="100" data-variable="--userImgSize"
-                                class="slider" id="imgSize">
+                                id="imgSize">
                         </div>
 
                         <div class="group">
@@ -210,7 +211,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="wrapper">
                     <div class="title">
                         <span class="material-icons arrow"> expand_more </span>
@@ -228,18 +229,18 @@
                         <div class="group">
                             <label for="tamanhoImagemCertificard">Tamanho</label>
                             <input type="range" min="0" max="200" value="200" data-variable="--headerImageHeight"
-                                class="slider" id="tamanhoImagemCertificard">
+                                id="tamanhoImagemCertificard">
                         </div>
 
                         <div class="group">
                             <label for="imagemCertificardRadius">Radius</label>
                             <input type="range" min="0" max="50" value="50" data-variable="--headerImgRadius"
-                                class="slider" id="imagemCertificardRadius">
+                                id="imagemCertificardRadius">
                         </div>
 
                     </div>
                 </div>
-                
+
                 <div class="wrapper">
                     <div class="title">
                         <span class="material-icons arrow">expand_more</span>
@@ -267,14 +268,14 @@
                         <div class="group">
                             <label for="filter">Icones preto e branco</label>
 
-                            <label for="filter" class="pseudo-checkbox">                                
+                            <label for="filter" class="pseudo-checkbox">
                                 <input type="checkbox" class="hide" id="filter" hidden>
                                 <span class="material-icons-outlined"> done </span>
                             </label>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="wrapper">
                     <div class="title">
                         <span class="material-icons arrow"> expand_more </span>
@@ -287,14 +288,14 @@
 
                             <label for="boxLinksVPadding">Espaçamento vertical</label>
                             <input type="range" min="0" max="40" value="30" data-variable="--boxLinksVPadding"
-                                class="slider" id="BoxLinksVPadding">
+                                id="BoxLinksVPadding">
                         </div>
 
                         <div class="group">
 
                             <label for="boxLinksHPadding">Espaçamento horizontal</label>
                             <input type="range" min="0" max="40" value="30" data-variable="--boxLinksHPadding"
-                                class="slider" id="BoxLinksHPadding">
+                                id="BoxLinksHPadding">
                         </div>
 
                         <div class="group">
@@ -306,13 +307,13 @@
                         <div class="group">
                             <label for="boxLinksRadius">Radius</label>
                             <input type="range" min="0" max="50" value="10" data-variable="--boxLinksRadius"
-                                class="slider" id="boxLinksRadius">
+                                id="boxLinksRadius">
                         </div>
 
                         <div class="group">
                             <label for="linksRowGap">Espaço entre links</label>
                             <input type="range" min="0" max="30" value="10" data-variable="--boxLinksRowGap"
-                                class="slider" id="linksRowGap">
+                                id="linksRowGap">
                         </div>
                     </div>
 
@@ -328,7 +329,7 @@
                     <div class="content">
                         <div class="group">
                             <label for="BoxPadding">Espaçamento interno</label>
-                            <input type="range" min="0" max="100" value="50" data-variable="--certificardPadding" class="slider"
+                            <input type="range" min="0" max="100" value="50" data-variable="--certificardPadding"
                                 id="BoxPadding">
                         </div>
 
@@ -340,13 +341,13 @@
 
                         <div class="group">
                             <label for="cardRadius">Radius</label>
-                            <input type="range" min="0" max="50" value="10" data-variable="--certificardRadius" class="slider"
+                            <input type="range" min="0" max="50" value="10" data-variable="--certificardRadius"
                                 id="cardRadius">
                         </div>
 
                         <div class="group">
                             <label for="cardWidth">Largura</label>
-                            <input type="range" min="500" max="1000" value="800" data-variable="--certificardWidth" class="slider"
+                            <input type="range" min="500" max="1000" value="800" data-variable="--certificardWidth"
                                 id="cardWidth">
                         </div>
                     </div>
@@ -382,7 +383,7 @@
 
                         <div class="group">
                             <label for="containerPadding">Espaçamento interno</label>
-                            <input type="range" min="0" max="100" value="50" data-variable="--containerPadding" class="slider"
+                            <input type="range" min="0" max="100" value="50" data-variable="--containerPadding"
                                 id="containerPadding">
                         </div>
                     </div>
@@ -395,7 +396,7 @@
         <div class="preview">
             <div class="certificard align-right">
                 <div class="user-photo">
-                    <img class="profile-photo" src="/images/woman-profile.svg">                    
+                    <img class="profile-photo" src="/images/woman-profile.svg">
                 </div>
 
                 <img class="header-img" src="/images/header-banner.jpg">
@@ -418,7 +419,7 @@
 
                 <div class="container social-medias">
                     <ul>
-                        <li class="socialTitle" style="font-weight: bold;" >Aqui estão suas redes sociais</li>
+                        <li class="socialTitle" style="font-weight: bold;">Aqui estão suas redes sociais</li>
                     </ul>
                 </div>
             </div>
