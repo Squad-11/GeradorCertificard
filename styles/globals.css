@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  color: #363636;
+  font-size: clamp(14px, 1.5vw, 30px);
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background: linear-gradient(180deg, #008aff 0%, #ffffff 40%);
+}
+
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}

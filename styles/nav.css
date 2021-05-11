@@ -1,16 +1,7 @@
-.body {
-  width: 100%;
-  margin: 0;
-  font-family: 'Raleway', sans-serif;
-  background: linear-gradient(180deg, #008AFF 0%, #ffffff 40%);
-}
-
 header {
-  width: 100%;
   height: 8vh;
   display: flex;
   justify-content: space-between;
-  font-size:  "Raleway", sans-serif;
 }
 
 .logo {
@@ -19,22 +10,16 @@ header {
   margin: auto 10px;
 }
 
-.link-logo {
-  padding: 0;
-}
-
 nav {
-  display:flex;
+  display: flex;
   align-items: center;
 }
 
 nav a {
-  text-decoration: none;
-  font-size: clamp(15px, 1.4vw, 30px);
-  color: white !important;
   padding: 1vh 1.5vw;
+  color: white !important;
+  font-size: clamp(15px, 1.4vw, 30px);
 }
-
 
 nav a:hover {
   background-color: #ffffff31;
@@ -46,20 +31,10 @@ nav ul {
   list-style: none;
   padding: 0;
   display: flex;
-  flex-direction: row;
 }
 
-nav ul li {
-  display: block;
+nav ul li {  
   padding: 0 2.5vw;
-}
-
-header a{
-  font-weight: normal;
-  }
-
-header a img{
-  width: 120px;
 }
 
 /* Menu-hamburguer */
@@ -76,8 +51,6 @@ label[for="bt-menu"] {
   border-radius: 5px;
   color: white;
   font-size: 1.5rem;
-  text-align: center;
-  justify-content: center;
 
   display: none;
 }
@@ -91,15 +64,13 @@ label[for="bt-menu"] {
   display: none;
 }
 
-@media(max-width: 800px) {
-
+@media (max-width: 800px) {
   label[for="bt-menu"] {
     display: block;
   }
+
   .nav-header {
     transform: translateY(-200%);
-    margin-right: 0;
-    margin-top: 0;
   }
 
   nav ul {
@@ -107,30 +78,24 @@ label[for="bt-menu"] {
   }
 
   .nav-header ul li {
-    width: 100%;
     padding: 10% 0;
   }
 
   #bt-menu:checked ~ .nav-header {
     transform: translateY(0);
 
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: auto;
-    background-color: white;
-    background: linear-gradient(180deg, #008AFF 0%, #3ca3fd 100%);
-    transition: transform 0.4s;
-    list-style: none;
-    padding: 16% 2% 2% 2%;
-    text-align: right;
-    border-radius: 0px 0px 0px 8px;
-    margin: 0;
-    z-index: 5;
     display: block;
-  }
+    position: fixed; 
+    top: 0;   
+    right: 0;        
 
-  header {
-    max-height: 65px;
+    z-index: 5;
+    text-align: right;
+    padding: 2%;
+    padding-top: 10%;
+    
+    transition: transform 0.4s;    
+    border-radius: 0px 0px 0px 8px;    
+    background: linear-gradient(180deg, #008aff 0%, #3ca3fd 100%);
   }
 }

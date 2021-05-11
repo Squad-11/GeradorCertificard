@@ -1,23 +1,5 @@
-body {
-  width: 100%;
-  margin: 0;
-  font-family: 'Raleway', sans-serif;
-  background: linear-gradient(180deg, #008AFF 0%, #eeeeee 30%, #eeeeee 70%, #008AFF 100%);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  font-size: clamp(14px, 1.5vw, 30px);
-  color: #363636;
-}
-
-
-main {
-  display: block;
-}
-
 .conteudo {
-  display: flex;
-  flex-direction: row;
+  display: flex;  
   flex-wrap: wrap;
   align-items: center;
   background-color: #eeeeee;
@@ -27,18 +9,25 @@ main {
   justify-content: center;
   box-shadow: 0 15px 35px rgb(50 50 93 / 10%), 0 5px 15px rgb(0 0 0 / 7%);
 }
-
+ 
 .template {
   display: flex;
-  background-color: #bbbbbb7a;
-  border: 2px solid #aaaaaa;
-  width: clamp(400px, 40%, 800px);
-  height: 160px;
-  text-decoration: none;
-  padding: 1%;
+  column-gap: 10px;
+
   margin: 3%;
+  padding: 1%;
+  height: 160px;  
+  width: clamp(400px, 40%, 800px);
+
   border-radius: 5px;
+  border: 2px solid #aaaaaa;
+  background-color: #bbbbbb7a;
   box-shadow: 0 15px 35px rgb(50 50 93 / 10%), 0 5px 15px rgb(0 0 0 / 7%);
+}
+
+.template:hover {
+  border-color: black;
+  background-color: #e4e4e4;
 }
 
 .template div {
@@ -61,17 +50,13 @@ p {
 
 .template img {
   width: 35%;
-}
-
-.template:hover {
-  background-color: #e4e4e4;
-  border: 2px solid black;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 @media(max-width: 1060px) {
   .template {
-    width: 90%;
-    height: auto;
+    width: 90%;    
   }
 
   .template div {
@@ -80,8 +65,7 @@ p {
   }
 
   .template img {
-    width: 40%;
-    height: auto;
+    width: 40%;    
   }
 
   p {
