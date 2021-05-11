@@ -109,7 +109,7 @@ p {
 @media (max-width: 650px) {
   .explicacao,
   .compartilhar {
-    height: 60vh;
+    height: 70vh;
   }
 
   .opcoes {
@@ -146,6 +146,11 @@ p {
     font-size: 1rem;
   }
   
+  .explicacao img {
+    margin: 10px auto 0;
+    height: clamp(180px, 40vw, 500px);
+  }
+
   h3,
   .compartilhar h3 {
     margin-top: 10px;
@@ -156,12 +161,7 @@ p {
   p {
     width: 100%;
     padding: 0;
-  }
-
-  .explicacao img {
-    margin: 40px auto 0;
-    height: clamp(180px, 40vw, 500px);
-  }
+  }  
 
   .compartilhar {
     font-size: 1.2rem;
