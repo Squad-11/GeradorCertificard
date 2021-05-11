@@ -257,7 +257,7 @@ input[type="color"] {
     overflow: hidden;
 
     position: fixed;
-    margin-top: 70vh;
+    margin-top: 60vh;
 
     border-radius: 10px 10px 0 0;
   }
@@ -267,7 +267,7 @@ input[type="color"] {
     width: 100%;
     font-size: 1rem;
 
-    height: 30vh;
+    height: 40vh;
   }
   .socialTitle {
     font-size: 10px;
