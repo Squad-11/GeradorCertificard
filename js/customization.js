@@ -78,7 +78,7 @@ function renderMediaIcons(){
   for (let index = 0; index < user.socialMedias.length; index++) {
     const element = user.socialMedias[index];
     socialMediasContainer.innerHTML += `<li><a href=${element.link} target="_blank">
-    <img src="/images/social/${element.media.toLowerCase()}.svg"></a></li>`
+    <img src="../images/social/${element.media.toLowerCase()}.svg"></a></li>`
   }
 }
 
@@ -99,6 +99,7 @@ function generateAddedAchievements(){
     const a = document.createElement("a");
     a.href = project.link;
     a.innerText = project.name;
+    a.target = "_blank";
 
     const icon = document.createElement("span");
     icon.classList.add("material-icons-outlined");
@@ -152,14 +153,15 @@ function generateAddedMedias(){
 
 function generateLinks(){
   const linkList = document.getElementById("socialLinks");
-  linkList.innerHTML = "";  
+  linkList.innerHTML = "";
+  const noBgCheckbox = document.getElementById("linkBgCheckbox");  
 
   for (let index = 0; index < user.projects.length; index++) {
     const project = user.projects[index];
     
     linkList.innerHTML += `
     <li>
-        <a class="project-links" href="${project.link}" target="_blank">
+        <a class="project-links ${noBgCheckbox.checked ? "no-bg" : ""}" href="${project.link}" target="_blank">
         ${project.name}
         </a>
     </li>`;

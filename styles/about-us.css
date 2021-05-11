@@ -1,17 +1,4 @@
-body {
-  width: 100%;
-  margin: 0;
-  font-family: 'Raleway', sans-serif;
-  background: linear-gradient(180deg, #008AFF 0%, #ffffff 40%);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  font-size: clamp(14px, 1.5vw, 30px);
-  color: #363636;
-}
-
-section{
+section {
   height: 48vh;
   display: flex;
   align-items: center;
@@ -29,7 +16,7 @@ section{
 }
 
 .imagens {
-  width: 30%;
+  width: min(100%, 200px);  
   display: flex;
   flex-direction: column;
 }
@@ -43,11 +30,11 @@ section{
 
 .redes-sociais{
   display: flex;
-  list-style: none;
-  column-gap: 10%;
+  column-gap: 10%;  
   justify-content: center;
-  flex-direction: row;
+
   padding: 0;
+  list-style: none;
 }
 
  .redes-sociais img{
@@ -55,14 +42,14 @@ section{
  }
 
  .apresentacao{
-   max-width: 50%;
+   width: 50%;
    margin: 0 auto;
  }
 
  @media(max-width: 500px) {
   section{
-    height: 80vh;
-    padding: 0% 4% 2%;
+    height: auto;
+    padding: 20px 0;
     text-align: center;
     justify-content: center;
   }
@@ -77,16 +64,12 @@ section{
     flex-direction: column-reverse;
   }
   
-  .imagens {
-    width: 100%;
-  }
-  
   .foto-perfil{
     height: clamp(50px, 40vw, 200px);
   }
   
    .apresentacao{
-     max-width: 80%;
+     width: 80%;
      margin: 10px auto 0;
      font-size: 1rem;
    }

@@ -134,10 +134,6 @@
   margin-bottom: 10px;
 }
 
-.content input[type="checkbox"] {
-  width: auto;
-}
-
 form{
   margin-bottom: 20px;
 }
@@ -202,12 +198,12 @@ input[type="color"] {
   cursor: pointer;
 }
 
-.added-medias a {
+:is(.added-medias, .added-achievements) a {
   color: #000;
   font-weight: bold;
 }
 
-.added-medias a:visited {
+:is(.added-medias, .added-achievements) a:visited {
   color: #000;
 }
 
@@ -261,7 +257,7 @@ input[type="color"] {
     overflow: hidden;
 
     position: fixed;
-    margin-top: 70vh;
+    margin-top: 60vh;
 
     border-radius: 10px 10px 0 0;
   }
@@ -271,9 +267,12 @@ input[type="color"] {
     width: 100%;
     font-size: 1rem;
 
-    height: 30vh;
+    height: 40vh;
   }
-  
+  .socialTitle {
+    font-size: 10px;
+  }
+
   .title {
     font-size: 20px;
   }
