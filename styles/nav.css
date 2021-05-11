@@ -92,7 +92,7 @@ label[for="bt-menu"] {
     z-index: 5;
     text-align: right;
     padding: 2%;
-    padding-top: 10%;
+    padding-top: 16%;
     
     transition: transform 0.4s;    
     border-radius: 0px 0px 0px 8px;    
