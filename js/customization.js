@@ -99,6 +99,7 @@ function generateAddedAchievements(){
     const a = document.createElement("a");
     a.href = project.link;
     a.innerText = project.name;
+    a.target = "_blank";
 
     const icon = document.createElement("span");
     icon.classList.add("material-icons-outlined");
