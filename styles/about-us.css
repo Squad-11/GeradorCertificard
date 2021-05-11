@@ -48,7 +48,8 @@ section {
 
  @media(max-width: 500px) {
   section{
-    height: 80vh;    
+    height: auto;
+    padding: 20px 0;
     text-align: center;
     justify-content: center;
   }
