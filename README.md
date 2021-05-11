@@ -1,4 +1,8 @@
-# ShowYou
+<h1 align="center">
+    <a href="https://squad-11.github.io/GeradorCertificard/pages/home-page.html">
+      ShowYou
+    </a>
+</h1>
 
 <div align="center">
   <img src=".github/ShowYou-github.PNG" alt="ShowYou GitHub">
@@ -14,6 +18,7 @@ Seja o protagonista da sua história. ShowYou foi desenvolvido para você se mos
    * [Sobre](#sobre)
    * [Tabela de conteúdos](#tabela-de-conteúdos)
    * [Hackathon FCamara](#hackathon-fcamara)
+   * [Funcionalidades](#funcionalidades)
    * [Tecnologias](#tecnologias)
    * [Como rodar](#como-rodar)
    * [Contribuidores](#contribuidores)
@@ -28,7 +33,13 @@ Este projeto foi desenvolvido durante o Hackathon da FCamara em parceria com a A
 A proposta deste desafio era pegar um dos projetos desenvolvidos durante a ImersãoDev Alura, e melhorá-lo propondo uma nova solução para seu projeto. Nossa equipe escolheu o Gerador de Certificado e criamos o ShowYou.
 </div>
 
-## Funcionalidades
+<div id="funcionalidades">
+
+## ✍️ Funcionalidades
+
+- [Youtube - Funcionalidades](https://www.youtube.com/watch?v=2EZApKzDp_4)
+
+</div>
 
 <div id="tecnologias">
 
@@ -71,6 +82,11 @@ $ git clone https://github.com/Squad-11/GeradorCertificard.git && cd geradorcert
 
 #Pronto, nossa página estará rodando no seu navegador!
 ```
+
+**Caso queira acessar via GitHub Pages:**
+
+- [ShowYou - Homepage](https://squad-11.github.io/GeradorCertificard/pages/home-page.html)
+
 </div>
 
 <div id="contribuidores">
