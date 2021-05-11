@@ -152,14 +152,15 @@ function generateAddedMedias(){
 
 function generateLinks(){
   const linkList = document.getElementById("socialLinks");
-  linkList.innerHTML = "";  
+  linkList.innerHTML = "";
+  const noBgCheckbox = document.getElementById("linkBgCheckbox");  
 
   for (let index = 0; index < user.projects.length; index++) {
     const project = user.projects[index];
     
     linkList.innerHTML += `
     <li>
-        <a class="project-links" href="${project.link}" target="_blank">
+        <a class="project-links ${noBgCheckbox.checked ? "no-bg" : ""}" href="${project.link}" target="_blank">
         ${project.name}
         </a>
     </li>`;
