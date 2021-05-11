@@ -213,6 +213,11 @@ main {
   filter: grayscale(100%);
 }
 
+.socialTitle {
+  color: #000;
+  font-weight: bold;
+}
+
 @media (max-width: 650px) {
   :root {
     --containerPadding: 120px;
