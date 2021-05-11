@@ -11,8 +11,8 @@ const templates = {
             dev4: ['📷 GitHub', 'https://github.com/'],
             dev5: ['📞 Discord', 'https://discord.com/'],
         },
-        userPhoto: '/images/templates/dev/dev-profile.svg',
-        headerImg: '/images/templates/dev/dev-banner.jpg',
+        userPhoto: '../images/templates/dev/dev-profile.svg',
+        headerImg: '../images/templates/dev/dev-banner.jpg',
         bgcolor: '#FFCB31',
         bg: '#6A92D7',
         boxLinksBg: '#635A6D',
@@ -33,8 +33,8 @@ const templates = {
             gamer4: ['⚓ Return of the Obra Dinn', 'https://www.youtube.com/watch?v=ILolesm8kFY'],
             gamer5: ['👨‍💻️ *Announcement - Game Builder Garage', 'https://www.youtube.com/watch?v=0yM3ppz0Zt8'],
         },
-        userPhoto: '/images/templates/gamer/gamer-profile.svg',
-        headerImg: '/images/templates/gamer/gamer-banner.jpg',
+        userPhoto: '../images/templates/gamer/gamer-profile.svg',
+        headerImg: '../images/templates/gamer/gamer-banner.jpg',
         bgcolor: '#6012A1',
         bg: '#36374F',
         boxLinksBg: '#3F1A84',
@@ -54,8 +54,8 @@ const templates = {
             cook4: ['🥩 Churrasco', 'https://gourmetadois.com/receita/picanha-assada-com-alecrim-75.html'],
             cook5: ['🍕 Pizza', 'https://gshow.globo.com/RPC/Estudio-C/cozinha-paranaense/receitas/receita-de-massa-caseira-de-pizza.ghtml'],
         },
-        userPhoto: '/images/templates/cook/cook-profile.svg',
-        headerImg: '/images/templates/cook/cook-banner.svg',
+        userPhoto: '../images/templates/cook/cook-profile.svg',
+        headerImg: '../images/templates/cook/cook-banner.svg',
         bgcolor: '#4D4D4D',
         bg: '#FAFAFA',
         boxLinksBg: '#7728A0',
@@ -75,8 +75,8 @@ const templates = {
             cinema4: ['😄 Divertida Mente', 'https://www.youtube.com/watch?v=LSpeM7G4zfY'],
             cinema5: ['🦊 Zootopia', 'https://www.youtube.com/watch?v=prct6AB5tR8'],
         },
-        userPhoto: '/images/templates/cinema/cinema-profile.svg',
-        headerImg: '/images/templates/cinema/cinema-banner.jpg',
+        userPhoto: '../images/templates/cinema/cinema-profile.svg',
+        headerImg: '../images/templates/cinema/cinema-banner.jpg',
         bgcolor: '#28B8D8',
         bg: '#000000',
         boxLinksBg: '#01057E',
@@ -96,8 +96,8 @@ starwars: {
         starwars4: ['Bespin', 'https://www.starwars.com/databank/bespin'],
         starwars5: ['Endor', 'https://www.starwars.com/databank/endor'],
     },
-    userPhoto: '/images/templates/starwars/starwars-profile.svg',
-    headerImg: '/images/templates/starwars/starwars-banner.jpg',
+    userPhoto: '../images/templates/starwars/starwars-profile.svg',
+    headerImg: '../images/templates/starwars/starwars-banner.jpg',
     bgcolor: '#FCDE04',
     bg: '#FCDE04',
     boxLinksBg: '#141518',
@@ -117,8 +117,8 @@ viagem : {
         viagem4: ['🌏 Austrália', 'https://www.youtube.com/watch?v=vW7V8cZw8ik'],
         viagem5: ['🌎 Canadá', 'https://www.youtube.com/watch?v=LxDo1kq2QLQ'],
     },
-    userPhoto: '/images/templates/viagem/viagem-profile.svg',
-    headerImg: '/images/templates/viagem/viagem-banner.jpg',
+    userPhoto: '../images/templates/viagem/viagem-profile.svg',
+    headerImg: '../images/templates/viagem/viagem-banner.jpg',
     bgcolor: '#FC6027',
     bg: '#FEF9F3',
     boxLinksBg: '#EF653C',
@@ -162,18 +162,18 @@ function addSocialIcons() {
     socialLinks.innerHTML = 
     `<ul>
     <li><a href="#">
-    <img src="/images/social/github.svg"></a></li>
+    <img src="../images/social/github.svg"></a></li>
     <li><a href="#">
-    <img src="/images/social/instagram.svg"></a></li>
+    <img src="../images/social/instagram.svg"></a></li>
     <li><a href="#">
-    <img src="/images/social/codepen.svg"></a></li>
+    <img src="../images/social/codepen.svg"></a></li>
     <li><a href="#">
-    <img src="/images/social/linkedin.svg"></a></li>
+    <img src="../images/social/linkedin.svg"></a></li>
     <li><a href="#">
-    <img src="/images/social/youtube.svg"></a></li>
+    <img src="../images/social/youtube.svg"></a></li>
     <li><a href="#">
-    <img src="/images/social/twitter.svg"></a></li>
+    <img src="../images/social/twitter.svg"></a></li>
     <li><a href="#">
-    <img src="/images/social/facebook.svg"></a></li>
+    <img src="../images/social/facebook.svg"></a></li>
     </ul>`;
 }

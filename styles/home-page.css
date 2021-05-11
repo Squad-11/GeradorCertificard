@@ -16,7 +16,7 @@ main {
 }
 
 .opcoes {
-  background-image: url("/images/backgroud-pc-branco.jpg");
+  background-image: url("../images/backgroud-pc-branco.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -96,7 +96,7 @@ p {
 }
 
 .compartilhar {
-  background-image: url("/images/background-compartilhar.png");
+  background-image: url("../images/background-compartilhar.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
